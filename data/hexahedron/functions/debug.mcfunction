@@ -1,0 +1,2 @@
+say test
+particle cloud ~ ~ ~ 0 0 0 0 100 force

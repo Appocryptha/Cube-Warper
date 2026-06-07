@@ -1,0 +1,11 @@
+{
+  "type": "undergarden:undergarden",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "undergarden:undergarden",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "undergarden:smog_spires"
+    }
+  }
+}

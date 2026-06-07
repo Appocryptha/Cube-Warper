@@ -1,0 +1,115 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": {
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "allowed_placement": {
+            "type": "minecraft:true"
+        },
+        "prioritize_tip": false,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 0,
+                            "max_inclusive": 2
+                        }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "regions_unexplored:raw_redstone_block"
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "regions_unexplored:pointed_redstone",
+                            "Properties": {
+                            "thickness": "base"
+                            }
+                    }
+                }
+            },
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 0,
+                            "max_inclusive": 2
+                        }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "regions_unexplored:pointed_redstone",
+                            "Properties": {
+                            "thickness": "middle"
+                            }
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "regions_unexplored:pointed_redstone",
+                            "Properties": {
+                            "thickness": "frustum"
+                            }
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "regions_unexplored:pointed_redstone",
+                            "Properties": {
+                            "thickness": "tip"
+                            }
+                    }
+                }
+            }
+        ]
+        
+    }
+},
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:deepslate_redstone_ore",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "tries": 96,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

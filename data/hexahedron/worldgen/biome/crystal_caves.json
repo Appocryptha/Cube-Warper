@@ -1,0 +1,41 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "ambient_sound": "alexscaves:magnetic_caves_ambience",
+    "additions_sound": {
+      "sound": "alexscaves:magnetic_caves_ambience_additions",
+      "tick_chance": 0.0111
+    },
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "alexscaves:magnetic_caves_ambience_mood",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": "alexscaves:magnetic_caves_music"
+    },
+    "particle": {
+      "options": {
+        "type": "supplementaries:sparkle"
+      },
+      "probability": 0.002
+    },
+    "sky_color": 0,
+    "fog_color": 2111042,
+    "water_color": 11126527,
+    "water_fog_color": 329011
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:certus_quartz"],
+    ["hexahedron:crystal_melon"]
+  ]
+}

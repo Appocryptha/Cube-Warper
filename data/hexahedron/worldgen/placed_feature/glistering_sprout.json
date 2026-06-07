@@ -1,0 +1,25 @@
+{
+    "feature": "hexahedron:glistening_sprout",
+    "placement": [
+        {
+            "type": "rarity_filter",
+            "chance": 1
+        },
+        {
+            "type": "count",
+            "count": 4
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 0
+        }
+    ]
+}

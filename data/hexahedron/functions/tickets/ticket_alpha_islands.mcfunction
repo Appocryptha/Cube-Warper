@@ -1,0 +1,14 @@
+### TEMINATE CURRENT POSITION
+execute as @e[tag=outer_core] at @s run fill ~-8 ~-8 ~-8 ~8 ~8 ~8 air
+kill @e[type=marker,tag=outer_core]
+
+### INITIATE CONNECTION
+execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal nbt {isVisible:false}
+execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal set_portal_destination hexahedron:alpha_islands ~ ~ ~
+execute at @e[type=minecraft:marker,tag=core] at @s in hexahedron:alpha_islands run summon marker ~ ~ ~ {NoGravity:1b,Tags:["outer_core"]}
+
+### QUE REPOSITIONING
+schedule function hexahedron:repositioning/standard_floor 5s
+
+### START TELEPORTATION
+tag @e[type=minecraft:marker,tag=core] add running

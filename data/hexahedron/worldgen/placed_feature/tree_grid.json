@@ -1,0 +1,30 @@
+{
+    "feature": "hexahedron:tree_gray",
+    "placement": [
+        {
+            "type": "count",
+            "count": 1
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "WORLD_SURFACE"
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": "grass_block"
+          }
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 0
+        }
+    ]
+}

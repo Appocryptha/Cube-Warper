@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 2,
+  "type": "square-textured",
+  "conditions": // conditions object (optional)
+  {
+    "dimensions": ["minecraft:overworld"]
+  },
+  "properties": {
+    "fade": {
+      "startFadeIn": 0,
+      "endFadeIn": 0,
+      "startFadeOut": 0,
+      "endFadeOut": 0,
+	  "alwaysOn": true
+    }
+  },
+  "blend": {
+  },
+  "textures": {
+    "north": "kubejs:textures/skybox/hexahedron/front.png",
+    "south": "kubejs:textures/skybox/hexahedron/back.png",
+    "east": "kubejs:textures/skybox/hexahedron/right.png",
+    "west": "kubejs:textures/skybox/hexahedron/left.png",
+    "top": "kubejs:textures/skybox/hexahedron/top.png",
+    "bottom": "kubejs:textures/skybox/hexahedron/bottom.png"
+  }
+}

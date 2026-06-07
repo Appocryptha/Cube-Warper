@@ -1,0 +1,33 @@
+{
+    "feature": "hexahedron:brazier_pillar_soul",
+    "placement": [
+        {
+            "type": "rarity_filter",
+            "chance": 20
+        },
+        {
+            "type": "count",
+            "count": 3
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "OCEAN_FLOOR"
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [0, -1, 0],
+            "blocks": ["minecraft:grass_block"]
+          }
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -2
+        }
+    ]
+}

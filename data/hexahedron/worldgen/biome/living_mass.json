@@ -1,0 +1,21 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 7143424,
+    "fog_color": 4915200,
+    "water_color": 10551296,
+    "water_fog_color": 3997696
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["biomesoplenty:flesh_tendon"],
+    ["biomesoplenty:hair"],
+    ["biomesoplenty:hair"],
+    ["biomesoplenty:hair"],
+    ["biomesoplenty:pus_bubbles"]
+  ]
+}

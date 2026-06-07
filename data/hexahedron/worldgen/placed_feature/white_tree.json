@@ -1,0 +1,16 @@
+{
+    "feature": "hexahedron:white_tree",
+    "placement": [
+        {
+            "type": "count",
+            "count": 4
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "feature": "hexahedron:eye_pillar_seeking",
+    "placement": [
+        {
+            "type": "rarity_filter",
+            "chance": 20
+        },
+        {
+            "type": "count",
+            "count": 4
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "OCEAN_FLOOR"
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -2
+        }
+    ]
+}

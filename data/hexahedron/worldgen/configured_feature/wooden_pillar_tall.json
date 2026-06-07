@@ -1,0 +1,393 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 128,
+    "xz_spread": 10,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+          "config": {
+            "features": [
+              {
+                "feature": {
+                  "type": "minecraft:block_column",
+                  "config": {
+                    "direction": "up",
+                    "allowed_placement": {
+                      "type": "minecraft:true"
+                    },
+                    "prioritize_tip": false,
+                    "layers": [
+                      {
+                        "height": {
+                          "type": "minecraft:uniform",
+                          "value": {
+                            "min_inclusive": 10,
+                            "max_inclusive": 20
+                          }
+                        },
+                        "provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:oak_planks"
+                          }
+                        }
+                      },
+                      {
+                        "height": 1,
+                        "provider": {
+                          "type": "minecraft:weighted_state_provider",
+                          "entries": [
+                            {
+                              "weight": 1,
+                              "data": {
+                                "Name": "minecraft:torch"
+                              }
+                            },
+                            {
+                              "weight": 3,
+                              "data": {
+                                "Name": "minecraft:air"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -1,
+                        0
+                      ],
+                      "blocks": "minecraft:grass_block"
+                    }
+                  },
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "blocks": "air"
+                    }
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "type": "minecraft:block_column",
+                  "config": {
+                    "direction": "up",
+                    "allowed_placement": {
+                      "type": "minecraft:true"
+                    },
+                    "prioritize_tip": false,
+                    "layers": [
+                      {
+                        "height": {
+                          "type": "minecraft:uniform",
+                          "value": {
+                            "min_inclusive": 10,
+                            "max_inclusive": 20
+                          }
+                        },
+                        "provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:birch_planks"
+                          }
+                        }
+                      },
+                      {
+                        "height": 1,
+                        "provider": {
+                          "type": "minecraft:weighted_state_provider",
+                          "entries": [
+                            {
+                              "weight": 1,
+                              "data": {
+                                "Name": "minecraft:torch"
+                              }
+                            },
+                            {
+                              "weight": 3,
+                              "data": {
+                                "Name": "minecraft:air"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -1,
+                        0
+                      ],
+                      "blocks": "minecraft:grass_block"
+                    }
+                  },
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "blocks": "air"
+                    }
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "type": "minecraft:block_column",
+                  "config": {
+                    "direction": "up",
+                    "allowed_placement": {
+                      "type": "minecraft:true"
+                    },
+                    "prioritize_tip": false,
+                    "layers": [
+                      {
+                        "height": {
+                          "type": "minecraft:uniform",
+                          "value": {
+                            "min_inclusive": 10,
+                            "max_inclusive": 20
+                          }
+                        },
+                        "provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:spruce_planks"
+                          }
+                        }
+                      },
+                      {
+                        "height": 1,
+                        "provider": {
+                          "type": "minecraft:weighted_state_provider",
+                          "entries": [
+                            {
+                              "weight": 1,
+                              "data": {
+                                "Name": "minecraft:torch"
+                              }
+                            },
+                            {
+                              "weight": 3,
+                              "data": {
+                                "Name": "minecraft:air"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -1,
+                        0
+                      ],
+                      "blocks": "minecraft:grass_block"
+                    }
+                  },
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "blocks": "air"
+                    }
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "type": "minecraft:block_column",
+                  "config": {
+                    "direction": "up",
+                    "allowed_placement": {
+                      "type": "minecraft:true"
+                    },
+                    "prioritize_tip": false,
+                    "layers": [
+                      {
+                        "height": {
+                          "type": "minecraft:uniform",
+                          "value": {
+                            "min_inclusive": 10,
+                            "max_inclusive": 20
+                          }
+                        },
+                        "provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:jungle_planks"
+                          }
+                        }
+                      },
+                      {
+                        "height": 1,
+                        "provider": {
+                          "type": "minecraft:weighted_state_provider",
+                          "entries": [
+                            {
+                              "weight": 1,
+                              "data": {
+                                "Name": "minecraft:torch"
+                              }
+                            },
+                            {
+                              "weight": 3,
+                              "data": {
+                                "Name": "minecraft:air"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -1,
+                        0
+                      ],
+                      "blocks": "minecraft:grass_block"
+                    }
+                  },
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "blocks": "air"
+                    }
+                  }
+                ]
+              },
+              {
+                "feature": {
+                  "type": "minecraft:block_column",
+                  "config": {
+                    "direction": "up",
+                    "allowed_placement": {
+                      "type": "minecraft:true"
+                    },
+                    "prioritize_tip": false,
+                    "layers": [
+                      {
+                        "height": {
+                          "type": "minecraft:uniform",
+                          "value": {
+                            "min_inclusive": 10,
+                            "max_inclusive": 20
+                          }
+                        },
+                        "provider": {
+                          "type": "minecraft:simple_state_provider",
+                          "state": {
+                            "Name": "minecraft:dark_oak_planks"
+                          }
+                        }
+                      },
+                      {
+                        "height": 1,
+                        "provider": {
+                          "type": "minecraft:weighted_state_provider",
+                          "entries": [
+                            {
+                              "weight": 1,
+                              "data": {
+                                "Name": "minecraft:torch"
+                              }
+                            },
+                            {
+                              "weight": 3,
+                              "data": {
+                                "Name": "minecraft:air"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "placement": [
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        -1,
+                        0
+                      ],
+                      "blocks": "minecraft:grass_block"
+                    }
+                  },
+                  {
+                    "type": "minecraft:block_predicate_filter",
+                    "predicate": {
+                      "type": "minecraft:matching_blocks",
+                      "offset": [
+                        0,
+                        0,
+                        0
+                      ],
+                      "blocks": "air"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+        "type": "minecraft:simple_random_selector"
+      },
+      "placement": []
+    }
+  }
+}

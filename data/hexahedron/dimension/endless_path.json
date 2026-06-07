@@ -1,0 +1,11 @@
+{
+    "type": "hexahedron:noon",
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "hexahedron:endless_path"
+        },
+        "settings": "hexahedron:endless_path"
+    }
+}

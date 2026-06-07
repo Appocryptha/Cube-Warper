@@ -1,0 +1,25 @@
+{
+    "feature": "hexahedron:acid_vent",
+    "placement": [
+        {
+            "type": "rarity_filter",
+            "chance": 27
+        },
+        {
+            "type": "count",
+            "count": 5
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -2
+        }
+    ]
+}

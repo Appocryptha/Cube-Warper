@@ -1,0 +1,11 @@
+{
+    "type": "hexahedron:ambient_light",
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "hexahedron:high_river"
+        },
+        "settings": "hexahedron:red_canyon"
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 8750469,
+    "fog_color": 6052956,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["patch_grass_jungle"],
+    ["hexahedron:eye_pillar_looking"]
+  ]
+}

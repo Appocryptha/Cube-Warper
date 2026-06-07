@@ -1,0 +1,46 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "additions_sound": {
+      "sound": "undergarden:ambient.spires_addition",
+      "tick_chance": 0.00555
+    },
+    "ambient_sound": "undergarden:ambient.spires",
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "undergarden:ambient.mood",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": true,
+      "sound": "undergarden:music.undergarden"
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:ash"
+      },
+      "probability": 0.118093334
+    },
+    "fog_color": 3843,
+    "sky_color": 0,
+    "water_color": 3736837,
+    "water_fog_color": 1900801
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:endless_chains"],
+    ["hexahedron:smog_vent"],
+    ["hexahedron:eye_pillar_peeking"],
+    ["hexahedron:eye_pillar_looking"],
+    ["hexahedron:bramble_wall"],
+    ["hexahedron:ore_utherium"],
+    ["undergarden:depthrock_pebble_patch"]
+  ]
+}

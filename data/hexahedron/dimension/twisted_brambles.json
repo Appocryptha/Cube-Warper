@@ -1,0 +1,11 @@
+{
+  "type": "hexahedron:dark_fogger",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "hexahedron:twisted_brambles",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "hexahedron:twisted_brambles"
+    }
+  }
+}

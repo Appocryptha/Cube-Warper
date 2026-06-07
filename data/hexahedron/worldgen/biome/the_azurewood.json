@@ -1,0 +1,50 @@
+{
+  "temperature": 2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 16758836,
+    "fog_color": 50175,
+    "water_color": 64966,
+    "grass_color": 6283263,
+    "water_fog_color": 3852,
+    "ambient_sound": "ambientsounds:suspense.pale-garden",
+    "particle": {
+      "options": {
+        "type": "firefly_bush_backport:firefly"
+      },
+      "probability": 0.002
+    }
+  },
+  "spawners": {
+    "water_ambient": [
+      {
+        "type": "minecraft:glow_squid",
+        "weight": 10,
+        "minCount": 2,
+        "maxCount": 4
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [
+      "hexahedron:tree_magic",
+      "hexahedron:tree_blue_birch",
+      "hexahedron:tree_azure_runewood"
+    ],
+    ["hexahedron:brazier_pillar_soul"],
+    ["hexahedron:sticks_blue_sparkler"],
+    ["hexahedron:moss_patch_glowing"],
+    ["hexahedron:enchanted_birch_shrub"],
+    ["hexahedron:blue_rose"],
+    ["hexahedron:flower_nightshade"],
+    ["hexahedron:flower_pitcher_plant"],
+    ["hexahedron:moyai"],
+    [
+      "minecraft:patch_grass_plain",
+      "minecraft:patch_tall_grass"
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+   "loader": "fusion:model",
+   "type": "connecting",
+   "connections": [
+      {
+         "type": "is_same_block"
+      },
+      {
+         "type": "match_block",
+         "block": "kubejs:warping_vent"
+      },
+      {
+         "type": "match_block",
+         "block": "kubejs:warping_frame"
+      },
+      {
+         "type": "match_block",
+         "block": "kubejs:warping_frame_rusted_half"
+      }
+   ],
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kubejs:block/warping_frame_rusted_half_end_side"
+  }
+}

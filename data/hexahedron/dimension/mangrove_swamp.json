@@ -1,0 +1,33 @@
+{
+  "type": "hexahedron:fogger",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:mangrove_swamp",
+      "lakes": false,
+      "features":  true,
+      "layers": [
+        {
+          "block": "minecraft:bedrock",
+          "height": 1
+        },
+        {
+          "block": "minecraft:stone",
+          "height": 99
+        },
+        {
+          "block": "minecraft:dirt",
+          "height": 4
+        },
+        {
+          "block": "minecraft:mud",
+          "height": 3
+        },
+        {
+          "block": "minecraft:water",
+          "height": 2
+        }
+      ]
+    }
+  }
+}

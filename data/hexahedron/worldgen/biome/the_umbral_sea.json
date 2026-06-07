@@ -1,0 +1,37 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "ambient_sound": "undergarden:ambient.abyss",
+    "additions_sound": {
+      "sound": "undergarden:ambient.abyss_addition",
+      "tick_chance": 0.01
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:ash"
+      },
+      "probability": 0.003
+    },
+    "sky_color": 0,
+    "fog_color": 5066061,
+    "water_color": 0,
+    "water_fog_color": 0,
+    "grass_color": 5066061,
+    "foliage_color": 5066061
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:pillar_darkslate"],
+    ["hexahedron:metal_rebar"],
+    ["hexahedron:shimmerweed_tall"],
+    ["hexahedron:shimmerweed"],
+    ["hexahedron:patch_dead_grass"],
+    ["hexahedron:patch_deepturf_tall"],
+    ["hexahedron:patch_deepturf"]
+
+  ]
+}

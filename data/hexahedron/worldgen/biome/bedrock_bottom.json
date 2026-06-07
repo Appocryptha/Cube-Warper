@@ -1,0 +1,23 @@
+{
+  "temperature": 2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "ambient_sound": "ambientsounds:suspense.end",
+    "sky_color": 0,
+    "fog_color": 0,
+    "water_color": 0,
+    "water_fog_color": 0
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:eye_pillar_peeking"],
+    ["hexahedron:eye_pillar_looking"],
+    ["hexahedron:eye_pillar_seeking"],
+    ["hexahedron:eye_pillar_peeking"],
+    ["hexahedron:eye_pillar_looking"],
+    ["hexahedron:eye_pillar_seeking"]
+  ]
+}

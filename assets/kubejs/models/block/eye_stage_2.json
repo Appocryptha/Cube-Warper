@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "kubejs:block/eye_top",
+    "side": "kubejs:block/eye_stage_2"
+  }
+}

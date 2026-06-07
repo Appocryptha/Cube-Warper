@@ -1,0 +1,41 @@
+{
+    "feature": "regions_unexplored:patch_prismoss_sprout",
+    "placement": [
+        {
+            "type": "count",
+            "count": 100
+        },
+        {
+            "type": "in_square"
+        },
+        {
+          "type": "minecraft:height_range",
+          "height": {
+            "type": "minecraft:uniform",
+            "max_inclusive": {
+              "below_top": 0
+            },
+            "min_inclusive": {
+              "above_bottom": 0
+            }
+          }
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 0
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": ["regions_unexplored:prismaglass"]
+          }
+        }
+    ]
+}

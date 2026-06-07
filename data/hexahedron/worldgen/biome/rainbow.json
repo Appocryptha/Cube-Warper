@@ -1,0 +1,48 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "grass_color": 6553382,
+    "sky_color": 63487,
+    "fog_color": 9697535,
+    "water_color": 48607,
+    "water_fog_color": 329011
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [
+      "minecraft:flower_flower_forest"
+    ],
+    [
+      "minecraft:flower_flower_forest"
+    ],
+    [
+      "minecraft:flower_flower_forest"
+    ],
+    [
+      "minecraft:flower_flower_forest"
+    ],
+    [
+      "minecraft:flower_flower_forest"
+    ],
+    [
+      "minecraft:flower_flower_forest"
+    ],
+    [
+      "minecraft:flower_flower_forest"
+    ],
+    [
+      "minecraft:flower_flower_forest"
+    ],
+    [
+      "minecraft:flower_flower_forest"
+    ],
+    [
+      "minecraft:flower_flower_forest"
+    ],
+    []
+  ]
+}

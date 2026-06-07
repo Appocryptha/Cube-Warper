@@ -1,0 +1,47 @@
+{
+  "world": "hexahedron:the_gray",
+  "id": "hexahedron:no_celestials",
+  "cloud_settings": {
+    "cloud": false,
+    "cloud_height": 0
+  },
+  "rain": false,
+  "custom_vanilla_objects": {
+    "sun": false,
+    "sun_texture": "",
+    "sun_height": 0,
+    "sun_size": 0,
+    "moon": false,
+    "moon_phase": false,
+    "moon_texture": "",
+    "moon_height": 0,
+    "moon_size": 0
+  },
+  "stars": {
+    "vanilla": false,
+    "moving_stars": false,
+    "count": 0,
+    "all_days_visible": false,
+    "scale": 0,
+    "color": [
+      0,
+      0,
+      0
+    ]
+  },
+  "sky_type": "OVERWORLD",
+  "sky_color": {
+    "custom_color": false,
+    "color": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "sky_objects": [],
+  "constellations": [],
+  "condition": {
+    "condition": false
+  }
+}

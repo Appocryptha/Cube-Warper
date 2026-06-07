@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:multiface_growth",
+  "config": {
+    "block": "clanginghowl:technoflesh_membrane",
+    "can_be_placed_on": [
+      "clanginghowl:extraterrestrial_stone",
+      "minecraft:blackstone",
+      "ae2:sky_stone_block",
+      "clanginghowl:technoflesh_block"
+    ],
+    "can_place_on_ceiling": true,
+    "can_place_on_floor": true,
+    "can_place_on_wall": true,
+    "chance_of_spreading": 1,
+    "search_range": 20
+  }
+}

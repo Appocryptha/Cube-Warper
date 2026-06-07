@@ -1,0 +1,11 @@
+{
+  "type": "hexahedron:dusk",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "hexahedron:rainbow",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "hexahedron:rainbow"
+    }
+  }
+}

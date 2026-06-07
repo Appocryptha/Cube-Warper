@@ -1,0 +1,37 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 0,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "alexscaves:galena_iron_ore",
+      "alexscaves:metal_swarf"
+    ],
+    [],
+    [
+      "alexscaves:scarlet_magnetic_node",
+      "alexscaves:azure_magnetic_node"
+    ],
+    [
+      "alexscaves:tesla_bulb"
+    ],
+    [
+    ]
+  ]
+}

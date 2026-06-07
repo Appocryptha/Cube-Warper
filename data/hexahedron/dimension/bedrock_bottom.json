@@ -1,0 +1,16 @@
+{
+  "type": "hexahedron:dark_fogger",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "hexahedron:bedrock_bottom",
+      "features": true,
+      "layers": [
+        {
+          "height": 97,
+          "block": "minecraft:bedrock"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:simple_block",
+    "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "alexscaves:waste_drum",
+                  "Properties": {
+                    "facing": "up"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "alexscaves:waste_drum",
+                  "Properties": {
+                    "facing": "down"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "alexscaves:waste_drum",
+                  "Properties": {
+                    "facing": "north"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "alexscaves:waste_drum",
+                  "Properties": {
+                    "facing": "south"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "alexscaves:waste_drum",
+                  "Properties": {
+                    "facing": "east"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "alexscaves:waste_drum",
+                  "Properties": {
+                    "facing": "west"
+                  }
+                }
+              }
+            ]
+        }
+    }
+}

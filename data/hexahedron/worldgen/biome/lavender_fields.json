@@ -1,0 +1,35 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "additions_sound": {
+      "sound": "undergarden:ambient.fields_addition",
+      "tick_chance": 0.02
+    },
+    "particle": {
+      "options": {
+        "type": "biomesoplenty:jacaranda_leaves"
+      },
+      "probability": 0.003
+    },
+    "sky_color": 7907327,
+    "fog_color": 13614079,
+    "water_color": 5295615,
+    "water_fog_color": 329011,
+    "foliage_color": 10601325,
+    "grass_color": 10601325
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:moyai_pillar"],
+    ["hexahedron:tree_jacaranda_bees"],
+    ["biomesoplenty:patch_tall_lavender"],
+    ["biomesoplenty:flower_lavender"],
+    ["biomesoplenty:flower_lavender"],
+    ["biomesoplenty:flower_lavender"],
+    ["patch_grass_plain"]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "": [{
+      "model": "kubejs:block/crimson_statue_sad", "weight": 25
+    },
+    {
+      "model": "kubejs:block/crimson_statue_happy", "weight": 25
+    },
+	{
+      "model": "kubejs:block/crimson_statue", "weight": 50
+    }]
+  }
+}

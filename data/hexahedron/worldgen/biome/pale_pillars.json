@@ -1,0 +1,21 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 50175,
+    "fog_color": 12119807,
+    "water_color": 8257529,
+    "water_fog_color": 1058903,
+    "grass_color": 7721783,
+    "foliage_color": 7721783
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:quartz_pillar"],
+    ["minecraft:patch_grass_plain"],
+    ["minecraft:warm_ocean_vegetation"]
+  ]
+}

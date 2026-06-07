@@ -1,0 +1,32 @@
+{
+  "temperature": 2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 16611831,
+    "fog_color": 16757746,
+    "water_color": 9961725,
+    "grass_color": 16736228,
+    "water_fog_color": 3852,
+    "ambient_sound": "ambientsounds:suspense.pale-garden",
+    "particle": {
+      "options": {
+        "type": "minecraft:cherry_leaves"
+      },
+      "probability": 0.002
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:tree_ice_cream"],
+    ["hexahedron:cakes"],
+    ["hexahedron:flower_gourmaryllis"],
+    ["hexahedron:sundrop"],
+    ["hexahedron:sweet_puffs"],
+    ["hexahedron:peppermint"],
+    ["hexahedron:sprinkles"],
+    ["hexahedron:gummy_rings"]
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 3032888,
+    "fog_color": 4020282,
+    "water_color": 6388580,
+    "water_fog_color": 2302743,
+    "grass_color_modifier": "swamp"
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:eye_pillar_peeking"],
+    ["patch_grass_normal"],
+    ["patch_grass_normal"],
+    ["patch_tall_grass"],
+    ["seagrass_swamp"],
+    ["seagrass_normal"],
+    ["environmental:patch_duckweed"],
+    ["environmental:cattails_dense"],
+    ["environmental:cattails"]
+  ]
+}

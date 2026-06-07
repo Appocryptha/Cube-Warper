@@ -1,0 +1,20 @@
+{
+  "temperature": 2,
+  "downfall": 1,
+  "has_precipitation": true,
+  "effects": {
+    "sky_color": 3487029,
+    "fog_color": 4013373,
+    "water_color": 3356481,
+    "water_fog_color": 1380907,
+    "grass_color": 8629333,
+    "foliage_color": 8693593
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["trees_plains"],
+    ["patch_grass_plain"]
+  ]
+}

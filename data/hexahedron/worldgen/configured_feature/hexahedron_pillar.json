@@ -1,0 +1,88 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "allowed_placement": {
+            "type": "minecraft:true"
+        },
+        "prioritize_tip": false,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 1,
+                            "max_inclusive": 4
+                        }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "kubejs:warping_frame_rusted_half"
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                    "weight": 2,
+                    "data": {
+                        "Name": "kubejs:warping_frame_rusted_half"}
+                    },
+                    {
+                    "weight": 2,
+                    "data": {
+                        "Name": "kubejs:warping_frame_rusted"}
+                    },
+                    {
+                    "weight": 1,
+                    "data": {
+                        "Name": "kubejs:warping_vent_rusted_half"}
+                    },
+                    {
+                    "weight": 1,
+                    "data": {
+                        "Name": "kubejs:warping_vent_rusted"}
+                    }
+                ]
+                }
+            },
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 1,
+                            "max_inclusive": 2
+                        }
+                },
+                "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                    "weight": 1,
+                    "data": {
+                        "Name": "kubejs:warping_frame_rusted_half"}
+                    },
+                    {
+                    "weight": 1,
+                    "data": {
+                        "Name": "kubejs:warping_frame_rusted"}
+                    }
+                ]
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "kubejs:warping_frame_rusted_end"
+                    }
+                }
+            }
+        ]
+    }
+}

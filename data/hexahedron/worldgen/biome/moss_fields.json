@@ -1,0 +1,22 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 802048,
+    "fog_color": 3896365,
+    "water_color": 3896365,
+    "water_fog_color": 1192709
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["minecraft:forest_rock"],
+    ["hexahedron:eye_pillar_peeking"],
+    ["biomesoplenty:moss_splatter"],
+    ["patch_grass_savanna"],
+    ["patch_grass_forest"],
+    ["patch_grass_forest"]
+  ]
+}

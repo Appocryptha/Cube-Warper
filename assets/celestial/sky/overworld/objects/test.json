@@ -1,0 +1,20 @@
+"skybox": {
+	"texture": "minecraft:textures/block/stone.png",
+	"texture_width": "16",
+	"texture_height": "16",
+	"sides": {
+		"0": {
+			"uv_x": "0",
+			"uv_y": "0",
+			"uv_width": "16",
+			"uv_height": "16"
+		},
+		"1": {
+		  	"texture": "minecraft:textures/block/bricks.png",
+			"uv_x": "0",
+			"uv_y": "0",
+			"uv_width": "8",
+			"uv_height": "8"
+		}
+	}
+}

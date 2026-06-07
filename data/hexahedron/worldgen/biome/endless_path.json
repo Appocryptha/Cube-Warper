@@ -1,0 +1,22 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 41727,
+    "fog_color": 16769109,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "foliage_color": 16121701,
+    "grass_color": 16641024
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:sticks"],
+    ["biomesoplenty:patch_barley"],
+    ["biomesoplenty:patch_barley"],
+    ["biomesoplenty:patch_barley"]
+  ]
+}

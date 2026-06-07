@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "direction": "up",
+    "allowed_placement": {
+      "type": "true"
+    },
+    "prioritize_tip": false,
+    "layers": [
+      {
+        "height": {
+            "type": "minecraft:uniform",
+                "value": {
+                    "min_inclusive": 5,
+                    "max_inclusive": 8
+                }
+        },
+        "provider": {
+          "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "moyai:moyai",
+                  "Properties": {
+                    "facing": "north"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "moyai:moyai",
+                  "Properties": {
+                    "facing": "south"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "moyai:moyai",
+                  "Properties": {
+                    "facing": "east"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "moyai:moyai",
+                  "Properties": {
+                    "facing": "west"
+                  }
+                }
+              }
+            ]
+        }
+      }
+    ]
+  }
+}

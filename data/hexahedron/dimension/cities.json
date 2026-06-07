@@ -1,0 +1,11 @@
+{
+    "type": "hexahedron:moonless_night",
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "hexahedron:cities"
+        },
+        "settings": "hexahedron:cities"
+    }
+}

@@ -1,0 +1,162 @@
+{
+    "sea_level": 50,
+    "disable_mob_generation": true,
+    "ore_veins_enabled": false,
+    "aquifers_enabled": false,
+    "legacy_random_source": false,
+    "default_block": {
+        "Name": "clanginghowl:extraterrestrial_stone"
+    },
+    "default_fluid": {
+        "Name": "biomesoplenty:blood"
+    },
+    "spawn_target": [],
+    "noise": {
+        "min_y": 0,
+        "height": 256,
+        "size_horizontal": 4,
+        "size_vertical": 1
+    },
+    "noise_router": {
+        "initial_density_without_jaggedness": 0.0,
+        "barrier": 0.0,
+        "fluid_level_floodedness": 0.0,
+        "fluid_level_spread": 0.0,
+        "lava": 0.0,
+        "vein_toggle": 0.0,
+        "vein_ridged": 0.0,
+        "vein_gap": 0.0,
+        "temperature": 0.0,
+        "vegetation": 0.0,
+        "continents": 0.0,
+        "erosion": 0.0,
+        "depth": 0.0,
+        "ridges": 0.0,
+    "final_density": {
+        "type": "minecraft:add",
+        "argument1": {
+          "type": "minecraft:y_clamped_gradient",
+          "from_y": 0,
+          "to_y": 100,
+          "from_value": 2,
+          "to_value": -2
+        },
+        "argument2": {
+          "type": "minecraft:noise",
+          "noise": "hexahedron:smooth_fields",
+          "xz_scale": 1,
+          "y_scale": 1
+        }
+      }
+    },
+  "surface_rule": {
+    "type": "sequence",
+    "sequence": [
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "water",
+          "offset": 0,
+          "surface_depth_multiplier": 0,
+          "add_stone_depth": false
+        },
+        "then_run": {
+          "type": "condition",
+          "if_true": {
+            "type": "stone_depth",
+            "surface_type": "floor",
+            "offset": 0,
+            "add_surface_depth": false,
+            "secondary_depth_range": 0
+          },
+          "then_run": {
+            "type": "minecraft:sequence",
+            "sequence": [
+              {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:noise_threshold",
+                  "noise": "hexahedron:blobs",
+                  "min_threshold": -2,
+                  "max_threshold": -0.2
+                },
+                "then_run": {
+                  "type": "minecraft:block",
+                  "result_state": {
+                    "Name": "clanginghowl:extraterrestrial_stone"
+                  }
+                }
+              },
+              {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:noise_threshold",
+                  "noise": "hexahedron:blobs",
+                  "min_threshold": -0.2,
+                  "max_threshold": 0.0
+                },
+                "then_run": {
+                  "type": "minecraft:block",
+                  "result_state": {
+                    "Name": "clanginghowl:tubular_technoflesh"
+                  }
+                }
+              },
+              {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:noise_threshold",
+                  "noise": "hexahedron:blobs",
+                  "min_threshold": 0,
+                  "max_threshold": 0.3
+                },
+                "then_run": {
+                  "type": "minecraft:block",
+                  "result_state": {
+                    "Name": "clanginghowl:technoflesh_block"
+                  }
+                }
+              },
+              {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:noise_threshold",
+                  "noise": "hexahedron:blobs",
+                  "min_threshold": 0.3,
+                  "max_threshold": 0.7
+                },
+                "then_run": {
+                  "type": "minecraft:block",
+                  "result_state": {
+                    "Name": "regions_unexplored:glistering_wart"
+                  }
+                }
+              },
+              {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:noise_threshold",
+                  "noise": "hexahedron:blobs",
+                  "min_threshold": 0.7,
+                  "max_threshold": 2
+                },
+                "then_run": {
+                  "type": "minecraft:block",
+                  "result_state": {
+                    "Name": "regions_unexplored:glowing_pink_bioshroom_block"
+                  }
+                }
+              },
+              {
+                  "type": "minecraft:block",
+                  "result_state": {
+                    "Name": "clanginghowl:technoflesh_block"
+                  }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

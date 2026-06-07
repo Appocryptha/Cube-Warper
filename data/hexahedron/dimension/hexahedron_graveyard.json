@@ -1,0 +1,11 @@
+{
+    "type": "hexahedron:sunless_noon",
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "hexahedron:hexahedron_graveyard"
+        },
+        "settings": "hexahedron:hexahedron_graveyard"
+    }
+}

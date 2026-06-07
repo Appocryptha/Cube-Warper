@@ -1,0 +1,24 @@
+{
+  "name": "titan_skulls",
+  "fallback": "minecraft:empty",
+  "elements": [
+      {
+          "element": {
+              "projection": "rigid",
+              "element_type": "minecraft:legacy_single_pool_element",
+              "location": "hexahedron:skull_side_small",
+              "processors": "minecraft:empty"
+          },
+          "weight": 1
+      },
+      {
+          "element": {
+              "projection": "rigid",
+              "element_type": "minecraft:legacy_single_pool_element",
+              "location": "hexahedron:skull_tilted_small",
+              "processors": "minecraft:empty"
+          },
+          "weight": 1
+      }
+  ]
+}

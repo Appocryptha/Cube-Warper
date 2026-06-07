@@ -1,0 +1,1 @@
+execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal complete_bi_way_portal

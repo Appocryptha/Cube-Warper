@@ -1,0 +1,33 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+
+  "connections": [
+    {
+      "type": "is_same_block"
+    }
+  ],
+
+  "textures": {
+    "top": "kubejs:block/warping_frame_slab_top",
+    "bottom": "kubejs:block/warping_frame_slab_top",
+    "side": "kubejs:block/warping_frame_slab_side",
+    "particle": "kubejs:block/warping_frame_slab_top"
+  },
+
+  "elements": [
+    {
+      "from": [0, 8, 0],
+      "to": [16, 16, 16],
+
+      "faces": {
+        "down":  { "texture": "#bottom" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#side" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

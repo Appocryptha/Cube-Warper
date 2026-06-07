@@ -1,0 +1,25 @@
+{
+  "temperature": 2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 61183,
+    "fog_color": 16772799,
+    "water_color": 64966,
+    "grass_color": 5273883,
+    "water_fog_color": 3852
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:tree_pine"],
+    ["hexahedron:moss_patch_dry"],
+    ["hexahedron:mossy_boulder_dry"],
+    ["seagrass_swamp"],
+    ["seagrass_normal"],
+    ["hexahedron:moyai"],
+    ["minecraft:patch_grass_plain"],
+    ["minecraft:patch_tall_grass"]
+  ]
+}

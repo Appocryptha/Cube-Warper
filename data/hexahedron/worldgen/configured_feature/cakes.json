@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": {
+
+    "type": "minecraft:simple_block",
+    "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:cake"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "neapolitan:vanilla_cake"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "neapolitan:chocolate_cake"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "neapolitan:strawberry_cake"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "botania:kekimurus"
+                }
+              }
+            ]
+        }
+    }
+    },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "alexscaves:block_of_frosting",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "tries": 96,
+    "xz_spread": 15,
+    "y_spread": 3
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "hexahedron:unfortunate_portal",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 10,
+    "separation": 0,
+    "salt": 123456789
+  }
+}

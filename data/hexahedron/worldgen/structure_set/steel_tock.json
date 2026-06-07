@@ -1,0 +1,14 @@
+{
+  "structures": [
+      {
+          "structure": "hexahedron:steel_rock",
+          "weight": 1
+      }
+  ],
+  "placement": {
+      "type": "minecraft:random_spread",
+      "spacing": 4,
+      "separation": 3,
+      "salt": 1646207470
+  }
+}

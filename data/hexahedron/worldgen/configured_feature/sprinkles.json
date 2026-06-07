@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": {
+
+    "type": "minecraft:simple_block",
+    "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 3,
+                "data": {
+                  "Name": "alexscaves:sprinkles",
+                  "Properties": {
+                    "amount": "1"
+                  }
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "Name": "alexscaves:sprinkles",
+                  "Properties": {
+                    "amount": "2"
+                  }
+                }
+              },
+              {
+                "weight": 2,
+                "data": {
+                  "Name": "alexscaves:sprinkles",
+                  "Properties": {
+                    "amount": "3"
+                  }
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "alexscaves:sprinkles",
+                  "Properties": {
+                    "amount": "4"
+                  }
+                }
+              }
+            ]
+        }
+    }
+    },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "alexscaves:block_of_frosting",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "tries": 96,
+    "xz_spread": 15,
+    "y_spread": 3
+  }
+}

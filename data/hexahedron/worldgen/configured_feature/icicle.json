@@ -1,0 +1,54 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "allowed_placement": {
+            "type": "minecraft:true"
+        },
+        "prioritize_tip": false,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 0,
+                            "max_inclusive": 3
+                        }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "regions_unexplored:icicle",
+                            "Properties": {
+                            "thickness": "middle"
+                        }
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "regions_unexplored:icicle",
+                            "Properties": {
+                            "thickness": "frustum"
+                        }
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "regions_unexplored:icicle",
+                            "Properties": {
+                            "thickness": "tip"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "additions_sound": {
+      "sound": "undergarden:bog_addition",
+      "tick_chance": 0.0111
+    },
+    "ambient_sound": "undergarden:ambient.undergarden",
+    "sky_color": 4741184,
+    "fog_color": 3884603,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:eye_pillar_peeking"],
+    ["hexahedron:eye_pillar_peeking"],
+    ["hexahedron:eye_pillar_peeking"],
+    [
+      "patch_sugar_cane",
+      "environmental:cattails_dense",
+      "environmental:cattails"
+    ],
+    ["patch_sugar_cane"],
+    ["patch_grass_jungle"],
+    ["seagrass_deep_warm"],
+    ["hexahedron:mossy_boulder"],
+    ["hexahedron:moss_boulder"],
+    ["hexahedron:droopfruit"],
+    ["hexahedron:firefly_bush"]
+  ]
+}

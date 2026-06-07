@@ -1,0 +1,25 @@
+{
+    "feature": "hexahedron:magma_patch",
+    "placement": [
+        {
+            "type": "rarity_filter",
+            "chance": 8
+        },
+        {
+            "type": "count",
+            "count": 25
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "OCEAN_FLOOR"
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": -2
+        }
+    ]
+}

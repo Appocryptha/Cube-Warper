@@ -1,0 +1,28 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 3658746,
+    "fog_color": 15383551,
+    "water_color": 10656767,
+    "water_fog_color": 2819379,
+    "grass_color": 15977471,
+    "foliage_color": 10506236
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:brazier_pillar_ender"],
+    [ 
+      "hexahedron:glistering_sprout",
+      "hexahedron:glistering_blub",
+      "hexahedron:glistering_bloom",
+      "hexahedron:glistering_spire",
+      "hexahedron:glistering_fern"
+    ],
+    ["patch_grass_plain"],
+    ["patch_tall_grass"]
+  ]
+}

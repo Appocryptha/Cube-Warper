@@ -1,0 +1,69 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "allowed_placement": {
+            "type": "minecraft:true"
+        },
+        "prioritize_tip": false,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 1,
+                            "max_inclusive": 4
+                        }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "alexscaves:metal_rebar",
+                            "Properties": {
+                            "lit": "true",
+                            "candles": "1"
+                            }
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                    "weight": 10,
+                    "data": {
+                        "Name": "supplementaries:candle_holder_red",
+                            "Properties": {
+                            "lit": "true",
+                            "candles": "1"
+                            }
+                        }
+                    },
+                    {
+                    "weight": 5,
+                    "data": {
+                        "Name": "supplementaries:candle_holder_red",
+                            "Properties": {
+                            "lit": "true",
+                            "candles": "2"
+                            }
+                        }
+                    },
+                    {
+                    "weight": 1,
+                    "data": {
+                        "Name": "supplementaries:candle_holder_red",
+                            "Properties": {
+                            "lit": "true",
+                            "candles": "3"
+                            }
+                        }
+                    }
+                ]
+                }
+            }
+        ]
+    }
+}

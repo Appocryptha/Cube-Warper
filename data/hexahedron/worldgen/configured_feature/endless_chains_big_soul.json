@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "allowed_placement": {
+            "type": "minecraft:true"
+        },
+        "prioritize_tip": false,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 5,
+                            "max_inclusive": 10
+                        }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "air"
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:light"
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "decorative_blocks:soul_brazier"
+                    }
+                }
+            },
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 200,
+                            "max_inclusive": 210
+                        }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "decorative_blocks:chain",
+                        "Properties": {
+                            "axis": "y"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

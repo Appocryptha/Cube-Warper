@@ -1,0 +1,11 @@
+{
+    "type": "hexahedron:lighted_fogger",
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "hexahedron:pillars"
+        },
+        "settings": "hexahedron:storm_mountains"
+    }
+}

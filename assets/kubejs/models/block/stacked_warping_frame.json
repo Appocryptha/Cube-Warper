@@ -1,0 +1,15 @@
+{
+   "loader": "fusion:model",
+   "type": "connecting",
+   "connections": [
+      {
+         "type": "is_same_block"
+      }
+   ],
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "kubejs:block/warping_frame_slab_top",
+    "side": "kubejs:block/warping_frame_slab_side"
+  }
+  }
+}

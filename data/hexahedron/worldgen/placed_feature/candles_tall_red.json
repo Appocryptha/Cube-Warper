@@ -1,0 +1,37 @@
+{
+    "feature": "hexahedron:candles_tall_red",
+    "placement": [
+        {
+            "type": "rarity_filter",
+            "chance": 4
+        },
+        {
+            "type": "count",
+            "count": 3
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "WORLD_SURFACE"
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 0
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": ["alexscaves:limestone", "minecraft:crimson_nylium"]
+          }
+        }
+    ]
+}

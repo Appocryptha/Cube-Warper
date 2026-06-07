@@ -1,0 +1,11 @@
+{
+    "type": "hexahedron:ambient_light",
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "hexahedron:the_sugarscape"
+        },
+        "settings": "hexahedron:the_sugarscape"
+    }
+}

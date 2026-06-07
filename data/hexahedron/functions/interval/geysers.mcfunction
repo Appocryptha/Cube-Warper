@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=geyser_marker] at @s if entity @e[type=tnt,distance=..2] run function hexahedron:effects/geysers

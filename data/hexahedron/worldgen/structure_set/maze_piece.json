@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "hexahedron:maze_piece",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "salt": 123456789
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "ambient_sound": "minecraft:custom.uplifting_pad",
+    "particle": {
+      "options": {
+        "type": "regions_unexplored:silver_birch_leaves"
+      },
+      "probability": 0.001
+    },
+    "sky_color": 12504575,
+    "fog_color": 16767020,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 16767232,
+    "foliage_color": 16761856
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:rock_livingrock"],
+    ["hexahedron:tree_silver_birch"],
+    ["regions_unexplored:silver_birch_shrub"],
+    ["hexahedron:mycotoxic_grass"],
+    ["regions_unexplored:fallen_silver_birch_tree"],
+    ["patch_grass_plain"],
+    ["patch_tall_grass"]
+  ]
+}

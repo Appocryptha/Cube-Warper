@@ -1,0 +1,18 @@
+{
+
+"custom.ambient_heaven": { "category": "master", "sounds": [ "custom/ambient_heaven" ] },
+"custom.ambient_hum": { "category": "master", "sounds": [ "custom/ambient_hum" ] },
+  "custom.atmosphere_sentry": {
+    "sounds": [
+      {
+        "name": "custom/atmosphere_sentry",
+        "stream": true
+      }
+    ]
+  },
+"custom.drone_rumble": { "category": "master", "sounds": [ "custom/drone_rumble" ] },
+"custom.strange_thoughts": { "category": "master", "sounds": [ "custom/strange_thoughts" ] },
+"custom.uplifting_pad": { "category": "master", "sounds": [ "custom/uplifting_pad" ] },
+"custom.water_machine": { "category": "master", "sounds": [ "custom/water_machine" ] }
+
+}

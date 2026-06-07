@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "": [{
+      "model": "kubejs:block/warping_frame", "weight": 5
+    },
+    {
+      "model": "kubejs:block/warping_frame_2", "weight": 1
+    },
+    {
+      "model": "kubejs:block/warping_frame_3", "weight": 1
+    },
+    {
+      "model": "kubejs:block/warping_frame_4", "weight": 1
+    }]
+  }
+}

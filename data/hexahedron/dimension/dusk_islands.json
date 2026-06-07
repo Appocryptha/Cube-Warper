@@ -1,0 +1,11 @@
+{
+    "type": "hexahedron:dusk",
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "hexahedron:dusk"
+        },
+        "settings": "hexahedron:dusk_islands"
+    }
+}

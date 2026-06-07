@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 4,
+        "min_inclusive": 2
+      }
+    },
+    "state": {
+      "Name": "dustrial_decor:padded_block"
+    },
+    "target": {
+      "Name": "dustrial_decor:mini_padded_block"
+    }
+  }
+}

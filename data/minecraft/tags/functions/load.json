@@ -1,0 +1,10 @@
+{
+    "values":   [
+                    "hexahedron:first_init/startup_hexahedron",
+                    "hexahedron:first_init/startup_player_loop",
+                    "hexahedron:init",
+                    "hexahedron:init_intervals",
+                    "hexahedron:processors/processor_init",
+                    "hexahedron:rng/rng_setup"
+                ]
+}

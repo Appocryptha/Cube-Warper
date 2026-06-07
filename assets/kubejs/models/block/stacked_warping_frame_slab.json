@@ -1,0 +1,16 @@
+{
+   "loader": "fusion:model",
+   "type": "connecting",
+   "connections": [
+      {
+         "type": "is_same_block"
+      }
+   ],
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "kubejs:block/warping_frame_slab_top",
+    "side": "kubejs:block/warping_frame_slab_side",
+    "top": "kubejs:block/warping_frame_slab_top"
+  }
+  }
+}

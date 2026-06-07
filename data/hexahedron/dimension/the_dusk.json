@@ -1,0 +1,30 @@
+{
+  "type": "hexahedron:dusk",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "hexahedron:dusk",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:stone",
+          "height": 137
+        },
+        {
+          "block": "minecraft:sandstone",
+          "height": 10
+        },
+        {
+          "block": "minecraft:sand",
+          "height": 1
+        },
+        {
+          "block": "minecraft:water",
+          "height": 1
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "ambient_sound": "alexscaves:toxic_caves_ambience",
+    "additions_sound": {
+      "sound": "alexscaves:toxic_caves_ambience_additions",
+      "tick_chance": 0.0111
+    },
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "alexscaves:toxic_caves_ambience_mood",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": "alexscaves:toxic_caves_music"
+    },
+    "particle": {
+      "options": {
+        "type": "alexscaves:fallout"
+      },
+      "probability": 0.001
+    },
+    "fog_color": 8781312,
+    "sky_color": 582913,
+    "water_color": 4944498,
+    "water_fog_color": 4944498
+  },
+  "spawners": {
+        "creature": [
+      {
+        "type": "alexscaves:gammaroach",
+        "maxCount": 8,
+        "minCount": 8,
+        "weight": 55
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [
+      "alexscaves:metal_swarf_replace_mud",
+      "alexscaves:radrock_uranium_ore"
+    ],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava",
+      "alexscaves:spring_acid",
+      "alexscaves:acid_vent"
+    ],
+    [
+      "alexscaves:sulfur_stack",
+      "alexscaves:nuclear_siren"
+    ],
+    [
+      "alexscaves:sulfur_stack",
+      "alexscaves:nuclear_siren"
+    ],
+    [
+      "minecraft:patch_dead_bush",
+      "alexscaves:underweed",
+      "biomesoplenty:patch_dead_grass"
+    ],
+    [
+      "hexahedron:nuclear_bomb",
+      "hexahedron:acid_vent",
+      "hexahedron:waste_barrel"
+    ]
+  ]
+}

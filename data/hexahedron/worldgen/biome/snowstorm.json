@@ -1,0 +1,35 @@
+{
+  "temperature": -200.0,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 8947848,
+    "fog_color": 12434877,
+    "water_color": 8826623,
+    "water_fog_color": 3421274,
+    "grass_color": 14480120,
+    "foliage_color": 14480120,
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.15
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:ore_shiverstone_osmium"],
+    ["hexahedron:eye_pillar_peeking"],
+    ["hexahedron:icicle"],
+    ["pile_snow"],
+    ["hexahedron:flower_snowdrop"],
+    ["hexahedron:cold_flowers"],
+    ["hexahedron:snow_sprouts"],
+    [],
+    [],
+    [],
+    []
+  ]
+}

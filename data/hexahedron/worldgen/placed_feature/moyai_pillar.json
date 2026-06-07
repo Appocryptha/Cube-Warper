@@ -1,0 +1,32 @@
+{
+    "feature": "hexahedron:moyai_pillar",
+    "placement": [
+        {
+            "type": "rarity_filter",
+            "chance": 100
+        },
+        {
+            "type": "count",
+            "count": 3
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": "#tconstruct:mineable/pickadze"
+          }
+        }
+    ]
+}

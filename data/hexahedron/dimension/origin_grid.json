@@ -1,0 +1,21 @@
+{
+  "type": "hexahedron:noon",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "hexahedron:origin_grid",
+      "lakes": false,
+      "features": true,
+      "layers": [
+        {
+          "height": 1,
+          "block": "minecraft:bedrock"
+        },
+        {
+          "height": 1,
+          "block": "biomesoplenty:origin_grass_block"
+        }
+      ]
+    }
+  }
+}

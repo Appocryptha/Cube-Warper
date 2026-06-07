@@ -1,0 +1,16 @@
+{
+  "temperature": 2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "ambient_sound": "minecraft:custom.atmosphere_sentry",
+    "sky_color": 4671303,
+    "fog_color": 4802889,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

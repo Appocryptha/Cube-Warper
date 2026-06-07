@@ -1,0 +1,11 @@
+{
+  "type": "hexahedron:fogger",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "hexahedron:folded_halls",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "hexahedron:folded_halls"
+    }
+  }
+}

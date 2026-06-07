@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [{
+      "model": "kubejs:block/ancient_bricks/ancient_bricks1", "weight": 1
+    },
+    {
+      "model": "kubejs:block/ancient_bricks/ancient_bricks2", "weight": 1
+    },
+    {
+      "model": "kubejs:block/ancient_bricks/ancient_bricks3", "weight": 1
+    },
+    {
+      "model": "kubejs:block/ancient_bricks/ancient_bricks4", "weight": 1
+    },
+    {
+      "model": "kubejs:block/ancient_bricks/ancient_bricks5", "weight": 1
+    },
+    {
+      "model": "kubejs:block/ancient_bricks/ancient_bricks6", "weight": 1
+    }]
+  }
+}

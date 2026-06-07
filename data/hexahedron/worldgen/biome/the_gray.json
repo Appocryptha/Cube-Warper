@@ -1,0 +1,20 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 9145227,
+    "fog_color": 13619151,
+    "water_color": 11184810,
+    "water_fog_color": 2368548,
+    "foliage_color": 9145227,
+    "grass_color": 9145227
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:tree_grid"],
+    ["hexahedron:eye_pillar_seeking"]
+  ]
+}

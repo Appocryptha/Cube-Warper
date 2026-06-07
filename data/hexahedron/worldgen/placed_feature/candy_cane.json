@@ -1,0 +1,25 @@
+{
+    "feature": "alexscaves:candy_cane",
+    "placement": [
+        {
+            "type": "rarity_filter",
+            "chance": 7
+        },
+        {
+            "type": "count",
+            "count": 3
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "OCEAN_FLOOR"
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 0
+        }
+    ]
+}

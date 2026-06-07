@@ -1,0 +1,11 @@
+{
+    "type": "hexahedron:fogger",
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "hexahedron:foggy_swamp"
+        },
+        "settings": "hexahedron:swamp"
+    }
+}

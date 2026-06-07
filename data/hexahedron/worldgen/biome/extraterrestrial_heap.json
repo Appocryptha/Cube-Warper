@@ -1,0 +1,31 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 5115930,
+    "fog_color": 7804454,
+    "water_color": 4462616,
+    "water_fog_color": 3421274,
+    "ambient_sound": "minecraft:ambient.crimson_forest.loop",
+    "particle": {
+      "options": {
+        "type": "minecraft:crimson_spore"
+      },
+      "probability": 0.01
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:flesh_pillar"],
+    [ 
+      "hexahedron:glistering_sprout",
+      "hexahedron:glistering_blub",
+      "hexahedron:glistering_bloom",
+      "hexahedron:glistering_spire",
+      "hexahedron:glistering_fern"
+    ]
+  ]
+}

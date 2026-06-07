@@ -1,0 +1,11 @@
+{
+  "type": "hexahedron:noon",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "hexahedron:dry_ocean",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "hexahedron:dry_ocean"
+    }
+  }
+}

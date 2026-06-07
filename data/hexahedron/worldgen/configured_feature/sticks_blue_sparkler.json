@@ -1,0 +1,65 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "allowed_placement": {
+            "type": "minecraft:true"
+        },
+        "prioritize_tip": false,
+        "layers": [
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 1,
+                            "max_inclusive": 3
+                        }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "supplementaries:stick",
+                            "Properties": {
+                                "axis_y": "true"
+                            }
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                  "type": "minecraft:weighted_state_provider",
+                  "entries": [
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "caverns_and_chasms:blue_sparkler",
+                        "Properties": {
+                          "lit": "true"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "caverns_and_chasms:light_cyan_sparkler",
+                        "Properties": {
+                          "lit": "true"
+                        }
+                      }
+                    },
+                    {
+                      "weight": 1,
+                      "data": {
+                        "Name": "caverns_and_chasms:light_blue_sparkler",
+                        "Properties": {
+                          "lit": "true"
+                        }
+                      }
+                    }
+                  ]
+                }
+            }
+        ]
+    }
+}

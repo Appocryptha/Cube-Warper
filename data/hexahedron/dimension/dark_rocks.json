@@ -1,0 +1,11 @@
+{
+  "type": "hexahedron:fogger_skylight",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "hexahedron:dark_rocks",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "hexahedron:dark_rocks"
+    }
+  }
+}

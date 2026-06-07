@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "": [{
+      "model": "kubejs:block/ancient_runes/ancient_runes1", "weight": 1
+    },
+    {
+      "model": "kubejs:block/ancient_runes/ancient_runes2", "weight": 1
+    },
+    {
+      "model": "kubejs:block/ancient_runes/ancient_runes3", "weight": 1
+    },
+    {
+      "model": "kubejs:block/ancient_runes/ancient_runes4", "weight": 1
+    },
+    {
+      "model": "kubejs:block/ancient_runes/ancient_runes5", "weight": 1
+    }]
+  }
+}

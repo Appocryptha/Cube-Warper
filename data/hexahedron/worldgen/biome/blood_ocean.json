@@ -1,0 +1,44 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "additions_sound": {
+      "sound": "minecraft:ambient.crimson_forest.additions",
+      "tick_chance": 0.0111
+    },
+    "ambient_sound": "minecraft:ambient.crimson_forest.loop",
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2,
+      "sound": "minecraft:ambient.crimson_forest.mood",
+      "tick_delay": 6000
+    },
+    "music": {
+      "max_delay": 24000,
+      "min_delay": 12000,
+      "replace_current_music": false,
+      "sound": "minecraft:music.nether.crimson_forest"
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:crimson_spore"
+      },
+      "probability": 0.025
+    },
+    "sky_color": 3997696,
+    "fog_color": 7613741,
+    "water_color": 7613741,
+    "water_fog_color": 3343621
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:candles_tall_red"],
+    ["hexahedron:pot_patch"],
+    ["crimson_forest_vegetation"],
+    ["hexahedron:eye_pillar_looking"],
+    ["hexahedron:crimson_pillar"]
+  ]
+}
