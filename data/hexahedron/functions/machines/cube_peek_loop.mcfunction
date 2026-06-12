@@ -5,3 +5,6 @@ execute if entity @e[type=marker,tag=cube_marker,limit=1,sort=nearest,scores={ti
 execute if entity @e[type=marker,tag=cube_marker,limit=1,sort=nearest,scores={time=0..101}] run function hexahedron:machines/cube_peek_loop
 
 execute if entity @e[type=marker,tag=cube_marker,limit=1,sort=nearest,scores={time=..0}] run scoreboard players remove @e[type=marker,tag=cube_marker,limit=1,sort=nearest] cube_time 0
+
+
+#version 10
