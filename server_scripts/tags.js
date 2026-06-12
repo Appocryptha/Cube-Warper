@@ -31,6 +31,9 @@ ServerEvents.tags('block', event => {
   event.add('minecraft:sand', 'infernalexp:shimmer_sand')
   event.add('minecraft:dirt', 'infernalexp:shimmer_sand')
 
+  event.add('biomesoplenty:flesh', 'incision:carrion')
+  event.add('biomesoplenty:flesh', 'incision:goreshed')
+
 })
 
 ServerEvents.tags('item', event => {

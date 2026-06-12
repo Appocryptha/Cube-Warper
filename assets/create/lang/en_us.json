@@ -1,0 +1,11 @@
+{
+  "block.create.rose_quartz_block": "Block of Blood Quartz",
+  "block.create.rose_quartz_lamp": "Blood Quartz Lamp",
+  "block.create.rose_quartz_tiles": "Blood Quartz Tiles",
+  "block.create.small_rose_quartz_tiles": "Small Blood Quartz Tiles",
+  "create.ponder.rose_quartz_lamp.header": "Blood Quartz Lamps",
+  "create.ponder.rose_quartz_lamp.text_1": "Blood Quartz Lamps activate on a Redstone signal",
+  "item.create.polished_rose_quartz": "Polished Blood Quartz",
+  "item.create.rose_quartz": "Blood Quartz",
+  "advancement.create.rose_quartz.desc": "Polish some Blood Quartz"
+}

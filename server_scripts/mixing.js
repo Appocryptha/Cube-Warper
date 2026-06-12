@@ -12,4 +12,8 @@ ServerEvents.recipes(event => {
 	  	'regions_unexplored:alpha_rose'
 	])//.superheated()
 
+	event.recipes.createMixing(['supplementaries:ash', Item.of('thermal:iron_dust').withChance(2.0)], [
+		Fluid.of('biomesoplenty:blood', 1000)
+	]).heated()
+
 })

@@ -28,4 +28,11 @@ ServerEvents.recipes(event => {
 		"kubejs:chocolate_chip",
 	)
 
+	event.remove({output: 'clanginghowl:cryogenic_fuel'})
+	chiller(
+		"minecraft:water",
+		"alexscaves:peppermint_powder",
+		"clanginghowl:cryogenic_fuel",
+	)
+
 })

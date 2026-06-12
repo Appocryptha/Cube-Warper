@@ -30,6 +30,18 @@
                         "Name": "caverns_and_chasms:soul_brazier"
                     }
                 }
+            },
+            {
+                "height": 1,
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "minecraft:light",
+                            "Properties": {
+                            "level": "15"
+                            }
+                    }
+                }
             }
         ]
     }

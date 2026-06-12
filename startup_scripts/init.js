@@ -280,6 +280,13 @@ let eye = (id) => {
 		.soundType("stone")
 		.unbreakable()
 
+	event.create('ancient_bricks_slab', 'slab').displayName("Ancient Brick Slab")
+	    .textureAll('kubejs:block/ancient_bricks/ancient_bricks1')
+		.fullBlock(true)
+		.material("stone")
+		.soundType("stone")
+		.unbreakable()
+
 	event.create('ancient_bricks_wall', 'wall').displayName("Ancient Brick Wall")
 	    .textureAll('kubejs:block/ancient_bricks/ancient_bricks1')
 		.fullBlock(true)

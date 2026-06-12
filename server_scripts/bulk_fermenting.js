@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
 	bulk_fermenting(
 		"malum:blazing_quartz",
 		"minecraft:blaze_powder",
-		"tconstruct:magma", 100,
+		"supplementaries:lumisene", 100,
 		"clanginghowl:blaze_fuel"
 	)
 

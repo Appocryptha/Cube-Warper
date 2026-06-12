@@ -30,14 +30,17 @@
   "carvers": {},
   "features": [
     [
-    "hexahedron:brimstone_boulder",
-    "hexahedron:netherrack_boulder"
+      "hexahedron:brimstone_boulder",
+      "hexahedron:netherrack_boulder"
     ],
+    ["hexahedron:better_sulfur_patch"],
     ["hexahedron:lava_boulder"],
     ["hexahedron:brimstone_vent"],
     ["biomesoplenty:brimstone_bud"],
-    ["biomesoplenty:brimstone_bud"],
-    ["biomesoplenty:brimstone_cluster"],
+    [
+      "biomesoplenty:brimstone_bud",
+      "biomesoplenty:brimstone_cluster"
+    ],
     ["hexahedron:brazier_pillar_glowlight"],
     ["hexahedron:flower_brimwood_shrub"],
     ["hexahedron:flower_ditchbulb"],

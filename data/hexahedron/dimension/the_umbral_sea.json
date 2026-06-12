@@ -1,5 +1,5 @@
 {
-    "type": "hexahedron:fogger",
+    "type": "hexahedron:dark_fogger",
     "generator": {
         "type": "noise",
         "biome_source": {

@@ -321,6 +321,43 @@ ServerEvents.recipes(event => {
 		W: 'clanginghowl:redstone_wire'
   	})
 
+    event.remove({output: 'thermal:machine_chiller'})
+	event.shaped('thermal:machine_chiller', [
+		'ISI', 
+	  	'GFG',
+	  	'ICI'  
+	  	],{
+	  	I: 'minecraft:iron_ingot',
+	  	S: 'alexscaves:sundae',
+		G: 'immersiveengineering:insulating_glass',
+	  	F: 'thermal:machine_frame',
+		C: 'brewinandchewin:ice_crate'
+  	})
+
+    event.remove({output: 'thermal:machine_crucible'})
+	event.shaped('thermal:machine_crucible', [
+		'ICI', 
+	  	'HFH',
+	  	'IRI'  
+	  	],{
+	  	I: 'minecraft:iron_ingot',
+	  	C: 'kubejs:chocolate_chip',
+		H: 'immersiveengineering:furnace_heater',
+	  	F: 'thermal:machine_frame',
+		R: 'botania:rune_fire'
+  	})
+
+    event.remove({output: 'immersiveengineering:cokebrick'})
+	event.shaped('3x immersiveengineering:cokebrick', [
+		'LBL',
+	  	'BFB',
+	  	'LBL'  
+	  	],{
+	  	L: 'alexscaves:limestone',
+	  	B: 'supplementaries:ash_brick',
+	  	F: 'create:cinder_flour'
+  	})
+
     event.remove({output: 'caverns_and_chasms:barometer'})
     event.remove({output: 'supplementaries:altimeter'})
 

@@ -37,7 +37,7 @@
               },
               {
                 "type": "minecraft:matching_blocks",
-                "blocks": "#tconstruct:mineable/pickadze",
+                "blocks": "minecraft:warped_nylium",
                 "offset": [
                   0,
                   -1,

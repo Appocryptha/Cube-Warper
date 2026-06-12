@@ -3,11 +3,11 @@
     "placement": [
         {
             "type": "rarity_filter",
-            "chance": 4
+            "chance": 5
         },
         {
             "type": "count",
-            "count": 3
+            "count": 2
         },
         {
             "type": "in_square"

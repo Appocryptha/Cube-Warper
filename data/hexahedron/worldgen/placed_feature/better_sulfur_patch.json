@@ -1,33 +1,37 @@
 {
-    "feature": "hexahedron:brazier_pillar_soul",
+    "feature": "hexahedron:better_sulfur_patch",
     "placement": [
         {
             "type": "rarity_filter",
-            "chance": 20
+            "chance": 5
         },
         {
             "type": "count",
-            "count": 3
+            "count": 1
         },
         {
             "type": "in_square"
         },
         {
             "type": "heightmap",
-            "heightmap": "OCEAN_FLOOR"
+            "heightmap": "WORLD_SURFACE"
         },
         {
           "type": "minecraft:block_predicate_filter",
           "predicate": {
             "type": "minecraft:matching_blocks",
             "offset": [0, -1, 0],
-            "blocks": ["create:scoria", "minecraft:soul_soil", "minecraft:soul_sand", "minecraft:warped_nylium"]
+            "blocks": [
+              "biomesoplenty:dried_salt",
+              "infernalexp:shimmer_sand",
+              "biomesoplenty:brimstone"
+            ]
           }
         },
         {
             "type": "minecraft:random_offset",
             "xz_spread": 0,
-            "y_spread": -2
+            "y_spread": 0
         }
     ]
 }

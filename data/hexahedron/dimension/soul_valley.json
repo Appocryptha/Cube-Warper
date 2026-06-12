@@ -1,5 +1,5 @@
 {
-  "type": "hexahedron:super_dark_fogger",
+  "type": "hexahedron:dark_fogger",
   "generator": {
     "type": "minecraft:noise",
     "settings": "hexahedron:soul_valley",

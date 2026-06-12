@@ -18,11 +18,7 @@
                 "provider": {
                     "type": "simple_state_provider",
                     "state": {
-                        "Name": "alexscaves:metal_rebar",
-                            "Properties": {
-                            "lit": "true",
-                            "candles": "1"
-                            }
+                        "Name": "alexscaves:metal_rebar"
                     }
                 }
             },
@@ -34,7 +30,7 @@
                     {
                     "weight": 5,
                     "data": {
-                        "Name": "supplementaries:candle_holder_red",
+                        "Name": "supplementaries:candle_holder_light_blue",
                             "Properties": {
                             "lit": "true",
                             "candles": "1"
@@ -44,7 +40,7 @@
                     {
                     "weight": 5,
                     "data": {
-                        "Name": "supplementaries:candle_holder_red",
+                        "Name": "supplementaries:candle_holder_light_blue",
                             "Properties": {
                             "lit": "true",
                             "candles": "2"
@@ -54,7 +50,37 @@
                     {
                     "weight": 2,
                     "data": {
-                        "Name": "supplementaries:candle_holder_red",
+                        "Name": "supplementaries:candle_holder_light_blue",
+                            "Properties": {
+                            "lit": "true",
+                            "candles": "3"
+                            }
+                        }
+                    },
+                    {
+                    "weight": 5,
+                    "data": {
+                        "Name": "supplementaries:candle_holder_cyan",
+                            "Properties": {
+                            "lit": "true",
+                            "candles": "1"
+                            }
+                        }
+                    },
+                    {
+                    "weight": 5,
+                    "data": {
+                        "Name": "supplementaries:candle_holder_cyan",
+                            "Properties": {
+                            "lit": "true",
+                            "candles": "2"
+                            }
+                        }
+                    },
+                    {
+                    "weight": 2,
+                    "data": {
+                        "Name": "supplementaries:candle_holder_cyan",
                             "Properties": {
                             "lit": "true",
                             "candles": "3"

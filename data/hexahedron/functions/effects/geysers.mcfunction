@@ -8,7 +8,7 @@ playsound minecraft:ambient.nether_wastes.mood master @a ~ ~7 ~ 1 2
 playsound minecraft:ambient.nether_wastes.mood master @a ~ ~7 ~ 1 2
 
 playsound minecraft:entity.generic.explode master @a ~ ~1 ~ 35 0
-playsound soundofrain:thunder_close master @a ~ ~1 ~ 35 0
+playsound soundofrain:thunder_close master @a ~ ~1 ~ 0.1 0
 playsound minecraft:entity.firework_rocket.twinkle_far master @a ~ ~ ~ 1 0
 
 particle minecraft:flame ~ ~13 ~ 0.5 1 0.5 0.1 50 force
