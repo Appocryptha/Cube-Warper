@@ -7,4 +7,4 @@ execute if entity @e[type=marker,tag=cube_marker,limit=1,sort=nearest,scores={ti
 execute if entity @e[type=marker,tag=cube_marker,limit=1,sort=nearest,scores={time=..0}] run scoreboard players remove @e[type=marker,tag=cube_marker,limit=1,sort=nearest] cube_time 0
 
 
-#version 10
+#version 10.1
