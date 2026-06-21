@@ -1,0 +1,14 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "kubejs:block/ancient_core",
+    "side": "kubejs:block/ancient_core"
+  },
+  "connections": [
+      {
+         "type": "is_same_block"
+      }
+   ]
+}

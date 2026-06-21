@@ -1,0 +1,13 @@
+{
+  "default": "certain_questing_additions:custom_background",
+  "chapters": {
+    "7216CC03FDC70704": "certain_questing_additions:chapter0_gray",
+    "714A4E9760055C1C": "certain_questing_additions:chapter1_yellow",
+    "73E93B5BACF8D10D": "certain_questing_additions:chapter2_purple",
+    "5B9242AE7DC77549": "certain_questing_additions:chapter3_green",
+    "3B77EFD909575A58": "certain_questing_additions:chapter4_orange",
+    "42E20C6D7BEA70B7": "certain_questing_additions:chapter5_blue",
+    "0C934DDE7CA3ABDC": "certain_questing_additions:chapter6_red",
+    "2425A8353B43CFB5": "certain_questing_additions:chapter7_void"
+  }
+}

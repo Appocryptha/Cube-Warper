@@ -4,6 +4,7 @@ scoreboard objectives add hexahedron_portals dummy
 scoreboard objectives add unfold dummy
 
 scoreboard objectives add cube_time dummy
+scoreboard objectives add redstone_cooldown dummy
 
 setworldspawn 0 100 0
 execute in overworld run weather clear 999999999d

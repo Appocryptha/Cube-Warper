@@ -1,0 +1,1 @@
+execute in hexahedron:soul_valley as @e[tag=soul_marker] at @s run particle minecraft:soul ~ ~ ~ 0.5 3 0.5 0 1 force

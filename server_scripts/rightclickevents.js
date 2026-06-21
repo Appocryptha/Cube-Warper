@@ -6,6 +6,20 @@ BlockEvents.rightClicked('kubejs:launch_button', event => {
 
 })
 
+BlockEvents.rightClicked('kubejs:ancient_core', event => {
+
+	if (event.item.id == 'minecraft:redstone') {
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} unless score @e[distance=..2,tag=ancient_redstone,limit=1,sort=nearest] redstone_cooldown matches 1.. run function hexahedron:machines/ancient_redstone`)
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} unless score @e[distance=..2,tag=ancient_redstone,limit=1,sort=nearest] redstone_cooldown matches ..0 run execute as @e[type=marker,tag=ancient_redstone] run title @a actionbar [
+  {"text":"This Ancient Redstone is recharging, wait ","bold":true,"color":"red"},
+  {"score":{"name":"@s","objective":"redstone_cooldown"},"bold":true,"color":"red"},
+  {"text":" more seconds...","bold":true,"color":"red"}
+]`)
+		event.item.count--
+		event.player.giveInHand('kubejs:energized_redstone')	
+	}
+})
+
 BlockEvents.rightClicked('create:depot', event => {
 
 	if (event.item.id == 'immersiveengineering:hammer') {

@@ -1,0 +1,24 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [16, 24],
+	"textures": {
+		"0": "kubejs:block/soul_cube",
+		"particle": "kubejs:block/soul_cube"
+	},
+	"elements": [
+		{
+			"from": [4, 4, 4],
+			"to": [12, 12, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [4, 4, 4]},
+			"faces": {
+				"north": {"uv": [8, 0, 16, 5.33333], "texture": "#0"},
+				"east": {"uv": [8, 5.33333, 16, 10.66667], "texture": "#0"},
+				"south": {"uv": [0, 0, 8, 5.33333], "texture": "#0"},
+				"west": {"uv": [0, 5.33333, 8, 10.66667], "texture": "#0"},
+				"up": {"uv": [8, 10.66667, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 10.66667, 8, 16], "texture": "#0"}
+			}
+		}
+	]
+}

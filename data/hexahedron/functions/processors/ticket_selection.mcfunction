@@ -22,7 +22,7 @@ execute as @e[type=marker,tag=core,scores={dimension_seed=18}] run function hexa
 
 # PROCESSOR 4
 execute as @e[type=marker,tag=core,scores={dimension_seed=10}] run function hexahedron:tickets/ticket_brimstone_veil
-execute as @e[type=marker,tag=core,scores={dimension_seed=16}] run function hexahedron:tickets/ticket_alfa_islands
+execute as @e[type=marker,tag=core,scores={dimension_seed=16}] run function hexahedron:tickets/ticket_blood_ocean
 execute as @e[type=marker,tag=core,scores={dimension_seed=24}] run function hexahedron:tickets/ticket_the_sugarscape
 execute as @e[type=marker,tag=core,scores={dimension_seed=32}] run function hexahedron:tickets/ticket_the_azurewood
 

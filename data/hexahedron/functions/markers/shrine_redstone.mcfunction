@@ -1,0 +1,1 @@
+summon marker ~ ~ ~ {Tags:["ancient_redstone"],Invulnerable:1b,NoGravity:1b}
