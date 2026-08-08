@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "kubejs:block/computer/computer_side",
+    "north": "kubejs:block/computer/computer_front",
+    "south": "kubejs:block/computer/computer_back",
+    "east": "kubejs:block/computer/computer_side",
+    "west": "kubejs:block/computer/computer_side",
+    "up": "kubejs:block/computer/computer_top",
+    "down": "kubejs:block/computer/computer_bottom"
+  }
+}

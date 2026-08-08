@@ -1,1 +1,1 @@
-execute in hexahedron:soul_valley as @e[tag=ancient_redstone] unless score @s redstone_cooldown matches ..0 run scoreboard players remove @s redstone_cooldown 1
+execute in hexahedron:coprolith as @e[tag=ancient_redstone] unless score @s redstone_cooldown matches ..0 run scoreboard players remove @s redstone_cooldown 1

@@ -1,0 +1,1 @@
+summon marker ~ ~ ~ {Tags:["ritual_marker"],Invulnerable:1b,NoGravity:1b}

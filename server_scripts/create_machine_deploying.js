@@ -102,4 +102,9 @@ let create = (block, item, result) => {
 	create("thermal:machine_frame", 		"immersiveengineering:coil_mv", 	"thermal:machine_smelter")
 	create("thermal:machine_frame", 		"minecraft:crafting_table", 		"thermal:machine_crafter")
 
+//Engineering Frame
+	create("kubejs:engineering_light_empty", 	"thermal:rf_coil", 				"immersiveengineering:rs_engineering")
+	create("kubejs:engineering_light_empty", 	"immersiveengineering:component_electronic", 		"immersiveengineering:light_engineering")
+	create("kubejs:engineering_heavy_empty", 	"immersiveengineering:component_electronic_adv", 	"immersiveengineering:heavy_engineering")
+
 })

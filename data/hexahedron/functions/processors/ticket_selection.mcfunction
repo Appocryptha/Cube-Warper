@@ -27,11 +27,11 @@ execute as @e[type=marker,tag=core,scores={dimension_seed=24}] run function hexa
 execute as @e[type=marker,tag=core,scores={dimension_seed=32}] run function hexahedron:tickets/ticket_the_azurewood
 
 # PROCESSOR 5
-execute as @e[type=marker,tag=core,scores={dimension_seed=13}] run function hexahedron:tickets/ticket_grass_fields
-execute as @e[type=marker,tag=core,scores={dimension_seed=14}] run function hexahedron:tickets/ticket_grass_fields
-execute as @e[type=marker,tag=core,scores={dimension_seed=36}] run function hexahedron:tickets/ticket_grass_fields
-execute as @e[type=marker,tag=core,scores={dimension_seed=48}] run function hexahedron:tickets/ticket_grass_fields
-execute as @e[type=marker,tag=core,scores={dimension_seed=72}] run function hexahedron:tickets/ticket_grass_fields
+execute as @e[type=marker,tag=core,scores={dimension_seed=13}] run function hexahedron:tickets/ticket_dusk
+execute as @e[type=marker,tag=core,scores={dimension_seed=14}] run function hexahedron:tickets/ticket_endless_rainbows
+execute as @e[type=marker,tag=core,scores={dimension_seed=36}] run function hexahedron:tickets/ticket_soul_valley
+execute as @e[type=marker,tag=core,scores={dimension_seed=48}] run function hexahedron:tickets/ticket_the_umbral_sea
+execute as @e[type=marker,tag=core,scores={dimension_seed=72}] run function hexahedron:tickets/ticket_gronglegrowth
 
 # PROCESSOR 6
 execute as @e[type=marker,tag=core,scores={dimension_seed=17}] run function hexahedron:tickets/ticket_grass_fields
@@ -40,9 +40,7 @@ execute as @e[type=marker,tag=core,scores={dimension_seed=96}] run function hexa
 execute as @e[type=marker,tag=core,scores={dimension_seed=128}] run function hexahedron:tickets/ticket_grass_fields
 
 # PROCESSOR 7
-execute as @e[type=marker,tag=core,scores={dimension_seed=-1}] run function hexahedron:tickets/ticket_grass_fields
-execute as @e[type=marker,tag=core,scores={dimension_seed=-2}] run function hexahedron:tickets/ticket_grass_fields
-execute as @e[type=marker,tag=core,scores={dimension_seed=-3}] run function hexahedron:tickets/ticket_grass_fields
+execute as @e[type=marker,tag=core,scores={dimension_seed=..-1}] run function hexahedron:tickets/ticket_grass_fields
 
 ### END
 execute as @e[type=marker,tag=core,scores={dimension_seed=999}] run function hexahedron:tickets/ticket_grass_fields

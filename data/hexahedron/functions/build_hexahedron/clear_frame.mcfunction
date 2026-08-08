@@ -1,4 +1,4 @@
-scoreboard players add @e time 1
+scoreboard players add @e[type=marker,tag=clear_frame] time 1
 
 execute as @e[type=marker,tag=clear_frame] at @s run fill ~30 ~ ~30 ~-30 ~ ~-30 air replace #minecraft:hexahedron_frame
 execute as @e[type=marker,tag=clear_frame] at @s run tp @s ~ ~-1 ~

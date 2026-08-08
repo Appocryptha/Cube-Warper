@@ -1,5 +1,5 @@
 {
-    "type": "hexahedron:noon",
+    "type": "hexahedron:end_dark",
     "generator": {
         "type": "noise",
         "biome_source": {

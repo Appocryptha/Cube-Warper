@@ -5,7 +5,7 @@
   "coordinate_scale": 1,
   "has_ceiling": false,
   "has_raids": true,
-  "has_skylight": false,
+  "has_skylight": true,
   "effects": "minecraft:the_end",
   "min_y": 0,
   "height": 256,

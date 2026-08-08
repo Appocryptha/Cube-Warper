@@ -3,10 +3,17 @@
   "downfall": 0,
   "has_precipitation": false,
   "effects": {
-    "sky_color": 5387613,
-    "fog_color": 5387613,
-    "water_color": 16746593,
-    "water_fog_color": 16746593,
+    "ambient_sound": "ambientsounds:weather.storm-close",
+    "particle": {
+      "options": {
+        "type": "particlerain:rain"
+      },
+      "probability": 0.01
+    },
+    "sky_color": 2500134,
+    "fog_color": 2500134,
+    "water_color": 4672354,
+    "water_fog_color": 329011,
     "grass_color": 8242475
   },
   "spawners": {},

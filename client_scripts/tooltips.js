@@ -24,8 +24,8 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.gray('Multiplies by 8').bold(true))  
   })
 
-  event.addAdvanced('kubejs:vector_operator_crimson', (item, advanced, text) => {
-    text.add(1, Text.gray('Subtracts 1').bold(true))  
+  event.addAdvanced('kubejs:vector_operator_eye', (item, advanced, text) => {
+    text.add(1, Text.gray('Divides by 0').bold(true))  
   })
   
 

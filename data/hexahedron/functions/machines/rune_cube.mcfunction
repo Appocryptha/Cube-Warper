@@ -1,0 +1,1 @@
+execute in hexahedron:endless_rainbows as @e[type=caverns_and_chasms:large_arrow,nbt={inGround:1b}] at @s if entity @e[type=marker,tag=cube_marker,distance=..9] at @e[type=marker,tag=cube_marker,distance=..9] run function hexahedron:effects/crystal_cube

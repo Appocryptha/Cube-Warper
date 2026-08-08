@@ -1,0 +1,11 @@
+{
+  "type": "hexahedron:fogger_skylight",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "untagged_mobs:rows"
+    }
+  }
+}

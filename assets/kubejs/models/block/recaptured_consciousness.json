@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "kubejs:block/recaptured_consciousness/recaptured_consciousness_side",
+    "north": "kubejs:block/recaptured_consciousness/recaptured_consciousness",
+    "south": "kubejs:block/recaptured_consciousness/recaptured_consciousness",
+    "east": "kubejs:block/recaptured_consciousness/recaptured_consciousness_side",
+    "west": "kubejs:block/recaptured_consciousness/recaptured_consciousness_side",
+    "up": "kubejs:block/recaptured_consciousness/recaptured_consciousness_top",
+    "down": "kubejs:block/recaptured_consciousness/recaptured_consciousness_bottom"
+  }
+}

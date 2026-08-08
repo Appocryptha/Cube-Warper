@@ -204,13 +204,33 @@ ServerEvents.recipes(event => {
   	})
 
     event.remove({output: 'clanginghowl:redstone_wire'})
-	event.shaped('3x clanginghowl:redstone_wire', [
-		'RRR', 
-	  	'CCC',
-	  	'RRR'  
+	event.shaped('clanginghowl:redstone_wire', [
+		'   ', 
+	  	'CRC',
+	  	'   '  
 	  	],{
-	  	R: 'minecraft:redstone',
+	  	R: 'kubejs:energized_redstone',
 	  	C: 'immersiveengineering:wire_copper'
+  	})
+
+    event.remove({output: 'immersiveengineering:wirecoil_redstone'})
+	event.shaped('4x immersiveengineering:wirecoil_redstone', [
+		' W ', 
+	  	'WSW',
+	  	' W '  
+	  	],{
+	  	S: '#forge:rods/wooden',
+	  	W: 'clanginghowl:redstone_wire'
+  	})
+
+    event.remove({output: 'thermal:rf_coil'})
+	event.shaped('thermal:rf_coil', [
+		'WWW', 
+	  	'WGW',
+	  	'WWW'  
+	  	],{
+	  	G: 'minecraft:gold_ingot',
+	  	W: 'immersiveengineering:wirecoil_redstone'
   	})
 
 	event.shaped('immersiveengineering:wirecutter', [
@@ -358,12 +378,120 @@ ServerEvents.recipes(event => {
 	  	F: 'create:cinder_flour'
   	})
 
-    event.remove({output: 'caverns_and_chasms:barometer'})
     event.remove({output: 'supplementaries:altimeter'})
 
 	event.replaceInput({input: 'ae2:quartz_glass' }, 
 		'ae2:quartz_glass', 
 		'minecraft:glass'        
 )
+
+    event.remove({output: 'actuallyadditions:lava_factory_casing'})
+	event.shaped('actuallyadditions:lava_factory_casing', [
+		'IPI',
+	  	'PCP',
+	  	'IPI'  
+	  	],{
+	  	I: 'clanginghowl:extraterrestrial_steel_ingot',
+	  	P: 'clanginghowl:extraterrestrial_steel_plate',
+	  	C: 'clanginghowl:extraterrestrial_energy_crystal'
+  	})
+
+    event.remove({output: 'actuallyadditions:atomic_reconstructor'})
+	event.shaped('actuallyadditions:atomic_reconstructor', [
+		' L ',
+	  	'BCB',
+	  	' E '  
+	  	],{
+	  	B: 'clanginghowl:energy_intensive_battery',
+	  	E: 'immersiveengineering:component_electronic',
+	  	C: 'actuallyadditions:lava_factory_casing',
+	  	L: 'botania:lens_influence'
+  	})
+
+    event.remove({output: 'actuallyadditions:display_stand'})
+	event.shaped('2x actuallyadditions:display_stand', [
+		' E ',
+	  	'DBD',
+	  	'QCQ'  
+	  	],{
+	  	B: 'clanginghowl:energy_intensive_battery',
+	  	E: 'ae2:charger',
+	  	C: 'actuallyadditions:lava_factory_casing',
+		D: 'forestry:electron_tube_diamond',
+		Q: 'immersiveengineering:component_electronic'
+  	})
+
+    event.remove({output: 'actuallyadditions:empowerer'})
+	event.shaped('actuallyadditions:empowerer', [
+		' T ',
+	  	'LBL',
+	  	'QCQ'  
+	  	],{
+	  	B: 'clanginghowl:energy_intensive_battery',
+	  	T: 'caverns_and_chasms:turquoise',
+	  	C: 'actuallyadditions:lava_factory_casing',
+		L: 'kubejs:bottled_lightning',
+		Q: 'immersiveengineering:component_electronic_adv'
+  	})
+
+    event.remove({output: 'enderio:ensouled_chassis'})
+	event.shaped('enderio:ensouled_chassis', [
+		'IRI',
+	  	'RER',
+	  	'IRI'  
+	  	],{
+	  	R: 'enderio:infinity_rod',
+	  	I: 'enderio:soularium_ingot',
+	  	E: 'actuallyadditions:empowered_void_crystal'
+  	})
+
+    event.remove({output: 'enderio:empty_soul_vial'})
+	event.shaped('enderio:empty_soul_vial', [
+		' O ',
+	  	'S S',
+	  	' S '  
+	  	],{
+	  	O: 'minecraft:obsidian',
+	  	S: 'tconstruct:soul_glass'
+  	})
+
+    event.remove({output: 'enderio:sag_mill'})
+	event.shaped('enderio:sag_mill', [
+		'CBD',
+	  	'WVW',
+	  	'EPE'  
+	  	],{
+	  	V: 'enderio:void_chassis',
+	  	W: 'create:crushing_wheel',
+	  	P: 'thermal:machine_pulverizer',
+	  	D: 'thermal:drill_head',
+	  	C: 'clanginghowl:chainsaw_teeth',
+	  	B: 'forestry:electron_tube_blaze',
+	  	E: 'immersiveengineering:heavy_engineering'
+  	})
+
+    event.remove({output: 'mekanism:enrichment_chamber'})
+	event.shaped('mekanism:enrichment_chamber', [
+		'ODO',
+	  	'SRS',
+	  	'OIO'  
+	  	],{
+	  	O: 'mekanism:ingot_osmium',
+	  	S: 'forestry:electron_tube_lapis',
+	  	R: 'kubejs:energized_redstone',
+	  	D: 'mekanism:dosimeter',
+	  	I: 'minecraft:blue_ice'
+  	})
+
+    event.remove({output: 'alexscaves:desolate_dagger'})
+	event.shaped('alexscaves:desolate_dagger', [
+		'  D',
+	  	'DE ',
+	  	'BD '  
+	  	],{
+	  	D: 'enderio:dark_steel_ingot',
+	  	E: 'kubejs:crimson_eye',
+	  	B: 'alexscaves:thornwood_branch'
+  	})
 
 })

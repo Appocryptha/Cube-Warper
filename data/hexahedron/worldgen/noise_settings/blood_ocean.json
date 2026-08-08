@@ -8,7 +8,7 @@
         "Name": "alexscaves:limestone"
     },
     "default_fluid": {
-        "Name": "biomesoplenty:blood"
+        "Name": "untagged_mobs:fluid_blood"
     },
     "spawn_target": [],
     "noise": {

@@ -3,7 +3,7 @@
     "placement": [
         {
             "type": "rarity_filter",
-            "chance": 32
+            "chance": 4
         },
         {
             "type": "count",
@@ -15,6 +15,14 @@
         {
             "type": "heightmap",
             "heightmap": "OCEAN_FLOOR"
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [0, -1, 0],
+            "blocks": ["untagged_mobs:inverse_alpha_grass"]
+          }
         },
         {
             "type": "minecraft:random_offset",

@@ -5,10 +5,10 @@
     "aquifers_enabled": false,
     "legacy_random_source": false,
     "default_block": {
-        "Name": "minecraft:dirt"
+        "Name": "minecraft:end_stone"
     },
     "default_fluid": {
-        "Name": "minecraft:water"
+        "Name": "tconstruct:molten_amethyst_fluid"
     },
     "spawn_target": [],
     "noise": {
@@ -74,7 +74,7 @@
             "then_run": {
               "type": "minecraft:block",
               "result_state": {
-                "Name": "minecraft:grass_block"
+                "Name": "untagged_mobs:inverse_alpha_grass"
               }
             }
           }
@@ -91,7 +91,7 @@
           "then_run": {
             "type": "minecraft:block",
             "result_state": {
-              "Name": "sand"
+              "Name": "biomesoplenty:white_sand"
             }
           }
         }

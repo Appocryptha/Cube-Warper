@@ -1,10 +1,10 @@
 {
     "values":   [
-                    "hexahedron:time",
                     "hexahedron:relocation/travel_runtime",
                     "hexahedron:processors/runtime",
                     "hexahedron:processors/travel_actionbar",
                     "hexahedron:build_hexahedron/clear_frame",
-                    "hexahedron:worldgen/chunk_pillar_tick"
+                    "hexahedron:worldgen/chunk_pillar_tick",
+                    "hexahedron:machines/rune_cube"
                 ]
 }

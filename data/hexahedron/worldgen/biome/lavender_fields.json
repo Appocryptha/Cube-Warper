@@ -3,9 +3,12 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "effects": {
-    "additions_sound": {
-      "sound": "undergarden:ambient.fields_addition",
-      "tick_chance": 0.02
+    "ambient_sound": "endergetic:ambient.poise_forest.loop",
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2,
+      "sound": "endergetic:ambient.poise_forest.mood",
+      "tick_delay": 200
     },
     "particle": {
       "options": {
@@ -13,17 +16,19 @@
       },
       "probability": 0.003
     },
-    "sky_color": 7907327,
+    "sky_color": 0,
     "fog_color": 13614079,
     "water_color": 5295615,
     "water_fog_color": 329011,
-    "foliage_color": 10601325,
-    "grass_color": 10601325
+    "foliage_color": 7951251,
+    "grass_color": 12489167
   },
   "spawners": {},
   "spawn_costs": {},
   "carvers": {},
   "features": [
+    ["hexahedron:tree_dreamwood"],
+    ["hexahedron:brazier_pillar_ender"],
     ["hexahedron:moyai_pillar"],
     ["hexahedron:tree_jacaranda_bees"],
     ["biomesoplenty:patch_tall_lavender"],

@@ -110,7 +110,6 @@ let operator = (id, name, color) => {
 	operator("charged", 	"Charged", 		'§e§l')
 	operator("fluix", 		"Fluix", 		'§5§l')
 	operator("nuclear", 	"Nuclear", 		'§a§l')
-	operator("crimson", 	"Crimson", 		'§4§l')
 	operator("blaze", 		"Blazing", 		'§6§l')
 	operator("lightning",	"Lightning",	'§b§l')
 
@@ -139,7 +138,7 @@ let operator = (id, name, color) => {
 	//§r = reset
 
 	event.create('vector_operator_eye')
-		.displayName('§c§l§kObserving§r§c§l Vector Operator')
+		.displayName('§4§l§kUnknown§r§4§l Vector Operator')
 		.fullBlock(false)
 		.material("lantern")
 		.soundType("lantern")
@@ -147,6 +146,28 @@ let operator = (id, name, color) => {
 		.renderType('translucent')
 		.waterlogged()
 		.hardness(0.0)
+
+	event.create('vector_operator_infinite_empty')
+		.displayName('§l§cI§6n§ef§ai§bn§di§5t§cy §r§f§lVector Operator')
+		.fullBlock(false)
+		.material("shroomlight")
+		.soundType("shroomlight")
+		.box(2, 0, 2, 14, 14, 14)
+		.renderType('translucent')
+		.waterlogged()
+		.hardness(0.0)
+		.lightLevel(1.0)
+
+	event.create('vector_operator_infinite')
+		.displayName('§l§cI§6n§ef§ai§bn§di§5t§cy §r§f§lVector Operator')
+		.fullBlock(false)
+		.material("shroomlight")
+		.soundType("shroomlight")
+		.box(2, 0, 2, 14, 14, 14)
+		.renderType('translucent')
+		.waterlogged()
+		.hardness(0.0)
+		.lightLevel(1.0)
 
 
 let eye = (id) => {
@@ -181,8 +202,8 @@ let eye = (id) => {
 
 	event.create('crimson_eye').displayName("§cCrimson Eye")
 		.fullBlock(true)
-		.material("netherite_block")
-		.soundType("netherite_block")
+		.material("shroomlight")
+		.soundType("shroomlight")
 		.unbreakable()
 		.box (4, 0, 4, 12, 8, 12)
 
@@ -300,6 +321,18 @@ let eye = (id) => {
 		.soundType("stone")
 		.unbreakable()
 
+	event.create('chiseled_ancient_bricks').displayName("Chiseled Ancient Bricks")
+		.fullBlock(true)
+		.material("stone")
+		.soundType("stone")
+		.unbreakable()
+
+	event.create('lightning_plinth').displayName('Lightning Plinth')
+		.fullBlock(true)
+		.material("stone")
+		.soundType("stone")
+		.unbreakable()
+
 	event.create('half_frame_bottom').displayName('Bottom of a Machine Frame')
 		.material('lantern').hardness(1.5)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -337,6 +370,7 @@ let eye = (id) => {
 		.material('stone')
 		.soundType("stone")
 		.unbreakable()
+		.lightLevel(1.0)
 
 	event.create('emergency_fuses').displayName("Emergency Fuses")
 		.fullBlock(true)
@@ -364,6 +398,58 @@ let eye = (id) => {
 		.soundType("netherite_block")
 		.unbreakable()
 
+	event.create('computer').displayName("Computer")
+		.fullBlock(true)
+		.material("netherite_block")
+		.soundType("netherite_block")
+
+	event.create('recaptured_consciousness').displayName("Recaptured Consciousness")
+		.fullBlock(true)
+		.material("netherite_block")
+		.soundType("netherite_block")
+
+	event.create('recaptured_consciousness_empty').displayName("Consciousness Container")
+		.fullBlock(true)
+		.material("netherite_block")
+		.soundType("netherite_block")
+
+	event.create('engineering_light_empty').displayName('Light Engineering Frame')
+		.material('lantern').hardness(1.5)
+		.soundType("lantern")
+		.tagBlock('minecraft:mineable/pickaxe')
+		.renderType("cutout")
+		.box(0, 0, 0, 3, 3, 16)
+		.box(13, 0, 0, 16, 3, 16)
+		.box(0, 13, 0, 3, 16, 16)
+		.box(13, 13, 0, 16, 16, 16)
+		.box(0, 3, 0, 3, 13, 3)
+		.box(0, 3, 13, 3, 13, 16)
+		.box(13, 3, 13, 16, 13, 16)
+		.box(13, 3, 0, 16, 13, 3)
+		.box(3, 13, 0, 13, 16, 3)
+		.box(3, 0, 0, 13, 3, 3)
+		.box(3, 0, 13, 13, 3, 16)
+		.box(3, 13, 13, 13, 16, 16)
+		.tagBlock('minecraft:mineable/pickaxe')
+
+	event.create('engineering_heavy_empty').displayName('Heavy Engineering Frame')
+		.material('lantern').hardness(1.5)
+		.soundType("lantern")
+		.renderType("cutout")
+		.box(0, 0, 0, 3, 3, 16)
+		.box(13, 0, 0, 16, 3, 16)
+		.box(0, 13, 0, 3, 16, 16)
+		.box(13, 13, 0, 16, 16, 16)
+		.box(0, 3, 0, 3, 13, 3)
+		.box(0, 3, 13, 3, 13, 16)
+		.box(13, 3, 13, 16, 13, 16)
+		.box(13, 3, 0, 16, 13, 3)
+		.box(3, 13, 0, 13, 16, 3)
+		.box(3, 0, 0, 13, 3, 3)
+		.box(3, 0, 13, 13, 3, 16)
+		.box(3, 13, 13, 13, 16, 16)
+		.tagBlock('minecraft:mineable/pickaxe')
+
 })
 
 StartupEvents.registry('item', event => {
@@ -378,10 +464,15 @@ StartupEvents.registry('item', event => {
 	event.create('alpha_particles').displayName('Alpha Particles')
 	event.create('empty_shell').displayName('Empty Shell')
 	event.create('energized_redstone').displayName('Energized Redstone')
+	event.create('soul_fuse').displayName('Soul Fuse')
+	event.create('portal_lantern').displayName('Recall Flame')
+
 
 	event.create('plastic').displayName('Plastic')
 	event.create('circuitboard_empty').displayName('Empty Circuit Board')
-	event.create('circuitboard').displayName('Circuit Board')
+	event.create('circuitboard').displayName('High-Tech Circuit Board')
 	event.create('peeking_circuit').displayName('Peeking Circuit')
 	event.create('seeking_circuit').displayName('Seeking Circuit')
+
+	event.create('adilette').displayName('Adilette')
 })

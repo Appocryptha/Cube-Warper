@@ -41,3 +41,19 @@ ItemEvents.rightClicked('minecraft:glass_bottle', event => {
 		event.player.giveInHand('alexscaves:radon_bottle')
 		event.player.level.playSound(null, event.entity.x, event.entity.y, event.entity.z, "minecraft:item.bottle.fill_dragonbreath", "blocks", 1, 1);
 })
+
+ItemEvents.rightClicked('kubejs:portal_lantern', event => {
+		event.item.count--
+		event.player.level.playSound(null, event.entity.x, event.entity.y, event.entity.z, "minecraft:block.glass.break", "blocks", 1, 0);
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run function hexahedron:return_portal/return_portal`)
+
+})
+
+ItemEvents.rightClicked('alexscaves:desolate_dagger', event => {
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run damage @a[limit=1,sort=nearest] 10 minecraft:player_attack by @a[limit=1,sort=nearest]`)
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run playsound malum:ritual_evolves master @a ~ ~ ~ 1 0`)
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run playsound minecraft:block.honey_block.place master @a ~ ~ ~ 1 0`)
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run particle untagged_mobs:blood ~ ~ ~ 0 0 0 0.2 1000`)
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run function hexahedron:machine/shrine_ritual`)
+
+})

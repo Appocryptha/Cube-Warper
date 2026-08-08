@@ -1,7 +1,7 @@
 ### PRE RUNTIME TICKING
 scoreboard players add @e[type=marker,tag=pre_runtime] pre_runtime 1
 
-### SEED SELECTION
+### SEED SELECTION (OLD)
 #execute as @e[type=marker,tag=core,scores={pre_runtime=1}] run function hexahedron:processors/calculation_procedure
 
 ### TERMINATE VENTS AND LOWER ANCHOR

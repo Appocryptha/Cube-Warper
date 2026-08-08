@@ -5,7 +5,7 @@
     "settings": "hexahedron:alpha_islands",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "hexahedron:alpha_islands"
+      "biome": "untagged_mobs:foggy_forest"
     }
   }
 }

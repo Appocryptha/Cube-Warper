@@ -3,7 +3,7 @@
   "start_pool": "malum:weeping_well",
   "size": 1,
   "max_distance_from_center": 10,
-  "biomes": "minecraft:plains",
+  "biomes": "hexahedron:lavender_fields",
   "step": "raw_generation",
   "max_y": 100,
   "min_y": -50,

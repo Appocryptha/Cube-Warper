@@ -85,7 +85,7 @@
         if (scrollSize.y > 0.0) scrollPos.y = scrollOffset.y / scrollSize.y;
 
     // --- 3. Base Color (Background) ---
-        fragColor = vec4(0.04, 0.1, 0.01, 1.0);
+        fragColor = vec4(0.05, 0.2, 0.05, 1.0);
     
     // --- 4. Render Clouds ---
         vec2 clouds_uv = zoomed_uv + (scrollPos * 0.01 * parallaxIntensity) / scale;

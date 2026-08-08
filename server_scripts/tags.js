@@ -34,6 +34,18 @@ ServerEvents.tags('block', event => {
   event.add('biomesoplenty:flesh', 'incision:carrion')
   event.add('biomesoplenty:flesh', 'incision:goreshed')
 
+  event.add('minecraft:dirt', 'minecraft:end_stone')
+  event.add('minecraft:dirt', 'windswept:lavender_thatch')
+
+  event.add('kubejs:vector', 'kubejs:vector_operator_basic')
+  event.add('kubejs:vector', 'kubejs:vector_operator_charged')
+  event.add('kubejs:vector', 'kubejs:vector_operator_fluix')
+  event.add('kubejs:vector', 'kubejs:vector_operator_nuclear')
+  event.add('kubejs:vector', 'kubejs:vector_operator_blaze')
+  event.add('kubejs:vector', 'kubejs:vector_operator_lightning')
+  event.add('kubejs:vector', 'kubejs:vector_operator_crimson')
+  event.add('kubejs:vector', 'kubejs:vector_operator_eye')
+
 })
 
 ServerEvents.tags('item', event => {
@@ -74,6 +86,9 @@ ServerEvents.tags('item', event => {
   event.add('create:upright_on_belt', 'biomesoplenty:large_rose_quartz_bud')
   event.add('create:upright_on_belt', 'biomesoplenty:rose_quartz_cluster')
   event.add('create:upright_on_belt', 'create:rose_quartz')
+
+  event.remove('forge:slimeballs', 'malum:cursed_sapball')
+  event.remove('forge:slimeballs', 'malum:runic_sapball')
 
 })
 

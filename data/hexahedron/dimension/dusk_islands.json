@@ -1,5 +1,5 @@
 {
-    "type": "hexahedron:dusk",
+    "type": "hexahedron:storm",
     "generator": {
         "type": "noise",
         "biome_source": {

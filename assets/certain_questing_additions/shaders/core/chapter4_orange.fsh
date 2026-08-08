@@ -85,12 +85,12 @@
         if (scrollSize.y > 0.0) scrollPos.y = scrollOffset.y / scrollSize.y;
 
     // --- 3. Base Color (Background) ---
-        fragColor = vec4(0.13, 0.08, 0.0, 1.0);
+        fragColor = vec4(0.2, 0.1, 0.0, 1.0);
     
     // --- 4. Render Clouds ---
         vec2 clouds_uv = zoomed_uv + (scrollPos * 0.01 * parallaxIntensity) / scale;
     // Mix the cloud color based on noise intensity
-        fragColor += clamp(vec4(0.7, 0.3, 0.0, 1.0) * clouds(clouds_uv), 0.0, 1.0);
+        fragColor += clamp(vec4(1.0, 0.7, 0.0, 1.0) * clouds(clouds_uv), 0.0, 1.0);
 
     // --- 5. Render Stars (Procedural Loop) ---
         vec4 stars = vec4(0.0);
