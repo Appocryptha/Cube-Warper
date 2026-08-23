@@ -19,6 +19,14 @@
   "spawn_costs": {},
   "carvers": {},
   "features": [
-    ["hexahedron:eye_pillar_looking"]
+    ["hexahedron:weartherrack_pillar"],
+    ["incision:mouthgen"],
+    ["incision:blinkinghamstringgen"],
+    ["incision:blinkinghamstringgen"],
+    ["incision:blinkinghamstringgen"],
+    ["incision:hamstringgen"],
+    ["incision:bloodstalkgen"],
+    ["incision:moochgen"],
+    ["incision:incisorgen"]
   ]
 }

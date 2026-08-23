@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "kubejs:block/eye_breaker/eye_breaker_side",
+    "north": "kubejs:block/eye_breaker/eye_breaker_side",
+    "south": "kubejs:block/eye_breaker/eye_breaker_side",
+    "east": "kubejs:block/eye_breaker/eye_breaker_side",
+    "west": "kubejs:block/eye_breaker/eye_breaker_side",
+    "up": "kubejs:block/eye_breaker/eye_breaker_top",
+    "down": "kubejs:block/eye_breaker/eye_breaker_bottom"
+  }
+}

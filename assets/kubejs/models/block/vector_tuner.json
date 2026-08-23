@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "kubejs:block/vector_tuner/vector_tuner",
+    "north": "kubejs:block/vector_tuner/vector_tuner",
+    "south": "kubejs:block/vector_tuner/vector_tuner",
+    "east": "kubejs:block/vector_tuner/vector_tuner",
+    "west": "kubejs:block/vector_tuner/vector_tuner",
+    "up": "kubejs:block/vector_tuner/vector_tuner_contact",
+    "down": "kubejs:block/frame_controls/warping_frame_single"
+  }
+}

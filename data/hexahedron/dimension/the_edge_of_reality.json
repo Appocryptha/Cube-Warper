@@ -1,0 +1,17 @@
+{
+  "type": "hexahedron:dark_fogger",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "hexahedron:the_edge_of_reality",
+      "lakes": false,
+      "features": true,
+      "layers": [
+        {
+          "height": 100,
+          "block": "untagged_mobs:nothing"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "hexahedron:sunless_noon",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "hexahedron:forsaken_planes",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "hexahedron:forsaken_planes"
+    }
+  }
+}

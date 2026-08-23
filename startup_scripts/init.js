@@ -9,7 +9,6 @@ let rotatable = (id, name, configure) => {
         })
 
     configure(block)
-
     block.blockstateJson = {
         variants: {
             "facing=up":    { model: `kubejs:block/${id}`, y: 0 },
@@ -20,6 +19,27 @@ let rotatable = (id, name, configure) => {
             "facing=west":  { model: `kubejs:block/${id}`, y: 270 }
         }
     }
+}
+
+let rotatable_side = (id, name, configure) => {
+    let block = event.create(id)
+        .displayName(name)
+        .property(BlockProperties.FACING)
+        .placementState(c => {
+            c.set(BlockProperties.FACING, c.nearestLookingDirection.opposite)
+        })
+
+    configure(block)
+	block.blockstateJson = {
+    	variants: {
+    	    "facing=up":    { model: `kubejs:block/${id}`,x: 180,y: 0 },
+    	    "facing=down":  { model: `kubejs:block/${id}`,x: 90, y: 0 },
+    	    "facing=north": { model: `kubejs:block/${id}`,x: 90, y: 180 },
+    	    "facing=east":  { model: `kubejs:block/${id}`,x: 90, y: 270 },
+    	    "facing=south": { model: `kubejs:block/${id}`,x: 90, y: 0 },
+    	    "facing=west":  { model: `kubejs:block/${id}`,x: 90, y: 90 }
+    	}
+	}
 }
 
 	rotatable("warping_interface", "Warping Interface", block => {block
@@ -91,6 +111,11 @@ let rotatable = (id, name, configure) => {
 		.unbreakable()
 	})
 
+	rotatable_side("eye_breaker", "Eye Breaker", block => {block
+		.fullBlock(true)
+		.material("netherite_block")
+		.soundType("netherite_block")
+	})
 
 let operator = (id, name, color) => {
 	event.create(`vector_operator_${id}`)
@@ -403,6 +428,11 @@ let eye = (id) => {
 		.material("netherite_block")
 		.soundType("netherite_block")
 
+	event.create('supercomputer').displayName("Supercomputer")
+		.fullBlock(true)
+		.material("netherite_block")
+		.soundType("netherite_block")
+
 	event.create('recaptured_consciousness').displayName("Recaptured Consciousness")
 		.fullBlock(true)
 		.material("netherite_block")
@@ -412,6 +442,27 @@ let eye = (id) => {
 		.fullBlock(true)
 		.material("netherite_block")
 		.soundType("netherite_block")
+
+	event.create('modular_reactor').displayName("Modular Reactor")
+		.fullBlock(true)
+		.material("netherite_block")
+		.soundType("netherite_block")
+
+	event.create('modular_reactor_empty').displayName("Empty Modular Reactor")
+		.fullBlock(true)
+		.material("netherite_block")
+		.soundType("netherite_block")
+
+	event.create('vector_tuner').displayName("Vector Tuner")
+		.fullBlock(true)
+		.material("netherite_block")
+		.soundType("netherite_block")
+		.unbreakable()
+
+	event.create('block_shiny_ingot').displayName("§eBlock of Shiny Ingot")
+		.fullBlock(true)
+		.material("metal")
+		.soundType("metal")
 
 	event.create('engineering_light_empty').displayName('Light Engineering Frame')
 		.material('lantern').hardness(1.5)
@@ -464,9 +515,9 @@ StartupEvents.registry('item', event => {
 	event.create('alpha_particles').displayName('Alpha Particles')
 	event.create('empty_shell').displayName('Empty Shell')
 	event.create('energized_redstone').displayName('Energized Redstone')
-	event.create('soul_fuse').displayName('Soul Fuse')
-	event.create('portal_lantern').displayName('Recall Flame')
-
+	event.create('soul_fuse').displayName('Soul Tube')
+	event.create('portal_lantern').displayName('Recall Tube')
+	event.create('shiny_ingot').displayName('§eShiny Ingot')
 
 	event.create('plastic').displayName('Plastic')
 	event.create('circuitboard_empty').displayName('Empty Circuit Board')

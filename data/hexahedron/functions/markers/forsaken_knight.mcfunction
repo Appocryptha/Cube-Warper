@@ -1,0 +1,1 @@
+summon darkerdepths:void_soul_knight ~ ~ ~ {ActiveEffects:[{Id:1,Amplifier:4b,Duration:-1,ShowParticles:0b},{Id:5,Amplifier:4b,Duration:-1,ShowParticles:0b},{Id:10,Amplifier:2b,Duration:-1,ShowParticles:0b},{Id:11,Amplifier:0b,Duration:-1,ShowParticles:0b},{Id:12,Amplifier:0b,Duration:-1,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:60}]}

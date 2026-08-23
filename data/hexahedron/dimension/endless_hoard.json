@@ -1,5 +1,5 @@
 {
-  "type": "hexahedron:moonless_night",
+  "type": "hexahedron:end_dark",
   "generator": {
     "type": "minecraft:noise",
     "settings": "hexahedron:endless_hoard",

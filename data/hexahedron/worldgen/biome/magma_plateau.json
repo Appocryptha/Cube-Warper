@@ -26,9 +26,9 @@
     "water_fog_color": 2302743,
     "particle": {
       "options": {
-        "type": "minecraft:ash"
+        "type": "darkerdepths:molten_ash"
       },
-      "probability": 0.05
+      "probability": 0.01
     }
   },
   "spawners": {},

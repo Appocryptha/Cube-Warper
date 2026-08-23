@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "kubejs:block/supercomputer/supercomputer_side",
+    "north": "kubejs:block/supercomputer/supercomputer_front",
+    "south": "kubejs:block/supercomputer/supercomputer_back",
+    "east": "kubejs:block/supercomputer/supercomputer_side",
+    "west": "kubejs:block/supercomputer/supercomputer_side",
+    "up": "kubejs:block/supercomputer/supercomputer_top",
+    "down": "kubejs:block/supercomputer/supercomputer_bottom"
+  }
+}

@@ -1,0 +1,1 @@
+execute as @e[type=lightning_bolt] at @s if block ~ ~-1 ~ immersiveengineering:steel_fence run function hexahedron:machines/lightning_rod_current

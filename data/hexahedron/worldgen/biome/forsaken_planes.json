@@ -1,0 +1,28 @@
+{
+  "temperature": 2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 11765589,
+    "water_color": 11765589,
+    "grass_color": 11765589,
+    "water_fog_color": 1972240,
+    "foliage_color": 11765589,
+    "ambient_sound": "ambientsounds:suspense.pale-garden",
+    "particle": {
+      "options": {
+        "type": "darkerdepths:molten_ash"
+      },
+      "probability": 0.001
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    ["hexahedron:eye_pillar_seeking"],
+    ["hexahedron:sea_grass"],
+    ["hexahedron:sandy_grass"]
+  ]
+}

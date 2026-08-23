@@ -16,7 +16,7 @@ execute as @e[type=marker,tag=core,scores={dimension_seed=9}] run function hexah
 ### PROCESSOR 3
 execute as @e[type=marker,tag=core,scores={dimension_seed=5}] run function hexahedron:tickets/ticket_toxic_caves
 execute as @e[type=marker,tag=core,scores={dimension_seed=7}] run function hexahedron:tickets/ticket_endless_hoard
-execute as @e[type=marker,tag=core,scores={dimension_seed=8}] run function hexahedron:tickets/ticket_extraterrestrial_heap
+execute as @e[type=marker,tag=core,scores={dimension_seed=8}] run function hexahedron:tickets/ticket_pine_forrest
 execute as @e[type=marker,tag=core,scores={dimension_seed=12}] run function hexahedron:tickets/ticket_snowstorm
 execute as @e[type=marker,tag=core,scores={dimension_seed=18}] run function hexahedron:tickets/ticket_silver_forest
 
@@ -40,10 +40,10 @@ execute as @e[type=marker,tag=core,scores={dimension_seed=96}] run function hexa
 execute as @e[type=marker,tag=core,scores={dimension_seed=128}] run function hexahedron:tickets/ticket_grass_fields
 
 # PROCESSOR 7
-execute as @e[type=marker,tag=core,scores={dimension_seed=..-1}] run function hexahedron:tickets/ticket_grass_fields
+execute as @e[type=marker,tag=core,scores={dimension_seed=..999}] run function hexahedron:tickets/ticket_the_edge_of_reality
 
 ### END
-execute as @e[type=marker,tag=core,scores={dimension_seed=999}] run function hexahedron:tickets/ticket_grass_fields
+execute as @e[type=marker,tag=core,scores={dimension_seed=-999}] run function hexahedron:tickets/ticket_overworld
 
 ##(1) +1 → total 3 → +3 → [1, 2, 3]
 ##(2) *3 → total 6 → +3 → [4, 6, 9]
@@ -51,7 +51,7 @@ execute as @e[type=marker,tag=core,scores={dimension_seed=999}] run function hex
 ##(4) *4 → total 15 → +4 → [10, 16, 24, 32]
 ##(5) *6 → total 20 → +5 → [13, 14, 36, 48, 72]
 ##(6) *8 → total 24 → +4 → [17, 64, 96, 128]
-##(7) -1 → total 26 → +3 → [-1, -2, -3]
+##(7) /0 → total 26 → +1 → [undefined]
 
 ##(8) *5 → total 33 → +7 → [20, 25, 30, 40, 50, 60, 80]
 ##(9) *7 → total 43 → +10 → [21, 28, 35, 42, 49, 56, 70, 84, 98, 112]

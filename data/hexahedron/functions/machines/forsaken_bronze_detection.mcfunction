@@ -1,0 +1,1 @@
+execute in hexahedron:forsaken_planes as @e[type=darkerdepths:void_soul_knight] at @s if entity @e[type=alexscaves:burrowing_arrow,distance=..3] at @e[type=alexscaves:burrowing_arrow,limit=1,sort=nearest] run function hexahedron:effects/forsaken_bronze_drop

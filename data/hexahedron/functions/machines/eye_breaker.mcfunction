@@ -1,0 +1,6 @@
+execute if block ~ ~ ~ kubejs:eye_breaker[facing=north] if block ~ ~ ~1 #kubejs:crimson_eye if block ~ ~ ~2 kubejs:eye_breaker[facing=south] positioned ~ ~ ~1 run function hexahedron:machines/eye_break
+execute if block ~ ~ ~ kubejs:eye_breaker[facing=south] if block ~ ~ ~-1 #kubejs:crimson_eye if block ~ ~ ~-2 kubejs:eye_breaker[facing=north] positioned ~ ~ ~-1 run function hexahedron:machines/eye_break
+execute if block ~ ~ ~ kubejs:eye_breaker[facing=west] if block ~1 ~ ~ #kubejs:crimson_eye if block ~2 ~ ~ kubejs:eye_breaker[facing=east] positioned ~1 ~ ~ run function hexahedron:machines/eye_break
+execute if block ~ ~ ~ kubejs:eye_breaker[facing=east] if block ~-1 ~ ~ #kubejs:crimson_eye if block ~-2 ~ ~ kubejs:eye_breaker[facing=west] positioned ~-1 ~ ~ run function hexahedron:machines/eye_break
+execute if block ~ ~ ~ kubejs:eye_breaker[facing=down] if block ~ ~1 ~ #kubejs:crimson_eye if block ~ ~2 ~ kubejs:eye_breaker[facing=up] positioned ~ ~1 ~ run function hexahedron:machines/eye_break
+execute if block ~ ~ ~ kubejs:eye_breaker[facing=up] if block ~ ~-1 ~ #kubejs:crimson_eye if block ~ ~-2 ~ kubejs:eye_breaker[facing=down] positioned ~ ~-1 ~ run function hexahedron:machines/eye_break
