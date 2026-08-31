@@ -20,6 +20,7 @@
   "carvers": {},
   "features": [
     ["hexahedron:brazier"],
+    ["hexahedron:diamond_lamp"],
     ["hexahedron:gems"],
     ["hexahedron:golden_treasure"],
     ["hexahedron:gold_bag_pile"],

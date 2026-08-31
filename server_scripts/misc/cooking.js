@@ -12,18 +12,34 @@ ServerEvents.recipes(event => {
 	    "minecraft:bowl",
 	);
 
+	event.recipes.create.emptying([Fluid.of('supplementaries:lumisene', 1000),
+		'minecraft:bucket'], 
+		'supplementaries:lumisene_bucket'
+	)
+
+	event.recipes.create.emptying([Fluid.of('supplementaries:lumisene', 250),
+		'minecraft:glass_bottle'], 
+		'supplementaries:lumisene_bottle'
+	)
+
+    event.remove({id: 'supplementaries:lumisene_bottle'})
+    event.remove({id: 'supplementaries:lumisene_bucket'})
+    event.remove({id: 'alexscaves:gummy_ring_red'})
+    event.remove({id: 'alexscaves:gummy_ring_pink'})
+    event.remove({id: 'alexscaves:gummy_ring_yellow'})
+    event.remove({id: 'alexscaves:gummy_ring_green'})
+    event.remove({id: 'alexscaves:gummy_ring_blue'})
 	event.recipes.farmersdelight.cooking(
 	    [
 			"alexscaves:gummy_ring_red",
-			"alexscaves:gummy_ring_pink",
 			"alexscaves:gummy_ring_yellow",
 			"alexscaves:gummy_ring_green",
 			"alexscaves:gummy_ring_blue"
 		],
-	    "supplementaries:lumisene_bucket",
+	    "supplementaries:lumisene_bottle",
 	    1,
 	    200,
-	    "minecraft:bucket",
+	    "minecraft:glass_bottle",
 	);
 
 })

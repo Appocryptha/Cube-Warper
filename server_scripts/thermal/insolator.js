@@ -15,7 +15,14 @@ ServerEvents.recipes(event => {
         })
     }
 
-    machine_insolator("regions_unexplored:alpha_rose", "regions_unexplored:alpha_rose")
-    machine_insolator("regions_unexplored:alpha_dandelion", "regions_unexplored:alpha_dandelion")
+    Ingredient.of("#minecraft:flowers").itemIds.forEach(flower => {
+        machine_insolator(flower, flower)
+    })
 	
+})
+
+BlockEvents.placed(event => {
+    if (event.block.item.id && Item.of(event.block.item.id).hasTag('botania:petals')) {
+        event.cancel()
+    }
 })

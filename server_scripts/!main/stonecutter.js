@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
     mold_cutting('immersiveengineering:mold_gear')
     mold_cutting('immersiveengineering:mold_wire')
     mold_cutting('immersiveengineering:mold_plate')
+    mold_cutting('thermal:chiller_ball_cast')
     mold_cutting('createdieselgenerators:mold')
 
 event.shapeless(

@@ -1,5 +1,10 @@
 ServerEvents.recipes(event => {
 
+	event.remove({type: 'thermal:press', output: '#forge:plates'})
+    event.remove({type: 'createdieselgenerators:hammering'})
+    //event.remove({type: 'createdieselgenerators:wire_cutting'})
+
+
 	let press = (die, input, output) => {
         event.recipes.thermal.press(output, [
             input, 
@@ -24,16 +29,9 @@ ServerEvents.recipes(event => {
                 )
             }
 
-            let output_rod = `immersiveengineering:${material}_rod`
-            if (Item.exists(output_rod)) {
-                press(  'immersiveengineering:mold_rod',          
-                         input,                  
-                        `4x immersiveengineering:${material}_rod`
-                )
-            }
-
-            let output_stick = `immersiveengineering:${material}_rod`
+            let output_stick = `immersiveengineering:stick_${material}`
             if (Item.exists(output_stick)) {
+                event.remove({type: 'minecraft:crafting_shaped', output: output_stick})
                 press(  'immersiveengineering:mold_rod',          
                          input,                  
                         `4x immersiveengineering:stick_${material}`
@@ -42,6 +40,7 @@ ServerEvents.recipes(event => {
 
             let output_gear = `thermal:${material}_gear`
             if (Item.exists(output_gear)) {
+                event.remove({type: 'minecraft:crafting_shaped', output: output_gear})
                 press(  'immersiveengineering:mold_gear',          
                          input,                  
                         `thermal:${material}_gear`
@@ -53,5 +52,9 @@ ServerEvents.recipes(event => {
         let material = id.split(':')[1].replace('ingot_', '').replace('_ingot','')
         universal_press(material, id)
     })
+
+    press('immersiveengineering:mold_plate', 'immersiveengineering:ingot_steel', 'immersiveengineering:plate_steel')
+    press('immersiveengineering:mold_plate', 'immersiveengineering:ingot_uranium', 'immersiveengineering:plate_uranium')
+    press('immersiveengineering:mold_plate', 'immersiveengineering:ingot_aluminum', 'immersiveengineering:plate_aluminum')
 
 })

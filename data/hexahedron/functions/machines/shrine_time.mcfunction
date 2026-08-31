@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=shrine_time,limit=1,sort=nearest] at @s run tag @s add clocking

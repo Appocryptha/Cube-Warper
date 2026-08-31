@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/orientable",
   "textures": {
-    "front": "kubejs:block/frame_controls/warping_frame_disc_drive",
+    "front": "kubejs:block/warping_vent",
     "side": "kubejs:block/frame_controls/warping_frame_single",
     "top": "kubejs:block/frame_controls/warping_frame_contact"
   }

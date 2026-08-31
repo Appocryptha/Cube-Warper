@@ -7,8 +7,23 @@ BlockEvents.rightClicked('kubejs:launch_button', event => {
 })
 
 BlockEvents.rightClicked('kubejs:ancient_core', event => {
+    const { player, item, server } = event;
 
 	if (event.item.id == 'minecraft:redstone') {
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} run function hexahedron:machines/ancient_redstone`)
+		event.item.count--
+		event.player.giveInHand('kubejs:energized_redstone')
+        if (!player.isFake()) {
+            server.scheduleInTicks(1, callback => {
+                player.addItemCooldown(item, 100);
+            });
+        }
+	}
+})
+
+BlockEvents.rightClicked('kubejs:ancient_core', event => {
+
+	if (event.item.id == 'kubejs:vector_operator_infinite_empty') {
 		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} unless score @e[distance=..2,tag=ancient_redstone,limit=1,sort=nearest] redstone_cooldown matches 1.. run function hexahedron:machines/ancient_redstone`)
 		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} unless score @e[distance=..2,tag=ancient_redstone,limit=1,sort=nearest] redstone_cooldown matches ..0 run execute as @e[type=marker,tag=ancient_redstone] run title @a actionbar [
   {"text":"This Ancient Redstone is recharging, wait ","bold":true,"color":"red"},
@@ -16,15 +31,8 @@ BlockEvents.rightClicked('kubejs:ancient_core', event => {
   {"text":" more seconds...","bold":true,"color":"red"}
 ]`)
 		event.item.count--
-		event.player.giveInHand('kubejs:energized_redstone')	
+		event.player.giveInHand('kubejs:vector_operator_step2')	
 	}
-})
-
-BlockEvents.rightClicked('create:depot', event => {
-
-	if (event.item.id == 'immersiveengineering:hammer') {
-		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} run execute if block ~ ~ ~ create:depot{HeldItem:{Item:{id:"minecraft:copper_ingot"}}} run function hexahedron:machines/plate_hammering`)
-		}
 })
 
 BlockEvents.rightClicked('kubejs:time_warper', event => {

@@ -101,15 +101,15 @@ ServerEvents.recipes(event => {
 	)
 
 	carpenter(
-		"kubejs:peeking_circuit",
+		"enderio:double_layer_capacitor",
 		"kubejs:circuitboard_empty",
-		"kubejs:crimson_eye",
+		"kubejs:peeking_circuit",
 		"clanginghowl:techno_optics",
 		"kubejs:solder_fluid",
 			[
   				"   ",
-  				"434",
-  				"121"
+  				"141",
+  				"323"
   			],
 		"kubejs:seeking_circuit"
 	)

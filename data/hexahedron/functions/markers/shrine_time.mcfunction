@@ -1,0 +1,1 @@
+summon marker ~ ~ ~ {Tags:["shrine_time"],Invulnerable:1b,NoGravity:1b}

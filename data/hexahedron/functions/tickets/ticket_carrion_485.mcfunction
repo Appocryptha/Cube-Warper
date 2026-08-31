@@ -4,8 +4,8 @@ kill @e[type=marker,tag=outer_core]
 
 ### INITIATE CONNECTION
 execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal nbt {isVisible:false}
-execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal set_portal_destination hexahedron:hexahedron_graveyard ~ ~ ~
-execute at @e[type=minecraft:marker,tag=core] at @s in hexahedron:hexahedron_graveyard run summon marker ~ ~ ~ {NoGravity:1b,Tags:["outer_core"]}
+execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal set_portal_destination hexahedron:carrion_485 ~ ~ ~
+execute at @e[type=minecraft:marker,tag=core] at @s in hexahedron:carrion_485 run summon marker ~ ~ ~ {NoGravity:1b,Tags:["outer_core"]}
 
 ### QUE REPOSITIONING
 schedule function hexahedron:repositioning/standard_floor 5s

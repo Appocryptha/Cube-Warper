@@ -13,15 +13,6 @@ ServerEvents.recipes(event => {
 			{"item": "create:copper_casing"}]
 	})
 
-	event.remove({output: 'create:depot'})
-	event.custom({"type": "create:item_application",
-		"ingredients":[
-			{"tag": "minecraft:planks"},
-			{"item": "minecraft:stone_slab"}],
-		"results": [
-			{"item": "create:depot"}]
-	})
-
 let create = (block, item, result) => {
 	event.remove({output: result})
 	event.custom({"type": "create:item_application",
@@ -36,12 +27,10 @@ let create = (block, item, result) => {
 //Misc
 	create("kubejs:half_frame_bottom",		"kubejs:half_frame_top",			"thermal:machine_frame")
 	create("create:fluid_pipe",				"create:golden_sheet",				"create:smart_fluid_pipe")
-	create("immersiveengineering:fiberboard","create:brass_ingot",				"create:brass_casing")
+	create("create:andesite_casing",		"create:brass_ingot",				"create:brass_casing")
 	create("create:chute", 					"create:golden_sheet", 				"create:smart_chute")
-	create("create:railway_casing", 		"actuallyadditions:diamatine_crystal", "mekanism:dimensional_stabilizer")
 	create("minecraft:barrel", 				"create:iron_sheet", 				"create:item_vault")
-	create("supplementaries:cage", 			"immersiveengineering:ingot_steel", "create:empty_blaze_burner")
-	create("supplementaries:timber_frame",	"kubejs:wallpaper", 				"kubejs:wallpaper_fake")
+	create("supplementaries:cage", 			"kubejs:shiny_ingot", 				"create:empty_blaze_burner")
 
 //Andesite Casings
 	create("create:andesite_casing","minecraft:compass","create:speedometer")
@@ -68,6 +57,7 @@ let create = (block, item, result) => {
 	create("create:andesite_casing", 		"create:turntable", 				"create:mechanical_bearing")
 	create("create:andesite_casing", 		"create:shaft", 					"createaddition:rolling_mill")
 	create("create:andesite_casing", 		"create:item_vault", 				"create:package_frogport")
+	create("create:andesite_casing", 		"create:depot", 					"minecraft:cobblestone_slab")
 
 //Copper Casing
 	create("create:copper_casing",			"minecraft:copper_ingot", 			"create:fluid_tank")
@@ -104,6 +94,7 @@ let create = (block, item, result) => {
 	create("thermal:machine_frame", 		"minecraft:crafting_table", 		"thermal:machine_crafter")
 	create("thermal:machine_frame", 		"minecraft:brewing_stand", 			"thermal:machine_brewer")
 	create("thermal:machine_frame", 		"immersiveengineering:turntable", 	"thermal:machine_centrifuge")
+	create("thermal:machine_frame", 		"minecraft:hopper", 				"thermal:device_collector")
 
 //Engineering Frame
 	create("kubejs:engineering_light_empty", 	"thermal:rf_coil", 									"immersiveengineering:rs_engineering")

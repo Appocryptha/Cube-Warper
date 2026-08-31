@@ -8,6 +8,8 @@ ServerEvents.recipes(event => {
         ])
     }
 
+    event.remove({id: 'malum:spirit_infusion/alchemical_impetus'})
+    event.remove({output: 'malum:alchemical_impetus'})
     event.recipes.thermal.press(Item.of('malum:alchemical_impetus', '{Damage:400}'), [
         'malum:block_of_alchemical_calx'
     ])
@@ -22,6 +24,27 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.press('untagged_mobs:bugging_stick', [
         '8x untagged_mobs:executable_redactor',
         'immersiveengineering:mold_rod'
+    ])
+
+    event.recipes.thermal.press('4x thermal:rubber', [
+        '#minecraft:logs'
+    ])
+
+	event.remove({output: 'ae2:fluix_pearl'})
+    event.recipes.thermal.press('ae2:fluix_pearl', [
+        'ae2:fluix_dust',
+        'thermal:chiller_ball_cast'
+    ])
+
+	event.remove({output: 'immersiveengineering:graphite_electrode'})
+    event.recipes.thermal.press('immersiveengineering:graphite_electrode', [
+        '4x mekanism:enriched_carbon',
+        'immersiveengineering:mold_rod'
+    ])
+
+	event.remove({output: 'caverns_and_chasms:diamond_lamp'})
+    event.recipes.thermal.pulverizer(['minecraft:diamond', '4x minecraft:glowstone_dust'], [
+        'caverns_and_chasms:diamond_lamp'
     ])
 
 })

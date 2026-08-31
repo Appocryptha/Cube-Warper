@@ -34,13 +34,13 @@ execute as @e[type=marker,tag=core,scores={dimension_seed=48}] run function hexa
 execute as @e[type=marker,tag=core,scores={dimension_seed=72}] run function hexahedron:tickets/ticket_gronglegrowth
 
 # PROCESSOR 6
-execute as @e[type=marker,tag=core,scores={dimension_seed=17}] run function hexahedron:tickets/ticket_grass_fields
-execute as @e[type=marker,tag=core,scores={dimension_seed=64}] run function hexahedron:tickets/ticket_grass_fields
-execute as @e[type=marker,tag=core,scores={dimension_seed=96}] run function hexahedron:tickets/ticket_grass_fields
-execute as @e[type=marker,tag=core,scores={dimension_seed=128}] run function hexahedron:tickets/ticket_grass_fields
+execute as @e[type=marker,tag=core,scores={dimension_seed=17}] run function hexahedron:tickets/ticket_forsaken_planes
+execute as @e[type=marker,tag=core,scores={dimension_seed=64}] run function hexahedron:tickets/ticket_carrion_485
+execute as @e[type=marker,tag=core,scores={dimension_seed=96}] run function hexahedron:tickets/ticket_lavender_fields
+execute as @e[type=marker,tag=core,scores={dimension_seed=128}] run function hexahedron:tickets/ticket_alpha_islands
 
 # PROCESSOR 7
-execute as @e[type=marker,tag=core,scores={dimension_seed=..999}] run function hexahedron:tickets/ticket_the_edge_of_reality
+execute as @e[type=marker,tag=core,scores={dimension_seed=999}] run function hexahedron:tickets/ticket_the_edge_of_reality
 
 ### END
 execute as @e[type=marker,tag=core,scores={dimension_seed=-999}] run function hexahedron:tickets/ticket_overworld

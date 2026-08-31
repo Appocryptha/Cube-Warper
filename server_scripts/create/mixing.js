@@ -23,4 +23,14 @@ ServerEvents.recipes(event => {
 		Fluid.of('tconstruct:molten_lead', 90)
 	]).heated()
 
+	event.remove({id: 'forestry:still/ethanol'})
+	event.remove({id: 'createdieselgenerators:bulk_fermenting/fermentable'})
+	event.remove({id: 'createdieselgenerators:basin_fermenting/fermentable'})
+	event.remove({id: 'createdieselgenerators:basin_fermenting/fermented_spider_eye'})
+	event.remove({id: 'immersiveengineering:refinery/resin'})
+	event.recipes.createMixing([Fluid.of('immersiveengineering:phenolic_resin', 270)], [
+		Fluid.of('immersiveengineering:creosote', 120),
+		Fluid.of('immersiveengineering:ethanol', 80)
+	]).superheated()
+
 })

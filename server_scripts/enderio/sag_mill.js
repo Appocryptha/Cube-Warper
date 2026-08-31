@@ -28,4 +28,12 @@ ServerEvents.recipes(event => {
     	1.0
     )
 
+    event.remove({id: "malum:spirit_infusion/living_flesh"})
+    sag_mill(
+    	"kubejs:crimson_eye",
+    	"malum:living_flesh",
+    	2,
+    	1.0
+    )
+
 })

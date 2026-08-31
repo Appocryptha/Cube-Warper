@@ -173,7 +173,7 @@ let operator = (id, name, color) => {
 		.hardness(0.0)
 
 	event.create('vector_operator_infinite_empty')
-		.displayName('§l§cI§6n§ef§ai§bn§di§5t§cy §r§f§lVector Operator')
+		.displayName('§8§lBroken Vector Operator')
 		.fullBlock(false)
 		.material("shroomlight")
 		.soundType("shroomlight")
@@ -510,7 +510,6 @@ StartupEvents.registry('item', event => {
 	event.create('crowbar').displayName('Crowbar')
 	event.create('unbaked_guano_blast_brick').displayName('Unbaked Guano Blast Brick')
 	event.create('guano_blast_brick').displayName('Guano Blast Brick')
-	event.create('chocolate_chip').displayName('Chocolate Chip')
 	event.create('cooling_unit').displayName('Cooling Unit')
 	event.create('alpha_particles').displayName('Alpha Particles')
 	event.create('empty_shell').displayName('Empty Shell')
@@ -526,4 +525,14 @@ StartupEvents.registry('item', event => {
 	event.create('seeking_circuit').displayName('Seeking Circuit')
 
 	event.create('adilette').displayName('Adilette')
+
+	event.create('chocolate_chip').displayName('Chocolate Chip')
+		.food(food => {
+    		food
+    			.hunger(8)
+    			.saturation(0.5)
+    			.effect('minecraft:speed', 200, 0, 1)
+    			.alwaysEdible()
+		})
+
 })

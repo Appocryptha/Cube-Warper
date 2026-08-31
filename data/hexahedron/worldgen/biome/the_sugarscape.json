@@ -3,12 +3,22 @@
   "downfall": 0,
   "has_precipitation": false,
   "effects": {
+    "additions_sound": {
+      "sound": "alexscaves:candy_cavity_ambience_additions",
+      "tick_chance": 0.0111
+    },
+    "ambient_sound": "alexscaves:candy_cavity_ambience",
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2,
+      "sound": "alexscaves:candy_cavity_ambience_mood",
+      "tick_delay": 6000
+    },
     "sky_color": 16611831,
     "fog_color": 16757746,
     "water_color": 9961725,
     "grass_color": 16736228,
     "water_fog_color": 3852,
-    "ambient_sound": "ambientsounds:suspense.pale-garden",
     "particle": {
       "options": {
         "type": "minecraft:cherry_leaves"

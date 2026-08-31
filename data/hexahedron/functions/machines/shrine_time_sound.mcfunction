@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=clocking] at @s run playsound supplementaries:block.clock.tick_2 master @a ~ ~ ~ 1 0

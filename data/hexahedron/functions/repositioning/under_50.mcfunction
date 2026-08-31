@@ -7,8 +7,6 @@ execute as @e[tag=outer_core,limit=1] at @s unless block ~ ~-9 ~ air run scorebo
 
 ### UNFOLD
 execute if score @e[tag=outer_core,limit=1] unfold matches 1 run function hexahedron:repositioning/unfold
-execute if score @e[tag=outer_core,limit=1] unfold matches 1 run say success
 
 ### LOOP
 execute if score @e[tag=outer_core,limit=1] unfold matches 0 run function hexahedron:repositioning/standard_floor
-execute if score @e[tag=outer_core,limit=1] unfold matches 0 run say unsuccessful

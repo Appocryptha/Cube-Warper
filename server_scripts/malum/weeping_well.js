@@ -32,4 +32,12 @@ ServerEvents.recipes(event => {
     weeping_well("incision:vile_fang",
         "alexscaves:sweet_tooth"
     )
+
+    weeping_well("untagged_mobs:null_item",
+        "untagged_mobs:item_missing"
+    )
+
+    weeping_well("kubejs:vector_operator_step9",
+        "kubejs:vector_operator_step8"
+    )
 })

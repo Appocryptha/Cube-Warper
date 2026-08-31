@@ -48,6 +48,8 @@ ServerEvents.recipes(event => {
 		"mekanism:nugget_osmium", 0.1
 	)
 
+    event.recipes.createCrushing(['minecraft:netherrack', Item.of('thermal:sulfur_dust').withChance(0.1), Item.of('tconstruct:cobalt_nugget').withChance(0.01)], ['biomesoplenty:brimstone'])
+
 	dimensional_mining("alexscaves:limestone", 
 		"create:raw_zinc", 0.1
 	)

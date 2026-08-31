@@ -1,5 +1,15 @@
 ServerEvents.recipes(event => {
 
+    const $BuiltInRegistries = Java.loadClass(
+        'net.minecraft.core.registries.BuiltInRegistries'
+    )
+
+    let moltenExists = material => {
+        let fluidId = `tconstruct:molten_${material}`
+        return $BuiltInRegistries.FLUID.containsKey(fluidId)
+    }
+
+
     let melting = (ingot, fluid) => {
         event.recipes.thermal.crucible(
             Fluid.of(fluid, 90),
@@ -9,12 +19,16 @@ ServerEvents.recipes(event => {
 
     Ingredient.of('#forge:ingots').itemIds.forEach(ingot => {
         let [namespace, item] = ingot.split(':')
-        
+
         if (item.endsWith('_ingot')) {
             let material = item.substring(0, item.length - '_ingot'.length)
-            melting(ingot, `tconstruct:molten_${material}`)
+
+            if (moltenExists(material)) {
+                melting(ingot, `tconstruct:molten_${material}`)
+            }
         }
     })
+
 
     let chilling = (fluid, ingot) => {
         event.recipes.thermal.chiller(
@@ -30,12 +44,12 @@ ServerEvents.recipes(event => {
         let [namespace, item] = ingot.split(':')
 
         if (item.endsWith('_ingot')) {
-            let material = item.substring(0, item.length - 6)
+            let material = item.substring(0, item.length - '_ingot'.length)
+            let fluid = `tconstruct:molten_${material}`
 
-            chilling(
-                `tconstruct:molten_${material}`,
-                ingot
-            )
+            if (moltenExists(material)) {
+                chilling(fluid, ingot)
+            }
         }
     })
 

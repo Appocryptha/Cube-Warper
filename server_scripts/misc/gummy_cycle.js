@@ -2,10 +2,7 @@ ServerEvents.recipes(event => {
 
 	event.recipes.createSequencedAssembly(
 		[
-			'2x alexscaves:gummy_ring_pink',
-			'2x alexscaves:gummy_ring_yellow',
-			'2x alexscaves:gummy_ring_green',
-			'2x alexscaves:gummy_ring_blue'
+			'2x alexscaves:gummy_ring_yellow'
 		], 'alexscaves:gummy_ring_red', [
 			event.recipes.createFilling(
 				'alexscaves:gummy_ring_red', [
@@ -14,28 +11,9 @@ ServerEvents.recipes(event => {
 			])
 		]).transitionalItem('alexscaves:gummy_ring_red').loops(1)
 
-
 	event.recipes.createSequencedAssembly(
 		[
-			'2x alexscaves:gummy_ring_red',
-			'2x alexscaves:gummy_ring_yellow',
-			'2x alexscaves:gummy_ring_green',
-			'2x alexscaves:gummy_ring_blue'
-		], 'alexscaves:gummy_ring_pink', [
-			event.recipes.createFilling(
-				'alexscaves:gummy_ring_pink', [
-	  			'alexscaves:gummy_ring_pink',
-	  			Fluid.of('supplementaries:lumisene', 10)
-			])
-		]).transitionalItem('alexscaves:gummy_ring_pink').loops(1)
-
-
-	event.recipes.createSequencedAssembly(
-		[
-			'2x alexscaves:gummy_ring_red',
-			'2x alexscaves:gummy_ring_pink',
-			'2x alexscaves:gummy_ring_green',
-			'2x alexscaves:gummy_ring_blue'
+			'2x alexscaves:gummy_ring_green'
 		], 'alexscaves:gummy_ring_yellow', [
 			event.recipes.createFilling(
 				'alexscaves:gummy_ring_yellow', [
@@ -47,9 +25,6 @@ ServerEvents.recipes(event => {
 
 	event.recipes.createSequencedAssembly(
 		[
-			'2x alexscaves:gummy_ring_red',
-			'2x alexscaves:gummy_ring_pink',
-			'2x alexscaves:gummy_ring_yellow',
 			'2x alexscaves:gummy_ring_blue'
 		], 'alexscaves:gummy_ring_green', [
 			event.recipes.createFilling(
@@ -61,10 +36,7 @@ ServerEvents.recipes(event => {
 
 	event.recipes.createSequencedAssembly(
 		[
-			'2x alexscaves:gummy_ring_red',
-			'2x alexscaves:gummy_ring_pink',
-			'2x alexscaves:gummy_ring_yellow',
-			'2x alexscaves:gummy_ring_green'
+			'2x alexscaves:gummy_ring_red'
 		], 'alexscaves:gummy_ring_blue', [
 			event.recipes.createFilling(
 				'alexscaves:gummy_ring_blue', [

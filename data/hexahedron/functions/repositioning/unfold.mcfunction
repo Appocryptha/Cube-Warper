@@ -18,3 +18,9 @@ execute as @e[type=immersive_portals:portal,tag=-x,limit=1] at @s run portal set
 
 execute as @e[type=immersive_portals:portal,tag=z,limit=1] at @s run portal set_portal_destination_to @e[type=marker,tag=z_outer,limit=1]
 execute as @e[type=immersive_portals:portal,tag=-z,limit=1] at @s run portal set_portal_destination_to @e[type=marker,tag=-z_outer,limit=1]
+
+
+### SCHEDULE INTEGRITY ECHOES
+#scoreboard players set @e[tag=outer_core] unfold 0
+#schedule function hexahedron:fix_portals 3s
+#schedule function hexahedron:fix_portals 5s

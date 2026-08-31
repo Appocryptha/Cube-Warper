@@ -1,6 +1,13 @@
 ServerEvents.recipes(event => {
 
+//      ### To the recipes that end up here, in peace may you rest ###
+
     //Removed
+        event.remove({type: 'botania:elven_trade'})
+        event.remove({type: 'tconstruct:alloy'})
+
+        event.remove({id: 'thermal:lightning_charge'})
+        event.remove({id: 'caverns_and_chasms:necromium_ingot'})
         event.remove({id: 'create_alexcaves_compat:splashing/guano_block'})
         event.remove({id: 'create_alexcaves_compat:sequenced_assembly/occult_gem'})
         event.remove({id: 'botania:petal_apothecary/jaded_amaranthus'})
@@ -8,8 +15,27 @@ ServerEvents.recipes(event => {
         event.remove({input: 'immersiveengineering:wirecutter'})
         event.remove({input: 'immersiveengineering:hammer'})
         event.remove({id: 'mechanism:sawing/torch'})
+        event.remove({id: 'tconstruct:smeltery/melting/metal/molten_debris/ore'})
+        event.remove({id: 'tconstruct:smeltery/melting/metal/netherite/lodestone'})
+
+        event.remove({id: `mekanism:infusion_conversion/carbon/from_coal`})
+        event.remove({id: `mekanism:infusion_conversion/carbon/from_charcoal`})
+        event.remove({id: `mekanism:infusion_conversion/carbon/from_coal_block`})
+        event.remove({id: `mekanism:infusion_conversion/carbon/from_charcoal_block`})
+        let chemical_nuke = (chemical) => {
+        	event.remove({id: `mekanism:infusion_conversion/${chemical}/from_dust`})
+        }
+
+        chemical_nuke("redstone")
+        chemical_nuke("tin")
+        chemical_nuke("iron")
+        chemical_nuke("gold")
+        chemical_nuke("diamond")
+        chemical_nuke("refined_obsidian")
+
 
     //Removed and unlisted items
+        event.remove({output: 'alexscaves:depth_charge'})
         event.remove({output: 'malum:crude_scythe'})
         event.remove({output: 'malum:soul_stained_steel_scythe'})
         event.remove({output: 'botania:endoflame'})
@@ -18,8 +44,27 @@ ServerEvents.recipes(event => {
         event.remove({output: '#forestry:bees'})
         event.remove({input: '#forestry:combs'})
         event.remove({output: '#forestry:combs'})
-        event.remove({output: '#forestry:combs'})
         event.remove({output: 'untagged_mobs:television'})
+        event.remove({output: 'botania:alfheim_portal'})
+
+        let impetus_nuke = (material) => {
+            event.remove({id: `malum:node_focusing${material}`})
+            event.remove({id: `malum:spirit_infusion/${material}_impetus`})
+        }
+
+        impetus_nuke('nickel')
+        impetus_nuke('zinc')
+        impetus_nuke('tin')
+        impetus_nuke('iron')
+        impetus_nuke('gold')
+        impetus_nuke('aluminum')
+        impetus_nuke('osmium')
+        impetus_nuke('uranium')
+
+    //Changed
+    event.replaceInput({input:'clanginghowl:extraterrestrial_steel_plate'}, 'clanginghowl:extraterrestrial_steel_plate', 'immersiveengineering:plate_steel'
+
+)
 
 
 })

@@ -19,4 +19,13 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(	'kubejs:circuitboard_empty', ['kubejs:circuitboard_empty', 'immersiveengineering:component_electronic_adv']),
 	]).transitionalItem('kubejs:circuitboard_empty').loops(1)
 
+
+	event.recipes.createSequencedAssembly([
+		'kubejs:modular_reactor_empty'
+	],  'mekanism:steel_casing', [
+		event.recipes.createDeploying(	'mekanism:steel_casing', ['mekanism:steel_casing', 'minecraft:netherite_ingot']),
+		event.recipes.createDeploying(	'mekanism:steel_casing', ['mekanism:steel_casing', 'alexscaves:polymer_plate']),
+		event.recipes.createDeploying(	'mekanism:steel_casing', ['mekanism:steel_casing', 'alexscaves:fissile_core']),
+	]).transitionalItem('mekanism:steel_casing').loops(20)
+
 })

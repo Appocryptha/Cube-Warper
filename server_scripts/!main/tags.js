@@ -42,9 +42,6 @@ ServerEvents.tags('block', event => {
   event.add('biomesoplenty:flesh', 'incision:carrion')
   event.add('biomesoplenty:flesh', 'incision:goreshed')
 
-  event.add('minecraft:dirt', 'minecraft:end_stone')
-  event.add('minecraft:dirt', 'windswept:lavender_thatch')
-
   event.add('kubejs:vector', 'kubejs:vector_operator_basic')
   event.add('kubejs:vector', 'kubejs:vector_operator_charged')
   event.add('kubejs:vector', 'kubejs:vector_operator_fluix')
@@ -92,6 +89,7 @@ ServerEvents.tags('item', event => {
 	event.add('thermal:crafting/casts', 'ae2:calculation_processor_press')
 	event.add('thermal:crafting/casts', 'ae2:logic_processor_press')
 	event.add('thermal:crafting/casts', 'ae2:engineering_processor_press')
+	event.add('thermal:crafting/casts', 'alexscaves:frostmint')
 
   event.add('create:upright_on_belt', 'biomesoplenty:small_rose_quartz_bud')
   event.add('create:upright_on_belt', 'biomesoplenty:medium_rose_quartz_bud')

@@ -43,6 +43,7 @@ ServerEvents.recipes(event => {
     electron_tubes('forestry:electron_tube_emerald',       'minecraft:emerald')
     electron_tubes('forestry:electron_tube_apatite',       'thermal:apatite')
     electron_tubes('forestry:electron_tube_lapis',         'minecraft:lapis_lazuli')
+    electron_tubes('forestry:electron_tube_silicon',       'ae2:silicon')
     electron_tubes('forestry:electron_tube_amber',         'alexscaves:amber_curiosity')
     electron_tubes('forestry:electron_tube_ender',         'thermal:enderium_ingot')
 

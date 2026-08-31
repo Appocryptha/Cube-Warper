@@ -2,12 +2,11 @@ ServerEvents.recipes(event => {
 
     event.remove({output: 'ae2:charger'})
 	event.shaped('ae2:charger', [
-		'PCP', 
-	  	'P  ',
-	  	'PCP'  
+		'CCC', 
+	  	'C  ',
+	  	'CCC'  
 	  	],{
-	  	C: 'minecraft:copper_ingot',
-	  	P: 'thermal:copper_plate'
+	  	C: 'minecraft:copper_ingot'
   	})
 
     event.remove({output: 'ae2:crystal_resonance_generator'})
@@ -80,17 +79,6 @@ ServerEvents.recipes(event => {
 
     event.remove({output: 'alexscaves:nuclear_furnace_component'})
 	event.shaped('4x alexscaves:nuclear_furnace_component', [
-		'SPS', 
-	  	'PFP',
-	  	'SPS'  
-	  	],{
-	  	S: 'clanginghowl:extraterrestrial_steel_plate',
-	  	P: 'alexscaves:polymer_plate',
-	  	F: 'alexscaves:fissile_core'
-  	})
-
-    event.remove({output: 'alexscaves:nuclear_furnace_component'})
-	event.shaped('4x alexscaves:nuclear_furnace_component', [
 		'LPL', 
 	  	'PFP',
 	  	'LPL'  
@@ -114,10 +102,10 @@ ServerEvents.recipes(event => {
     event.remove({output: 'forestry:fabricator'})
 	event.shaped('forestry:fabricator', [
 		'ICI', 
-	  	'CFC',
-	  	'IBI'  
+	  	'BFB',
+	  	'IEI'  
 	  	],{
-	  	I: 'minecraft:iron_ingot',
+	  	I: 'thermal:tin_ingot',
 	  	F: 'thermal:machine_crafter',
 	  	C: 'thermal:rf_coil',
 	  	E: 'immersiveengineering:furnace_heater',
@@ -253,7 +241,7 @@ ServerEvents.recipes(event => {
 	  	'F F',
 	  	'ICI'  
 	  	],{
-	  	F: 'ae2:fluix_glass_cable',
+	  	F: 'ae2:fluix_smart_cable',
 	  	C: 'ae2:calculation_processor',
 	  	I: 'minecraft:iron_ingot'
   	})
@@ -311,7 +299,7 @@ ServerEvents.recipes(event => {
 	  	'BCB',
 	  	'EEE'  
 	  	],{
-	  	E: 'clanginghowl:extraterrestrial_steel_plate',
+	  	E: 'immersiveengineering:plate_steel',
 	  	B: 'clanginghowl:energy_battery',
 	  	L: 'minecraft:lightning_rod',
 		C: 'clanginghowl:extraterrestrial_energy_crystal'
@@ -365,7 +353,7 @@ ServerEvents.recipes(event => {
 	  	'ICI'  
 	  	],{
 	  	I: 'minecraft:iron_ingot',
-	  	S: 'alexscaves:sundae',
+	  	S: 'alexscaves:large_peppermint',
 		G: 'immersiveengineering:insulating_glass',
 	  	F: 'thermal:machine_frame',
 		C: 'brewinandchewin:ice_crate'
@@ -400,7 +388,7 @@ ServerEvents.recipes(event => {
 	event.replaceInput({input: 'ae2:quartz_glass' }, 
 		'ae2:quartz_glass', 
 		'minecraft:glass'        
-)
+	)
 
     event.remove({output: 'actuallyadditions:lava_factory_casing'})
 	event.shaped('actuallyadditions:lava_factory_casing', [
@@ -633,7 +621,6 @@ ServerEvents.recipes(event => {
 	  	'SBS'  
 	  	],{
 	  	S: 'kubejs:shiny_ingot',
-	  	D: 'mekanism:dosimeter',
 		O: 'mekanism:block_osmium',
 		I: 'forestry:electron_tube_iron',
 		R: 'malum:block_of_brilliance',
@@ -876,19 +863,6 @@ ServerEvents.recipes(event => {
 	  	P: 'kubejs:peeking_circuit'
   	})
 
-	event.remove({output: 'clanginghowl:techno_optics'})
-	event.shaped('clanginghowl:techno_optics', [
-		' PW',
-	  	'CBP',
-	  	'EC '  
-	  	],{
-	  	E: 'kubejs:crimson_eye',
-	  	C: 'kubejs:peeking_circuit',
-	  	B: 'clanginghowl:advanced_energy_battery',
-	  	W: 'clanginghowl:redstone_wire',
-	  	P: 'kubejs:plastic'
-  	})
-
 	event.shaped('untagged_mobs:nothing', [
 		'EEE',
 	  	'EVE',
@@ -994,6 +968,71 @@ ServerEvents.recipes(event => {
 	  	C: 'kubejs:computer',
 		U: 'mekanism:ultimate_control_circuit',
 		S: 'kubejs:seeking_circuit'
+  	})
+
+	event.shaped('kubejs:recaptured_consciousness_empty', [
+		'NON',
+	  	'SES',
+	  	'NCN'  
+	  	],{
+	  	N: 'enderio:dark_steel_ingot',
+	  	E: 'enderio:ensouled_chassis',
+	  	C: 'mekanism:ultimate_control_circuit',
+		S: 'kubejs:seeking_circuit',
+		O: 'forestry:electron_tube_obsidian'
+  	})
+
+	event.shaped('kubejs:supercomputer', [
+		'OUO',
+	  	'SRS',
+	  	'ACA'  
+	  	],{
+	  	U: 'mekanism:ultimate_control_circuit',
+	  	R: 'kubejs:recaptured_consciousness',
+	  	C: 'kubejs:computer',
+		S: 'kubejs:seeking_circuit',
+		O: 'forestry:electron_tube_obsidian',
+		A: 'mekanism:alloy_atomic'
+  	})
+
+	event.remove({output: 'clanginghowl:flamethrower'})
+	event.shaped('clanginghowl:flamethrower', [
+		'P  ',
+	  	'BPS',
+	  	' CS'  
+	  	],{
+	  	P: 'create:fluid_pipe',
+	  	B: 'clanginghowl:blaze_burner',
+	  	C: 'clanginghowl:blaze_fuel_cylinder',
+		S: 'immersiveengineering:ingot_steel'
+  	})
+
+	event.shaped(Item.of('kubejs:adilette', '{AttributeModifiers:[{Amount:5,AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;-1921186012,-1080931508,-1909593174,-120252776]}]}').enchant('minecraft:bane_of_arthropods', 6).enchant('minecraft:knockback', 2), [
+		'   ',
+	  	' R ',
+	  	'RRR'  
+	  	],{
+	  	R: 'thermal:cured_rubber'
+  	})
+
+	event.remove({output: 'create:brass_hand'})
+	event.shaped('create:brass_hand', [
+		' G ',
+	  	'GGG',
+	  	' A '  
+	  	],{
+	  	A: 'create:andesite_alloy',
+	  	G: 'create:golden_sheet'
+  	})
+
+	event.remove({output: 'alexscaves:frostmint'})
+	event.shaped('alexscaves:frostmint', [
+		'PPP',
+	  	'PSP',
+	  	'PPP'  
+	  	],{
+	  	P: 'alexscaves:peppermint_powder',
+	  	S: 'minecraft:snow_block'
   	})
 
 })

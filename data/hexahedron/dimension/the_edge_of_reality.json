@@ -8,7 +8,7 @@
       "features": true,
       "layers": [
         {
-          "height": 100,
+          "height": 97,
           "block": "untagged_mobs:nothing"
         }
       ]

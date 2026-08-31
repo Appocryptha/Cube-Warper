@@ -1,23 +1,33 @@
 ServerEvents.recipes(event => {
+	
+	let infusing = (output, input, chemical, amount) => {
+    	event.remove({output: output})	
+		event.custom({"type":"mekanism:metallurgic_infusing",
+			"chemicalInput":{
+				"amount":amount,"tag":chemical},
+				"itemInput":{"ingredient":{"item":input}},
+				"output":{"item":output}}
+		)
+	}
 
-	//event.recipes.mekanismMetallurgicInfusing('thermal:electrum_ingot', 'thermal:silver_ingot', 'mekanism:gold', 160)
+	infusing("mekanism:basic_control_circuit", 
+		"enderio:pulsating_alloy_ingot", 
+		"mekanism:gold", 80
+	)
 
-	event.custom({"type":"mekanism:metallurgic_infusing",
-		"chemicalInput":{
-			"amount":160,
-			"tag":"mekanism:gold"
-		},
+	infusing("mekanism:advanced_control_circuit", 
+		"mekanism:alloy_infused", 
+		"mekanism:gold", 80
+	)
 
-		"itemInput":{
-			"ingredient":{
-				"item":"thermal:silver_ingot"
-			}
-		},
+	infusing("mekanism:elite_control_circuit", 
+		"mekanism:alloy_reinforced", 
+		"mekanism:gold", 80
+	)
 
-		"output":{
-			"item":"thermal:electrum_ingot"
-		}
-	})
-
+	infusing("mekanism:ultimate_control_circuit", 
+		"mekanism:alloy_atomic", 
+		"mekanism:gold", 80
+	)
 
 })

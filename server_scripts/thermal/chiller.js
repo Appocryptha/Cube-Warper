@@ -31,8 +31,15 @@ ServerEvents.recipes(event => {
 	event.remove({output: 'clanginghowl:cryogenic_fuel'})
 	chiller(
 		"minecraft:water",
-		"alexscaves:peppermint_powder",
+		"alexscaves:frostmint",
 		"clanginghowl:cryogenic_fuel",
+	)
+
+	event.remove({output: 'immersiveengineering:plate_duroplast'})
+	chiller(
+		"immersiveengineering:phenolic_resin",
+		"immersiveengineering:mold_plate",
+		"immersiveengineering:plate_duroplast",
 	)
 
 })

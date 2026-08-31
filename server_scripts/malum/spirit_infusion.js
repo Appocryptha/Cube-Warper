@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    let spirit_infusion = (output, count, input, extra_items, spirits) => {
+    let spirit_infusion = (output, output_count, input, input_count, extra_items, spirits) => {
 
         extra_items = extra_items || []
         spirits = spirits || []
@@ -16,12 +16,12 @@ ServerEvents.recipes(event => {
             extra_items: extra_items,
 
             input: {
-                count: 1,
+                count: input_count,
                 item: input
             },
 
             output: {
-                count: count,
+                count: output_count,
                 item: output
             },
 
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 
     spirit_infusion(
         "malum:spirit_crucible", 1,
-        "minecraft:furnace",
+        "minecraft:furnace", 1,
         [
             {
                 count: 8,
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
 
     spirit_infusion(
         "caverns_and_chasms:large_arrow", 4,
-        "immersiveposts:stick_silver",
+        "immersiveposts:stick_silver", 1, 
         [
             {
                 count: 16,
@@ -78,4 +78,160 @@ ServerEvents.recipes(event => {
             }
         ]
     )
+
+    spirit_infusion(
+        "alexscaves:burrowing_arrow", 4,
+        "enderio:infinity_rod", 1,
+        [
+            {
+                count: 1,
+                item: "alexscaves:sweet_tooth"
+            }
+        ],
+        [
+            {
+                type: "aerial",
+                count: 4
+            },
+            {
+                type: "earthen",
+                count: 4
+            }
+        ]
+    )
+
+    spirit_infusion(
+        "alexscaves:occult_gem", 1,
+        "botania:dragonstone", 1,
+        [
+            {
+                count: 16,
+                item: "kubejs:error_cube"
+            },
+            {
+                count: 1,
+                item: "alexscaves:pure_darkness"
+            },
+            {
+                count: 1,
+                item: "malum:living_flesh"
+            }
+        ],
+        [
+            {
+                type: "aerial",
+                count: 4
+            },
+            {
+                type: "arcane",
+                count: 4
+            },
+            {
+                type: "infernal",
+                count: 4
+            }
+        ]
+    )
+
+    spirit_infusion(
+        "alexscaves:forsaken_idol", 1,
+        "enderio:ensouled_chassis", 1,
+        [
+            {
+                count: 6,
+                item: "alexscaves:occult_gem"
+            },
+            {
+                count: 6,
+                item: "darkerdepths:forsaken_bronze_ingot"
+            },
+            {
+                count: 6,
+                item: "alexscaves:thornwood_log"
+            }
+        ],
+        [
+            {
+                type: "arcane",
+                count: 32
+            }
+        ]
+    )
+
+    spirit_infusion(
+        "kubejs:crimson_eye", 32,
+        "kubejs:crimson_eye", 16,
+        [
+            {
+                count: 16,
+                item: "malum:living_flesh"
+            }
+        ],
+        [
+            {
+                type: "infernal",
+                count: 4
+            }
+        ]
+    )
+
+    spirit_infusion(
+        "incision:congealed_acid", 32,
+        "incision:congealed_acid", 16,
+        [
+            {
+                count: 16,
+                item: "malum:living_flesh"
+            }
+        ],
+        [
+            {
+                type: "infernal",
+                count: 4
+            }
+        ]
+    )
+
+    spirit_infusion(
+        "kubejs:vector_operator_step5", 1,
+        "kubejs:vector_operator_step4", 1,
+        [
+            {
+                count: 4,
+                item: "botania:rune_water"
+            },
+            {
+                count: 4,
+                item: "botania:rune_earth"
+            },
+            {
+                count: 4,
+                item: "botania:rune_fire"
+            },
+            {
+                count: 4,
+                item: "botania:rune_air"
+            }
+        ],
+        [
+            {
+                type: "aqueous",
+                count: 4
+            },
+            {
+                type: "earthen",
+                count: 4
+            },
+            {
+                type: "infernal",
+                count: 4
+            },
+            {
+                type: "aerial",
+                count: 4
+            }
+        ]
+    )
+
+
 })

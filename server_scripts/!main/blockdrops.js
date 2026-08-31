@@ -45,6 +45,14 @@ LootJS.modifiers((event) => {
         )
         .dropExperience(3);
 
+    event.addBlockLootModifier("minecraft:gilded_blackstone")
+        .removeLoot(Ingredient.all)
+        .addWeightedLoot(
+            [9, 12],
+            ["minecraft:gold_nugget"]
+        )
+        .dropExperience(3);
+
     event.addBlockLootModifier("kubejs:coin_pile_gold")
         .removeLoot(Ingredient.all)
         .addWeightedLoot(

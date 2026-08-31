@@ -3,11 +3,13 @@ execute as @e[tag=outer_core] at @s run spreadplayers ~ ~ 100 100 false @e[tag=o
 execute as @e[tag=outer_core] at @s run tp @s ~ ~8.5 ~
 
 ### SUCCESS CHECK
-execute as @e[tag=outer_core,limit=1] at @s unless block ~ ~-9 ~ air run scoreboard players set @s unfold 1
+execute as @e[tag=outer_core,limit=1] at @s unless block ~ ~-9 ~ air if block ~ ~-7 ~ air run scoreboard players set @s unfold 1
 
 ### UNFOLD
-execute if score @e[tag=outer_core,limit=1] unfold matches 1 run function hexahedron:repositioning/unfold
+schedule function hexahedron:repositioning/unfold 3s
+#execute if score @e[tag=outer_core,limit=1] unfold matches 1 run function hexahedron:repositioning/unfold
 
 ### LOOP
-execute if score @e[tag=outer_core,limit=1] unfold matches 0 run function hexahedron:repositioning/standard_floor
+#execute if score @e[tag=outer_core,limit=1] unfold matches 0 run schedule function hexahedron:repositioning/standard_floor 1s
+say cycle
 

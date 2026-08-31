@@ -8,7 +8,10 @@ execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal set
 execute at @e[type=minecraft:marker,tag=core] at @s in hexahedron:the_edge_of_reality run summon marker ~ ~ ~ {NoGravity:1b,Tags:["outer_core"]}
 
 ### QUE REPOSITIONING
-schedule function hexahedron:repositioning/standard_floor 5s
+schedule function hexahedron:repositioning/none 5s
 
 ### START TELEPORTATION
 tag @e[type=minecraft:marker,tag=core] add running
+
+### PLACE STRUCTURE
+schedule function hexahedron:build_hexahedron/lost_hexahedron 7s

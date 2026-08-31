@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "kubejs:block/modular_reactor/modular_fission_reactor_frontback_off",
+    "north": "kubejs:block/modular_reactor/modular_fission_reactor_frontback_off",
+    "south": "kubejs:block/modular_reactor/modular_fission_reactor_frontback_off",
+    "east": "kubejs:block/modular_reactor/modular_fission_reactor_sides_off",
+    "west": "kubejs:block/modular_reactor/modular_fission_reactor_sides_off",
+    "up": "kubejs:block/modular_reactor/modular_fission_reactor_top_off",
+    "down": "kubejs:block/modular_reactor/modular_fission_reactor_bottom"
+  }
+}
