@@ -5,10 +5,10 @@
   "effects": {
     "grass_color": 11010048,
     "foliage_color": 11010048,
-    "ambient_sound": "undergarden:ambient.abyss",
+    "ambient_sound": "alexscaves:forlorn_hollows_ambience",
     "additions_sound": {
-      "sound": "undergarden:ambient.abyss_addition",
-      "tick_chance": 0.01
+      "sound": "alexscaves:forlorn_hollows_ambience_mood",
+      "tick_chance": 0.001
     },
     "sky_color": 3938842,
     "fog_color": 3873563,

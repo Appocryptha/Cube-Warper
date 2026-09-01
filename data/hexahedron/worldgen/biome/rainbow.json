@@ -3,6 +3,11 @@
   "downfall": 0.4,
   "has_precipitation": false,
   "effects": {
+    "ambient_sound": "endergetic:ambient.poise_forest.loop",
+    "additions_sound": {
+      "sound": "alexscaves:forlorn_hollows_ambience_mood",
+      "tick_chance": 0.001
+    },
     "grass_color": 6553382,
     "sky_color": 63487,
     "fog_color": 9697535,

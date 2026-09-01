@@ -1,5 +1,5 @@
 {
-  "type": "hexahedron:sunless_noon",
+  "type": "hexahedron:end_dark",
   "generator": {
     "type": "minecraft:noise",
     "settings": "hexahedron:magnetic_caves",

@@ -17,6 +17,7 @@ ServerEvents.recipes(event => {
         event.remove({id: 'mechanism:sawing/torch'})
         event.remove({id: 'tconstruct:smeltery/melting/metal/molten_debris/ore'})
         event.remove({id: 'tconstruct:smeltery/melting/metal/netherite/lodestone'})
+        event.remove({output: 'alexscaves:nuclear_bomb'})
 
         event.remove({id: `mekanism:infusion_conversion/carbon/from_coal`})
         event.remove({id: `mekanism:infusion_conversion/carbon/from_charcoal`})

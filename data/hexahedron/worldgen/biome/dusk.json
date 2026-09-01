@@ -3,7 +3,11 @@
   "downfall": 0,
   "has_precipitation": false,
   "effects": {
-    "ambient_sound": "ambientsounds:weather.storm-close",
+    "ambient_sound": "ambientsounds:weather.rain1",
+    "additions_sound": {
+      "sound": "ambientsounds:weather.storm-close",
+      "tick_chance": 0.1
+    },
     "particle": {
       "options": {
         "type": "particlerain:rain"

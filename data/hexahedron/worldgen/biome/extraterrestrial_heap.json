@@ -7,7 +7,11 @@
     "fog_color": 7804454,
     "water_color": 4462616,
     "water_fog_color": 3421274,
-    "ambient_sound": "minecraft:ambient.crimson_forest.loop",
+    "ambient_sound": "alexscaves:forlorn_hollows_ambience",
+    "additions_sound": {
+      "sound": "alexscaves:forlorn_hollows_ambience_mood",
+      "tick_chance": 0.001
+    },
     "particle": {
       "options": {
         "type": "minecraft:crimson_spore"

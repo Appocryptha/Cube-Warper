@@ -29,7 +29,7 @@ ItemEvents.tooltip(event => {
   })
 
   event.addAdvanced('alexscaves:frostmint', (item, advanced, text) => {
-    text.add(1, Text.light_blue('Will not be consumed when used in the Chiller'))  
+    text.add(1, Text.blue('Will not be consumed when used in the Chiller'))  
   })
 
 //Final Vectors

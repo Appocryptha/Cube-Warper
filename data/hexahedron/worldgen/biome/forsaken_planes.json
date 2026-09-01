@@ -3,13 +3,17 @@
   "downfall": 0,
   "has_precipitation": false,
   "effects": {
+    "ambient_sound": "undergarden:ambient.sea",
+    "additions_sound": {
+      "sound": "undergarden:ambient.sea_addition",
+      "tick_chance": 0.001
+    },
     "sky_color": 0,
     "fog_color": 11765589,
     "water_color": 11765589,
     "grass_color": 11765589,
     "water_fog_color": 1972240,
     "foliage_color": 11765589,
-    "ambient_sound": "ambientsounds:suspense.pale-garden",
     "particle": {
       "options": {
         "type": "darkerdepths:molten_ash"

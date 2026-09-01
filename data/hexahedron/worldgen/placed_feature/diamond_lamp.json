@@ -3,7 +3,7 @@
     "placement": [
         {
             "type": "rarity_filter",
-            "chance": 8
+            "chance": 32
         },
         {
             "type": "count",

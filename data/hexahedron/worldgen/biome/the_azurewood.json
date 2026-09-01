@@ -3,12 +3,16 @@
   "downfall": 0,
   "has_precipitation": false,
   "effects": {
+    "ambient_sound": "infernalexp:ambient.glowstone_canyon.loop",
+    "additions_sound": {
+      "sound": "infernalexp:ambient.glowstone_canyon.mood",
+      "tick_chance": 0.001
+    },
     "sky_color": 16758836,
     "fog_color": 50175,
     "water_color": 64966,
     "grass_color": 6283263,
     "water_fog_color": 3852,
-    "ambient_sound": "ambientsounds:suspense.pale-garden",
     "particle": {
       "options": {
         "type": "firefly_bush_backport:firefly"

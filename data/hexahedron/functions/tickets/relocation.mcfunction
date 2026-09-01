@@ -34,10 +34,10 @@
 
 
 ### FINAL
-execute as @e[type=minecraft:marker,tag=outer_core] at @s run fill ~8 ~8 ~8 ~-8 ~-8 ~-8 kubejs:hexahedron_filling
-execute as @e[type=minecraft:marker,tag=outer_core] at @s run fill ~6 ~6 ~6 ~-6 ~-6 ~-6 light
-execute as @e[type=minecraft:marker,tag=outer_core] at @s positioned ~ ~-5 ~ run function hexahedron:build_hexahedron/17x17
-
-execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal nbt {isVisible:true}
-execute as @e[type=immersive_portals:portal,name=!main_cube] at @s run portal nbt {isVisible:true}
+#execute as @e[type=minecraft:marker,tag=outer_core] at @s run fill ~8 ~8 ~8 ~-8 ~-8 ~-8 kubejs:hexahedron_filling
+#execute as @e[type=minecraft:marker,tag=outer_core] at @s run fill ~6 ~6 ~6 ~-6 ~-6 ~-6 light
+#execute as @e[type=minecraft:marker,tag=outer_core] at @s positioned ~ ~-5 ~ run function hexahedron:build_hexahedron/17x17
+#
+#execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal nbt {isVisible:true}
+#execute as @e[type=immersive_portals:portal,name=!main_cube] at @s run portal nbt {isVisible:true}
 function hexahedron:tickets/cleanup

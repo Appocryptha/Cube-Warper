@@ -3,6 +3,11 @@
   "downfall": 0,
   "has_precipitation": false,
   "effects": {
+    "ambient_sound": "undergarden:ambient.sea",
+    "additions_sound": {
+      "sound": "undergarden:ambient.bog_addition",
+      "tick_chance": 0.01
+    },
     "sky_color": 61183,
     "fog_color": 16772799,
     "water_color": 64966,
