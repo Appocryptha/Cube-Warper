@@ -4,6 +4,8 @@ ServerEvents.recipes(event => {
     event.remove({type: 'createdieselgenerators:hammering'})
     //event.remove({type: 'createdieselgenerators:wire_cutting'})
 
+    event.recipes.create.pressing('immersiveengineering:plate_steel', 'immersiveengineering:ingot_steel')
+    event.recipes.create.pressing('immersiveengineering:plate_aluminum', 'immersiveengineering:ingot_aluminum')
 
 	let press = (die, input, output) => {
         event.recipes.thermal.press(output, [
@@ -23,6 +25,7 @@ ServerEvents.recipes(event => {
 
             let output_plate = `thermal:${material}_plate`
             if (Item.exists(output_plate)) {
+                event.recipes.create.pressing(`thermal:${material}_plate`, input)
                 press(  'immersiveengineering:mold_plate',          
                          input,                  
                         `thermal:${material}_plate`

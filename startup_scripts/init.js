@@ -117,6 +117,18 @@ let rotatable_side = (id, name, configure) => {
 		.soundType("netherite_block")
 	})
 
+	event.create(`vector_operator_empty`)
+		.displayName(`§fEmpty Vector Operator`)
+		.fullBlock(false)
+		.material("lantern")
+		.soundType("lantern")
+		.lightLevel(1.0)
+		.box(4, 0, 4, 12, 10, 12)
+		.renderType('translucent')
+		.waterlogged()
+		.hardness(0.0)
+		.noDrops()
+
 let operator = (id, name, color) => {
 	event.create(`vector_operator_${id}`)
 		.displayName(`${color}${name} Vector Operator`)
@@ -130,7 +142,6 @@ let operator = (id, name, color) => {
 		.hardness(0.0)
 	}
 
-	operator("empty", 		"Empty", 		'§f')
 	operator("basic", 		"Old", 			'§f§l')
 	operator("charged", 	"Charged", 		'§e§l')
 	operator("fluix", 		"Fluix", 		'§5§l')

@@ -1,7 +1,7 @@
 
 let transmutation = (input, output) => {
     BlockEvents.rightClicked(input, event => {
-        if (event.hand != "MAIN_HAND") return
+	    if (event.item.id != 'malum:warp_flux') return
 
         event.server.runCommandSilent(
             `execute in ${event.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} run function hexahedron:effects/transmutation`

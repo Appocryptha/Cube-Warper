@@ -14,5 +14,13 @@ ServerEvents.recipes(event => {
 	event.shapeless('immersiveengineering:blastbrick', ['4x kubejs:guano_blast_brick'])
 
 	event.shapeless('kubejs:block_shiny_ingot', ['9x kubejs:shiny_ingot'])
+	event.shapeless('9x kubejs:shiny_ingot', ['kubejs:block_shiny_ingot'])
+
+	event.remove({output: 'tconstruct:crafting_station'})
+	event.shapeless('minecraft:crafting_table', ['tconstruct:crafting_station'])
+	event.shapeless('tconstruct:crafting_station', ['minecraft:crafting_table'])
+
+	event.remove({output: 'exposure_polaroid:instant_color_slide'})
+	event.shapeless('exposure_polaroid:instant_color_slide', ['minecraft:paper'])
 
 })

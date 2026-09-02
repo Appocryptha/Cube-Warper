@@ -90,3 +90,9 @@ BlockEvents.rightClicked('kubejs:eye_breaker', event => {
 		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} run function hexahedron:machines/eye_breaker`)
 
 })
+
+BlockEvents.leftClicked('untagged_mobs:nothing', event => {
+
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} run fill ~ ~ ~ ~ ~ ~ air destroy`)
+
+})

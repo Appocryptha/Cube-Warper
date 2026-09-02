@@ -5,4 +5,6 @@ ServerEvents.recipes(event => {
 
 	event.recipes.thermal.pulverizer(['ae2:certus_quartz_dust'], 'ae2:certus_quartz_crystal')
 
+	event.recipes.thermal.pulverizer(['minecraft:redstone'], 'regions_unexplored:pointed_redstone')
+
 })

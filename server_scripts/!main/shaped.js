@@ -653,15 +653,6 @@ ServerEvents.recipes(event => {
 	  	C: 'minecraft:copper_ingot'
   	})
 
-	event.shaped('4x create:andesite_alloy', [
-		'IS ',
-	  	'SI ',
-	  	'   '  
-	  	],{
-	  	I: 'minecraft:iron_nugget',
-	  	S: 'tconstruct:seared_cobble'
-  	})
-
 	event.remove({output: 'create:hand_crank'})
 	event.shaped('create:hand_crank', [
 		'  L',
@@ -1033,6 +1024,25 @@ ServerEvents.recipes(event => {
 	  	],{
 	  	P: 'alexscaves:peppermint_powder',
 	  	S: 'minecraft:snow_block'
+  	})
+
+	event.remove({output: 'exposure:camera_stand'})
+	event.shaped('exposure:camera_stand', [
+		' S ',
+	  	'S S',
+	  	'S S'  
+	  	],{
+	  	S: 'minecraft:stick'
+  	})
+
+	event.remove({output: 'exposure_polaroid:instant_camera'})
+	event.shaped('exposure_polaroid:instant_camera', [
+		' P ',
+	  	'IGI',
+	  	'III'  
+	  	],{
+	  	I: 'minecraft:iron_ingot',
+	  	P: 'thermal:iron_plate'
   	})
 
 })

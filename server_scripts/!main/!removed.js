@@ -19,6 +19,11 @@ ServerEvents.recipes(event => {
         event.remove({id: 'tconstruct:smeltery/melting/metal/netherite/lodestone'})
         event.remove({output: 'alexscaves:nuclear_bomb'})
 
+        event.remove({id: 'ae2:crank'})
+        event.remove({id: 'supplementaries:crank'})
+        event.remove({id: 'immersiveengineering:alloybrick'})
+        event.remove({id: 'tiab:time_in_a_bottle'})
+
         event.remove({id: `mekanism:infusion_conversion/carbon/from_coal`})
         event.remove({id: `mekanism:infusion_conversion/carbon/from_charcoal`})
         event.remove({id: `mekanism:infusion_conversion/carbon/from_coal_block`})

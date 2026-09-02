@@ -43,4 +43,35 @@ ServerEvents.recipes(event => {
 		"immersiveengineering:electron_tube"
 	)
 
+	event.custom({
+		"type": "forestry:fabricator",
+		"molten": {
+		  "Amount": 500,
+		  "FluidName": "forestry:glass"
+		},
+		"plan": [],
+		"recipe": {
+		  "type": "minecraft:crafting_shaped",
+		  "category": "misc",
+		  "key": {
+		    "#": {
+		      "item": "kubejs:energized_redstone"
+		    },
+		    "X": {
+		      "item": "thermal:silver_ingot"
+		    }
+		  },
+		  "pattern": [
+		    "   ",
+		    " # ",
+		    "XXX"
+		  ],
+		  "result": {
+		    "count": 2,
+		    "item": "kubejs:vector_operator_empty"
+		  },
+		  "show_notification": true
+		}
+	})
+
 })

@@ -4,8 +4,8 @@ ServerEvents.recipes(event => {
 	event.remove({id: 'create:mixing/andesite_alloy'})
 	event.remove({id: 'create:mixing/andesite_alloy_from_zinc'})
 	event.recipes.createMixing('8x create:andesite_alloy', [
-	  	'2x tconstruct:seared_cobble',
-	  	'2x minecraft:iron_nugget'
+	  	'2x #tconstruct:seared_blocks',
+	  	'2x minecraft:iron_ingot'
 	])//.superheated()
 
 	event.remove({id: 'malum:spirit_infusion/alchemical_calx'})
@@ -21,6 +21,12 @@ ServerEvents.recipes(event => {
 	event.recipes.createMixing([Fluid.of('kubejs:solder_fluid', 270)], [
 		Fluid.of('tconstruct:molten_tin', 180),
 		Fluid.of('tconstruct:molten_lead', 90)
+	]).heated()
+
+	event.remove({output: 'create:brass_ingot'})
+	event.recipes.createMixing('2x create:brass_ingot', [
+		'minecraft:copper_ingot',
+		'create:zinc_ingot'
 	]).heated()
 
 	event.remove({id: 'forestry:still/ethanol'})

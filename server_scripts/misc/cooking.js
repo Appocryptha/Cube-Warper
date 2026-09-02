@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    event.remove({output: 'alexscaves:serene_salad'})
+    event.remove({output: 'miners_delight:weird_caviar'})
 	event.recipes.farmersdelight.cooking(
 	    [
 			"undergarden:droopvine_item",

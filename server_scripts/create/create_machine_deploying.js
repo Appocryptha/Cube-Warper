@@ -4,6 +4,15 @@ ServerEvents.recipes(event => {
 
 	event.replaceInput({mod: 'create'}, 'minecraft:dried_kelp', 'thermal:cured_rubber')
 
+	event.remove({output: 'create:andesite_casing'})
+	event.custom({"type": "create:item_application",
+		"ingredients":[
+			{"tag": "minecraft:planks"},
+			{"item": "create:andesite_alloy"}],
+		"results": [
+			{"item": "create:andesite_casing"}]
+	})
+
 	event.remove({output: 'create:copper_casing'})
 	event.custom({"type": "create:item_application",
 		"ingredients":[

@@ -21,6 +21,10 @@ ServerEvents.recipes(event => {
 			[Input]
 		)
 	}
+
+	dimensional_mining("create:asurine", 
+		"create:raw_zinc", 1.0
+	)
 	
 	dimensional_mining("regions_unexplored:chalk", 
 		"immersiveengineering:raw_aluminum", 0.2
@@ -51,7 +55,7 @@ ServerEvents.recipes(event => {
     event.recipes.createCrushing(['minecraft:netherrack', Item.of('thermal:sulfur_dust').withChance(0.1), Item.of('tconstruct:cobalt_nugget').withChance(0.01)], ['biomesoplenty:brimstone'])
 
 	dimensional_mining("alexscaves:limestone", 
-		"create:raw_zinc", 0.1
+		"thermal:raw_tin", 0.1
 	)
 
 	dimensional_mining("darkerdepths:darkslate", 
