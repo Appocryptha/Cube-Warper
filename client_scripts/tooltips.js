@@ -28,6 +28,10 @@ ItemEvents.tooltip(event => {
     text.add(1, Text.red('Divides by 0').bold(true))  
   })
 
+  event.addAdvanced('kubejs:vector_operator_infinite', (item, advanced, text) => {
+    text.add(1, Text.red('Collapses all destinations into one').bold(true))  
+  })
+
   event.addAdvanced('alexscaves:frostmint', (item, advanced, text) => {
     text.add(1, Text.blue('Will not be consumed when used in the Chiller'))  
   })
@@ -44,7 +48,7 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('kubejs:vector_operator_step9', (item, advanced, text) => {text.add(1, Text.gray('Step 9 -> Combine with 8 Modular Reactors in the Ritual Cricle').bold(true))  })
   event.addAdvanced('kubejs:vector_operator_step10', (item, advanced, text) => {text.add(1, Text.gray('Step 10 -> Combine with 8 Forsaken Idols in the Ritual Cricle').bold(true))  })
   event.addAdvanced('kubejs:vector_operator_step11', (item, advanced, text) => {text.add(1, Text.gray('Step 11 -> Combine with 8 Super Computers in the Ritual Cricle').bold(true))  })
-  event.addAdvanced('kubejs:vector_operator_step12', (item, advanced, text) => {text.add(1, Text.gray('Step 12 -> Place this back on the Vector Tuner within 15 minutes').bold(true))  })
+  event.addAdvanced('kubejs:vector_operator_step12', (item, advanced, text) => {text.add(1, Text.gray('Step 12 -> Place this back on the Vector Tuner within 10 minutes').bold(true))  })
 
 
   //(1) +1 → total 3  → +3 → [1, 2, 3]

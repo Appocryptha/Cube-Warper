@@ -55,6 +55,25 @@
             {
                 "type": "condition",
                 "if_true": {
+                    "type": "vertical_gradient",
+                    "random_name": "minecraft:bedrock_floor",
+                    "true_at_and_below": {
+                        "above_bottom": 0
+                    },
+                    "false_at_and_above": {
+                        "above_bottom": 5
+                    }
+                },
+                "then_run": {
+                    "type": "block",
+                    "result_state": {
+                        "Name": "minecraft:bedrock"
+                    }
+                }
+            },
+            {
+                "type": "condition",
+                "if_true": {
                       "type": "stone_depth",
                       "surface_type": "floor",
                       "offset": 2,

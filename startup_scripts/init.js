@@ -63,7 +63,7 @@ let rotatable_side = (id, name, configure) => {
 		.unbreakable()
 	})
 
-	rotatable("warping_disc_drive", "Warping Disc Drive", block => {block
+	rotatable("warping_disc_drive", "Warping Exhaust", block => {block
 		.fullBlock(true)
 		.material("netherite_block")
 		.soundType("netherite_block")
@@ -195,7 +195,7 @@ let operator = (id, name, color) => {
 		.lightLevel(1.0)
 
 	event.create('vector_operator_infinite')
-		.displayName('§l§cI§6n§ef§ai§bn§di§5t§cy §r§f§lVector Operator')
+		.displayName('§f§lInfinity Vector Operator')
 		.fullBlock(false)
 		.material("shroomlight")
 		.soundType("shroomlight")
@@ -534,6 +534,10 @@ StartupEvents.registry('item', event => {
 	event.create('circuitboard').displayName('High-Tech Circuit Board')
 	event.create('peeking_circuit').displayName('Peeking Circuit')
 	event.create('seeking_circuit').displayName('Seeking Circuit')
+	event.create('grains_of_infinity').displayName('Grains of Infinity').modelJson({parent: 'enderio:item/grains_of_infinity'})
+
+	event.create('party_popper').displayName('Party Popper')
+	event.create('tiny_party_popper').displayName('Tiny Confetti Popper')
 
 	event.create('adilette').displayName('Adilette')
 

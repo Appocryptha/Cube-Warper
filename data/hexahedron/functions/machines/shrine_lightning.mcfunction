@@ -1,2 +1,2 @@
-execute if block ~ ~26 ~ #caverns_and_chasms:copper_golem_summon_blocks if block ~ ~21 ~ immersiveengineering:coil_lv positioned ~ ~28 ~ run function hexahedron:machines/shrine_lightning_sequence
+execute if block ~ ~26 ~ #caverns_and_chasms:copper_golem_summon_blocks if block ~ ~25 ~ immersiveengineering:coil_lv if block ~ ~24 ~ immersiveengineering:coil_lv if block ~ ~23 ~ immersiveengineering:coil_lv if block ~ ~22 ~ immersiveengineering:coil_lv if block ~ ~21 ~ immersiveengineering:coil_lv if block ~ ~20 ~ immersiveengineering:capacitor_lv{energy:100000} positioned ~ ~28 ~ run function hexahedron:machines/shrine_lightning_sequence
 

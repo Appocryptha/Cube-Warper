@@ -29,10 +29,31 @@ ServerEvents.recipes(event => {
 		})
 	}
 
-	smelter("create:andesite_alloy", 4, 
-		"tconstruct:seared_stone", 1, 
-		"minecraft:iron_ingot", 1
-	)
+	event.custom({
+		"type": "forestry:smelter",
+		"inputs": [
+		  {
+		    "count": 1,
+		    "ingredient": {
+		      "tag": "tconstruct:seared_blocks"
+		    }
+		  },
+		  {
+		    "count": 1,
+		    "ingredient": {
+		      "item": "minecraft:iron_ingot"
+		    }
+		  }
+		],
+		"output": {
+		  "count": 4,
+		  "ingredient": {
+		    "item": "create:andesite_alloy"
+		  }
+		},
+		"processingTime": 40,
+		"temperature": 0
+	})
 
 	smelter("thermal:electrum_ingot", 2, 
 		"minecraft:gold_ingot", 1, 

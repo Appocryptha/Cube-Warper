@@ -16,7 +16,7 @@ execute as @e[tag=active_ritual,scores={time=10}] at @s run playsound malum:ritu
 execute as @e[tag=active_ritual,scores={time=10}] at @s run playsound untagged_mobs:misc.mutate master @a ~ ~ ~ 1 0
 
 ## RECIPES
-execute as @e[tag=active_ritual,scores={time=10}] at @s if block ~ ~ ~ kubejs:vector_operator_empty if score @s super_computer matches 2 if score @s modular_reactor matches 3 if score @s forsaken_idol matches 2 if score @s eye matches 1 run setblock ~ ~ ~ kubejs:vector_operator_eye
+execute as @e[tag=active_ritual,scores={time=10}] at @s if block ~ ~ ~ kubejs:vector_operator_empty if score @s super_computer matches 3 if score @s modular_reactor matches 2 if score @s forsaken_idol matches 2 if score @s forsaken_idol matches 1 run setblock ~ ~ ~ kubejs:vector_operator_eye
 execute as @e[tag=active_ritual,scores={time=10}] at @s if block ~ ~ ~ kubejs:crimson_eye if score @s nothing matches 2 if score @s null matches 2 if score @s salt matches 4 run function hexahedron:effects/pure_darkness_start
 execute as @e[tag=active_ritual,scores={time=10}] at @s if block ~ ~ ~ kubejs:recaptured_consciousness_empty if score @s eye matches 1 if score @s computer matches 4 if score @s vector matches 3 run setblock ~ ~ ~ kubejs:recaptured_consciousness
 execute as @e[tag=active_ritual,scores={time=10}] at @s if block ~ ~ ~ enderio:ensouled_chassis if score @s nothing matches 8 run function hexahedron:effects/missing_start

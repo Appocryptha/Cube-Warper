@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
 		event.recipes.botania.runic_altar(
 		{
 			item:rune,
-			count:4
+			count:2
 		},
 			[
 				petal1, 

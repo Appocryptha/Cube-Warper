@@ -40,10 +40,10 @@ execute as @e[type=marker,tag=core,scores={dimension_seed=96}] run function hexa
 execute as @e[type=marker,tag=core,scores={dimension_seed=128}] run function hexahedron:tickets/ticket_alpha_islands
 
 # PROCESSOR 7
-execute as @e[type=marker,tag=core,scores={dimension_seed=999}] run function hexahedron:tickets/ticket_the_edge_of_reality
+execute as @e[type=marker,tag=core,scores={dimension_seed=999..}] run function hexahedron:tickets/ticket_the_edge_of_reality
 
 ### END
-execute as @e[type=marker,tag=core,scores={dimension_seed=-999}] run function hexahedron:tickets/ticket_overworld
+execute as @e[type=marker,tag=core,scores={dimension_seed=..-999}] run function hexahedron:tickets/ticket_overworld
 
 ##(1) +1 → total 3 → +3 → [1, 2, 3]
 ##(2) *3 → total 6 → +3 → [4, 6, 9]

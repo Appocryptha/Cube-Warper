@@ -5,6 +5,11 @@ ServerEvents.recipes(event => {
 		'ae2:terminal'       
 	)
 
+	event.replaceInput({input: 'ae2:quartz_fiber' }, 
+		'ae2:quartz_fiber', 
+		'ae2:fluix_smart_cable'       
+	)
+
 	event.replaceInput({input: 'ae2:fluix_glass_cable' }, 
 		'ae2:fluix_glass_cable', 
 		'ae2:fluix_smart_cable'       
@@ -59,12 +64,11 @@ ServerEvents.recipes(event => {
 
 	event.remove({output: 'aeinfinitybooster:dimension_card'})
 	event.shaped('aeinfinitybooster:dimension_card', [
-		'WC ',
+		'EC ',
 	  	'EQ ',
 	  	'EF '  
 	  	],{
 	  	Q: 'ae2wtlib:quantum_bridge_card',
-	  	W: 'clanginghowl:blaze_burner',
 	  	C: 'kubejs:chocolate_chip',
 		E: 'create:electron_tube',
 		F: 'alexscaves:fissile_core'
@@ -73,13 +77,49 @@ ServerEvents.recipes(event => {
 	event.remove({output: 'ae2:wireless_access_point'})
 	event.shaped('ae2:wireless_access_point', [
 		' R ',
-	  	'IWI ',
-	  	'ICI '  
+	  	'IWI',
+	  	'ICI'  
 	  	],{
 	  	R: 'ae2:wireless_receiver',
 	  	W: 'aewireless:wireless_transceiver',
 	  	C: 'kubejs:chocolate_chip',
 		I: 'minecraft:iron_ingot'
   	})
+
+	event.remove({output: 'ae2:import_bus'})
+	event.shaped('ae2:import_bus', [
+		' C ',
+	  	' F ',
+	  	'   '  
+	  	],{
+	  	C: 'ae2:annihilation_core',
+	  	F: 'ae2:fluix_smart_cable'
+  	})
+
+	event.remove({output: 'ae2:export_bus'})
+	event.shaped('ae2:export_bus', [
+		' C ',
+	  	' F ',
+	  	'   '  
+	  	],{
+	  	C: 'ae2:formation_core',
+	  	F: 'ae2:fluix_smart_cable'
+  	})
+
+	event.remove({output: 'ae2:storage_bus'})
+	event.shaped('ae2:storage_bus', [
+		' C ',
+	  	' I ',
+	  	' E '  
+	  	],{
+	  	C: 'kubejs:chocolate_chip',
+	  	I: 'ae2:interface',
+	  	E: 'ae2:engineering_processor'
+  	})
+
+	event.replaceInput({output: 'ae2:wireless_terminal' }, 							'ae2:dense_energy_cell', 'kubejs:chocolate_chip')
+	event.replaceInput({output: 'ae2:wireless_crafting_terminal' }, 				'ae2:dense_energy_cell', 'kubejs:chocolate_chip')
+	event.replaceInput({output: 'ae2wtlib:wireless_pattern_encoding_terminal' }, 	'ae2:dense_energy_cell', 'kubejs:chocolate_chip')
+	event.replaceInput({output: 'ae2wtlib:wireless_pattern_access_terminal' }, 		'ae2:dense_energy_cell', 'kubejs:chocolate_chip')
 
 })

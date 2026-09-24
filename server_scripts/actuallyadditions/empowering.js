@@ -31,14 +31,14 @@ ServerEvents.recipes(event => {
         })
 	}
 	
-    event.remove({id: 'mekanism:metallurgic_infusing/alloy/infused'})
+  event.remove({id: 'mekanism:metallurgic_infusing/alloy/infused'})
 	empowering(
         "caverns_and_chasms:zirconia",
 
-        "kubejs:energized_redstone",
-        "kubejs:energized_redstone",
-		"actuallyadditions:restonia_crystal",
-		"actuallyadditions:restonia_crystal",
+        "appflux:charged_redstone",
+        "actuallyadditions:restonia_crystal",
+		    "appflux:charged_redstone",
+		    "actuallyadditions:restonia_crystal",
 
         "mekanism:alloy_infused",
 		5000, 50, 16723994

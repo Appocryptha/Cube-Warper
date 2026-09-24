@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 	)
 
 	dimensional_mining("undergarden:depthrock", 
-		"thermal:diamond_dust", 0.05
+		"minecraft:diamond", 0.011
 	)
 
 	event.remove({id: 'thermal:machines/pulverizer/pulverizer_red_sandstone'})
@@ -44,9 +44,21 @@ ServerEvents.recipes(event => {
 		"ae2:silicon", 0.2
 	)
 
-	dimensional_mining("alexscaves:radrock", 
-		"alexscaves:uranium_shard", 0.2
+	dimensional_mining("clanginghowl:extraterrestrial_stone", 
+		"thermal:raw_tin", 0.1
 	)
+
+	dimensional_mining("alexscaves:radrock", 
+		"alexscaves:uranium_shard", 0.5
+	)
+
+	event.shaped('alexscaves:uranium', [
+		'UUU',
+	  	'UUU',
+	  	'UUU'  
+	  	],{
+	  	U: 'alexscaves:uranium_shard'
+  	})
 
 	dimensional_mining("undergarden:shiverstone", 
 		"mekanism:nugget_osmium", 0.1
@@ -55,11 +67,7 @@ ServerEvents.recipes(event => {
     event.recipes.createCrushing(['minecraft:netherrack', Item.of('thermal:sulfur_dust').withChance(0.1), Item.of('tconstruct:cobalt_nugget').withChance(0.01)], ['biomesoplenty:brimstone'])
 
 	dimensional_mining("alexscaves:limestone", 
-		"thermal:raw_tin", 0.1
-	)
-
-	dimensional_mining("darkerdepths:darkslate", 
-		"thermal:raw_nickel", 0.1
+		"minecraft:bone_meal", 0.1
 	)
 
 	dimensional_mining("darkerdepths:duskrock", 
@@ -76,5 +84,21 @@ ServerEvents.recipes(event => {
 	)
 
 	event.remove({output: 'regions_unexplored:raw_redstone_block'})
+
+
+    event.remove({output: "darkerdepths:darkslate"})
+	event.recipes.thermal.pulverizer([
+		Item.of("thermal:raw_nickel").withChance(0.1),
+		Item.of("malum:raw_soulstone").withChance(0.01)
+	], 
+		"darkerdepths:darkslate"
+	)
+
+	event.recipes.createCrushing([
+		Item.of("thermal:raw_nickel").withChance(0.1),
+		Item.of("malum:raw_soulstone").withChance(0.011)
+	], 
+		["darkerdepths:darkslate"]
+	)
 
 })

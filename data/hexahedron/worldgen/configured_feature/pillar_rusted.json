@@ -1,0 +1,68 @@
+{
+    "type": "minecraft:block_column",
+    "config": {
+        "direction": "up",
+        "allowed_placement": {
+            "type": "minecraft:true"
+        },
+        "prioritize_tip": false,
+        "layers": [
+            {
+                "height": 1,
+                "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                    "weight": 1,
+                    "data": {
+                        "Name": "untagged_mobs:fully_rusted_heavy_metal_grate"}
+                    }
+                ]
+                }
+            },
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 1,
+                            "max_inclusive": 2
+                        }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "untagged_mobs:fully_rusted_heavy_metal_block"
+                    }
+                }
+            },
+            {
+                "height": {
+                    "type": "minecraft:uniform",
+                        "value": {
+                            "min_inclusive": 0,
+                            "max_inclusive": 2
+                        }
+                },
+                "provider": {
+                    "type": "simple_state_provider",
+                    "state": {
+                        "Name": "untagged_mobs:very_rusted_heavy_metal_block"
+                    }
+                }
+            },
+            {
+                "height": 1,
+                "provider": {
+                "type": "minecraft:weighted_state_provider",
+                "entries": [
+                    {
+                    "weight": 1,
+                    "data": {
+                        "Name": "untagged_mobs:very_rusted_heavy_metal_grate"}
+                    }
+                ]
+                }
+            }
+        ]
+    }
+}

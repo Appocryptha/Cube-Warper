@@ -6,6 +6,11 @@ ServerEvents.recipes(event => {
         event.remove({type: 'botania:elven_trade'})
         event.remove({type: 'tconstruct:alloy'})
 
+        //event.remove({output: 'forestry:bee_combs'})
+        //event.remove({input: /^forestry:.*bee.*/})
+        //event.remove({output: /^forestry:.*comb.*/})
+
+        event.remove({output: 'appflux:energy_processor_press'})
         event.remove({id: 'thermal:lightning_charge'})
         event.remove({id: 'caverns_and_chasms:necromium_ingot'})
         event.remove({id: 'create_alexcaves_compat:splashing/guano_block'})
@@ -18,11 +23,24 @@ ServerEvents.recipes(event => {
         event.remove({id: 'tconstruct:smeltery/melting/metal/molten_debris/ore'})
         event.remove({id: 'tconstruct:smeltery/melting/metal/netherite/lodestone'})
         event.remove({output: 'alexscaves:nuclear_bomb'})
+        event.remove({output: 'ae2:crank'})
+        event.remove({output: 'thermal:lightning_charge'})
 
         event.remove({id: 'ae2:crank'})
         event.remove({id: 'supplementaries:crank'})
         event.remove({id: 'immersiveengineering:alloybrick'})
         event.remove({id: 'tiab:time_in_a_bottle'})
+
+        event.remove({id: 'immersiveposts:has_gold_rod'})
+        event.remove({id: 'immersiveposts:has_iron_rod'})
+        event.remove({id: 'immersiveposts:has_copper_rod'})
+        event.remove({id: 'immersiveposts:has_aluminum_rod'})
+        event.remove({id: 'immersiveposts:has_lead_rod'})
+        event.remove({id: 'immersiveposts:has_silver_rod'})
+        event.remove({id: 'immersiveposts:has_electrum_rod'})
+        event.remove({id: 'immersiveposts:has_nickel_rod'})
+        event.remove({id: 'immersiveposts:has_constantan_rod'})
+        event.remove({id: 'immersiveposts:has_uranium_rod'})
 
         event.remove({id: `mekanism:infusion_conversion/carbon/from_coal`})
         event.remove({id: `mekanism:infusion_conversion/carbon/from_charcoal`})
@@ -41,6 +59,7 @@ ServerEvents.recipes(event => {
 
 
     //Removed and unlisted items
+        event.remove({output: 'untagged_mobs:alpha_core'})
         event.remove({output: 'alexscaves:depth_charge'})
         event.remove({output: 'malum:crude_scythe'})
         event.remove({output: 'malum:soul_stained_steel_scythe'})
@@ -68,7 +87,7 @@ ServerEvents.recipes(event => {
         impetus_nuke('uranium')
 
     //Changed
-    event.replaceInput({input:'clanginghowl:extraterrestrial_steel_plate'}, 'clanginghowl:extraterrestrial_steel_plate', 'immersiveengineering:plate_steel'
+        event.replaceInput({input:'clanginghowl:extraterrestrial_steel_plate'}, 'clanginghowl:extraterrestrial_steel_plate', 'immersiveengineering:plate_steel'
 
 )
 

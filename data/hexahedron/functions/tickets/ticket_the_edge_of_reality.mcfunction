@@ -15,3 +15,6 @@ tag @e[type=minecraft:marker,tag=core] add running
 
 ### PLACE STRUCTURE
 schedule function hexahedron:build_hexahedron/lost_hexahedron 7s
+
+### KEEP YOUR FRIENDS INSIDE THE VEHICLE AT ALL TIMES
+execute as @e[tag=core] at @s unless entity @a[limit=1,sort=nearest,distance=..50] run tp @a[limit=1] ~ ~-7 ~4

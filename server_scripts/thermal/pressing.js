@@ -10,13 +10,13 @@ ServerEvents.recipes(event => {
 
     event.remove({id: 'malum:spirit_infusion/alchemical_impetus'})
     event.remove({output: 'malum:alchemical_impetus'})
-    event.recipes.thermal.press(Item.of('malum:alchemical_impetus', '{Damage:400}'), [
+    event.recipes.thermal.press('malum:alchemical_impetus', [
         'malum:block_of_alchemical_calx'
     ])
 
 	event.remove({output: 'enderio:infinity_rod'})
     event.recipes.thermal.press('enderio:infinity_rod', [
-        '8x enderio:grains_of_infinity',
+        '8x kubejs:grains_of_infinity',
         'immersiveengineering:mold_rod'
     ])
 
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     ])
 
 	event.remove({output: 'caverns_and_chasms:diamond_lamp'})
-    event.recipes.thermal.pulverizer(['minecraft:diamond', '4x minecraft:glowstone_dust'], [
+    event.recipes.thermal.pulverizer(['minecraft:diamond'], [
         'caverns_and_chasms:diamond_lamp'
     ])
 

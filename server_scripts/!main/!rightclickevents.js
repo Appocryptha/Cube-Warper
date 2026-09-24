@@ -22,22 +22,9 @@ BlockEvents.rightClicked('kubejs:ancient_core', event => {
 
 	if (event.item.id == 'kubejs:vector_operator_infinite_empty') {
 		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} unless score @e[distance=..2,tag=ancient_redstone,limit=1,sort=nearest] redstone_cooldown matches 1.. run function hexahedron:machines/ancient_redstone`)
-		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} unless score @e[distance=..2,tag=ancient_redstone,limit=1,sort=nearest] redstone_cooldown matches ..0 run execute as @e[type=marker,tag=ancient_redstone] run title @a actionbar [
-  {"text":"This Ancient Redstone is recharging, wait ","bold":true,"color":"red"},
-  {"score":{"name":"@s","objective":"redstone_cooldown"},"bold":true,"color":"red"},
-  {"text":" more seconds...","bold":true,"color":"red"}
-]`)
 		event.item.count--
 		event.player.giveInHand('kubejs:vector_operator_step2')	
 	}
-})
-
-BlockEvents.rightClicked('kubejs:time_warper', event => {
-
-	if (event.item.id == 'ae2:item_cell_housing') {
-		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} run function hexahedron:machines/time_warper`)
-		event.item.count--
-		}
 })
 
 ItemEvents.rightClicked('minecraft:glass_bottle', event => {
@@ -51,6 +38,12 @@ ItemEvents.rightClicked('kubejs:portal_lantern', event => {
 		event.item.count--
 		event.player.level.playSound(null, event.entity.x, event.entity.y, event.entity.z, "minecraft:block.glass.break", "blocks", 1, 0);
 		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run function hexahedron:return_portal/return_portal`)
+
+})
+
+ItemEvents.rightClicked('kubejs:party_popper', event => {
+		event.item.count--
+		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.entity.x} ${event.entity.y} ${event.entity.z} run function hexahedron:effects/confetti`)
 
 })
 

@@ -1,0 +1,2 @@
+schedule function hexahedron:effects/final_countdown_min 60s
+scoreboard players add countdown_min countdown_min 1

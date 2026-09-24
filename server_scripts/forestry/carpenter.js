@@ -1,11 +1,13 @@
 ServerEvents.recipes(event => {
 
+    event.remove({type: 'forestry:carpenter'})
+
 	let carpenter = (input1, input2, input3, input4, Fluid, pattern, output) => {
 		event.custom({
   			"type": "forestry:carpenter",
   			"box": [],
   			"liquid": {
-  			  "Amount": 1000,
+  			  "Amount": 500,
   			  "FluidName": Fluid
   			},
   			"recipe": {

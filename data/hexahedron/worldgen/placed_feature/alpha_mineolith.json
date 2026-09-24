@@ -1,0 +1,37 @@
+{
+    "feature": "untagged_mobs:alpha_mineolith_world",
+    "placement": [
+        {
+            "type": "rarity_filter",
+            "chance": 5
+        },
+        {
+            "type": "count",
+            "count": 3
+        },
+        {
+            "type": "in_square"
+        },
+        {
+            "type": "heightmap",
+            "heightmap": "WORLD_SURFACE"
+        },
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": "untagged_mobs:alpha_grass_block"
+          }
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 0,
+            "y_spread": 0
+        }
+    ]
+}

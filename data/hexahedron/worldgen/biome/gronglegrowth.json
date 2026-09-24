@@ -3,11 +3,11 @@
   "creature_spawn_probability": 0.5,
   "downfall": 0.0,
   "effects": {
+    "ambient_sound": "alexscaves:toxic_caves_ambience",
     "additions_sound": {
       "sound": "undergarden:ambient.gronglegrowth_addition",
-      "tick_chance": 0.00555
+      "tick_chance": 0.01
     },
-    "fog_color": 9811461,
     "foliage_color": 4103962,
     "grass_color": 4103962,
     "music": {
@@ -20,26 +20,42 @@
       "options": {
         "type": "undergarden:grongle_spore"
       },
-      "probability": 0.01
+      "probability": 0.003
     },
-    "sky_color": 16777215,
-    "water_color": 342306,
-    "water_fog_color": 332810
+    "sky_color": 3032888,
+    "fog_color": 4020282,
+    "water_color": 6388580,
+    "water_fog_color": 2302743,
+    "grass_color_modifier": "swamp"
   },
   "features": [
-    [],
-    [],
-    [
-      "undergarden:depthrock_rock"
+    [ 
+      "hexahedron:flower_moschatel",
+      "hexahedron:flower_yellow_rose",
+      "hexahedron:firefly_bush"
     ],
-    [],
+    [ "hexahedron:patch_gronglet"],
+    [ "environmental:cattails"],
+    [ 
+      "hexahedron:rust_barrel",
+      "hexahedron:pillar_rusty",
+      "hexahedron:pillar_rusty_stick"
+    ],
     [
       "undergarden:gronglegrowth_delta"
     ],
-    [],
-    [],
-    [ "minecraft:seagrass_swamp"],
-    [ "undergarden:grongle_tree"],
+    [ "environmental:cattails"],
+    [
+      "hexahedron:eye_pillar_peeking",
+      "patch_grass_normal",
+      "patch_grass_normal",
+      "patch_tall_grass",
+      "seagrass_swamp",
+      "seagrass_normal",
+      "environmental:patch_duckweed",
+      "environmental:cattails_dense",
+      "environmental:cattails"
+    ],
     [
       "minecraft:patch_grass_jungle",
       "undergarden:deepturf_patch",
@@ -48,90 +64,17 @@
       "undergarden:underbean_bush_patch",
       "undergarden:ditchbulb_patch",
       "undergarden:droopvine_patch",
-      "undergarden:gloomgourd_patch",
-      "undergarden:grongle_tree",
-      "undergarden:small_grongle_tree",
-      "undergarden:grongle_bush",
-      "undergarden:butterbunch_patch"
+      "undergarden:gloomgourd_patch"
     ]
   ],
   "has_precipitation": false,
   "spawn_costs": {},
   "spawners": {
-    "ambient": [
-      {
-        "type": "undergarden:scintling",
-        "maxCount": 8,
-        "minCount": 4,
-        "weight": 5
-      }
-    ],
+    "ambient": [],
     "axolotls": [],
-    "creature": [
-      {
-        "type": "undergarden:gloomper",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
-      },
-      {
-        "type": "undergarden:mog",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
-      },
-      {
-        "type": "undergarden:dweller",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
-      }
-    ],
+    "creature": [],
     "misc": [],
-    "monster": [
-      {
-        "type": "undergarden:nargoyle",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 50
-      },
-      {
-        "type": "undergarden:muncher",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 50
-      },
-      {
-        "type": "undergarden:sploogie",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 50
-      },
-      {
-        "type": "undergarden:rotling",
-        "maxCount": 4,
-        "minCount": 2,
-        "weight": 100
-      },
-      {
-        "type": "undergarden:rotwalker",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 100
-      },
-      {
-        "type": "undergarden:rotbeast",
-        "maxCount": 2,
-        "minCount": 1,
-        "weight": 100
-      },
-      {
-        "type": "undergarden:stoneborn",
-        "maxCount": 3,
-        "minCount": 1,
-        "weight": 100
-      }
-    ],
+    "monster": [],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []

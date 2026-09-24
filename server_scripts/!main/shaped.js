@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
 	  	'ICI',
 	  	'IQI'  
 	  	],{
-	  	I: 'create:iron_sheet',
+	  	I: '#forge:plates/iron',
 	  	C: 'immersiveengineering:coil_lv',
 	  	Q: 'ae2:calculation_processor'
 
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
 	  	'BFB',
 	  	'IEI'  
 	  	],{
-	  	I: 'thermal:tin_ingot',
+	  	I: 'create:zinc_ingot',
 	  	F: 'thermal:machine_crafter',
 	  	C: 'thermal:rf_coil',
 	  	E: 'immersiveengineering:furnace_heater',
@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
 	  	' S '  
 	  	],{
 	  	S: 'minecraft:stick',
-	  	I: 'create:iron_sheet'
+	  	I: '#forge:plates/iron'
   	})
 
     event.remove({output: 'ae2:terminal'})
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
 	  	G: 'minecraft:glass',
 	  	R: 'clanginghowl:redstone_wire',
 	  	C: 'ae2:calculation_processor',
-	  	I: 'create:iron_sheet'
+	  	I: '#forge:plates/iron'
   	})
 
     event.remove({output: 'ae2:drive'})
@@ -370,6 +370,19 @@ ServerEvents.recipes(event => {
 		H: 'immersiveengineering:furnace_heater',
 	  	F: 'thermal:machine_frame',
 		R: 'botania:rune_fire'
+  	})
+
+    event.remove({output: 'thermal:machine_insolator'})
+	event.shaped('thermal:machine_insolator', [
+		'ICI', 
+	  	'DFD',
+	  	'IEI'  
+	  	],{
+	  	I: 'minecraft:iron_ingot',
+	  	G: 'ae2:growth_accelerator',
+		D: 'minecraft:dirt',
+	  	F: 'thermal:machine_frame',
+		E: 'botania:rune_earth'
   	})
 
     event.remove({output: 'immersiveengineering:cokebrick'})
@@ -607,10 +620,10 @@ ServerEvents.recipes(event => {
 	  	'LOL',
 	  	'SBS'  
 	  	],{
-	  	S: 'kubejs:shiny_ingot',
-		O: 'mekanism:block_osmium',
+	  	S: 'enderio:pulsating_alloy_ingot',
+		O: 'thermal:machine_frame',
 		L: 'forestry:electron_tube_lapis',
-		R: 'malum:block_of_brilliance',
+		R: 'clanginghowl:redstone_wire',
 		B: 'clanginghowl:energy_battery'
   	})
 
@@ -621,9 +634,9 @@ ServerEvents.recipes(event => {
 	  	'SBS'  
 	  	],{
 	  	S: 'kubejs:shiny_ingot',
-		O: 'mekanism:block_osmium',
+		O: 'thermal:machine_frame',
 		I: 'forestry:electron_tube_iron',
-		R: 'malum:block_of_brilliance',
+		R: 'clanginghowl:redstone_wire',
 		B: 'clanginghowl:energy_battery'
   	})
 
@@ -719,7 +732,7 @@ ServerEvents.recipes(event => {
 	  	'AEA',
 	  	'ACA'  
 	  	],{
-	  	A: 'immersiveengineering:ingot_aluminum',
+	  	A: 'thermal:tin_ingot',
 		C: 'kubejs:chocolate_chip',
 		E: 'clanginghowl:extraterrestrial_energy_crystal',
 		B: 'forestry:electron_tube_blaze'
@@ -973,18 +986,18 @@ ServerEvents.recipes(event => {
 		O: 'forestry:electron_tube_obsidian'
   	})
 
-	event.shaped('kubejs:supercomputer', [
-		'OUO',
-	  	'SRS',
-	  	'ACA'  
-	  	],{
-	  	U: 'mekanism:ultimate_control_circuit',
-	  	R: 'kubejs:recaptured_consciousness',
-	  	C: 'kubejs:computer',
-		S: 'kubejs:seeking_circuit',
-		O: 'forestry:electron_tube_obsidian',
-		A: 'mekanism:alloy_atomic'
-  	})
+	//event.shaped('kubejs:supercomputer', [
+	//	'OUO',
+	//  'SRS',
+	//  'ACA'  
+	//  ],{
+	//  U: 'mekanism:ultimate_control_circuit',
+	//  R: 'kubejs:recaptured_consciousness',
+	//  C: 'kubejs:computer',
+	//	S: 'kubejs:seeking_circuit',
+	//	O: 'forestry:electron_tube_obsidian',
+	//	A: 'mekanism:alloy_atomic'
+  	//})
 
 	event.remove({output: 'clanginghowl:flamethrower'})
 	event.shaped('clanginghowl:flamethrower', [
@@ -1013,7 +1026,7 @@ ServerEvents.recipes(event => {
 	  	' A '  
 	  	],{
 	  	A: 'create:andesite_alloy',
-	  	G: 'create:golden_sheet'
+	  	G: '#forge:plates/gold'
   	})
 
 	event.remove({output: 'alexscaves:frostmint'})
@@ -1045,4 +1058,116 @@ ServerEvents.recipes(event => {
 	  	P: 'thermal:iron_plate'
   	})
 
+	event.remove({output: 'mekanism:nutritional_liquifier'})
+	event.shaped('mekanism:nutritional_liquifier', [
+		'IGI',
+	  	'FMF',
+	  	'IUI'  
+	  	],{
+	  	I: 'minecraft:iron_ingot',
+	  	G: 'botania:gourmaryllis',
+	  	M: 'thermal:machine_frame',
+	  	U: 'alexscaves:uranium_rod',
+		F: 'create:fluid_tank'
+  	})
+
+	event.remove({output: 'mekanism:canteen'})
+	event.shaped('mekanism:canteen', [
+		' I ',
+	  	'I I',
+	  	'III'  
+	  	],{
+	  	I: '#forge:plates/iron'
+  	})
+
+	event.remove({output: 'untagged_mobs:wire'})
+	event.remove({id: 'create:crafting/appliances/chain_from_zinc'})
+	event.shaped('minecraft:chain', [
+		' N ',
+	  	' N ',
+	  	' N '  
+	  	],{
+	  	N: 'create:zinc_nugget'
+  	})
+
+	event.remove({output: 'thermal:device_rock_gen'})
+	event.shaped('thermal:device_rock_gen', [
+		'LEL',
+	  	'FMF',
+	  	'IDI'  
+	  	],{
+	  	I: 'minecraft:iron_ingot',
+	  	E: 'forestry:electron_tube_iron',
+	  	F: 'create:fluid_tank',
+	  	M: 'thermal:machine_frame',
+	  	D: 'thermal:drill_head',
+		L: 'thermal:lead_ingot'
+  	})
+
+	event.shaped(Item.of('patchouli:guide_book', '{"patchouli:book":"patchouli:ritual_circle"}'), [
+		' E ',
+	  	' B ',
+	  	'   '  
+	  	],{
+	  	B: 'minecraft:book',
+	  	E: 'kubejs:crimson_eye'
+  	})
+
+	event.remove({output: 'thermal:dynamo_lapidary'})
+	event.shaped('thermal:dynamo_lapidary', [
+		' C ',
+	  	'PBP',
+	  	'PFP'  
+	  	],{
+	  	P: 'alexscaves:polymer_plate',
+	  	F: 'alexscaves:fissile_core',
+	  	B: 'alexscaves:metal_barrel',
+	  	C: 'thermal:rf_coil'
+  	})
+
+	event.remove({output: 'appflux:flux_accessor'})
+	event.shaped('appflux:flux_accessor', [
+		'IGI',
+	  	'GRG',
+	  	'IGI'  
+	  	],{
+	  	I: 'minecraft:iron_ingot',
+	  	G: 'minecraft:glass',
+	  	R: 'appflux:charged_redstone'
+  	})
+
+	event.remove({output: 'create:water_wheel'})
+	event.shaped('create:water_wheel', [
+		' W ',
+	  	'WSW',
+	  	' W '  
+	  	],{
+	  	W: 'immersiveengineering:waterwheel_segment',
+	  	S: 'create:shaft'
+  	})
+
+	event.remove({output: 'create:large_water_wheel'})
+	event.shaped('create:large_water_wheel', [
+		'WWW',
+	  	'WSW',
+	  	'WWW'  
+	  	],{
+	  	W: 'immersiveengineering:waterwheel_segment',
+	  	S: 'create:shaft'
+  	})
+
+	event.remove({output: 'minecraft:netherite_upgrade_smithing_template'})
+	event.shaped('minecraft:netherite_upgrade_smithing_template', [
+		'NNN',
+	  	'NFN',
+	  	'NNN'  
+	  	],{
+	  	N: 'clanginghowl:netherrack_shavings',
+	  	F: 'clanginghowl:fireproof_steel_coating'
+  	})
+
+	event.replaceInput({output:'immersiveengineering:capacitor_hv'}, 'immersiveengineering:ingot_hop_graphite', 'immersiveengineering:plate_aluminum')
+
+	event.replaceInput({output:'immersiveengineering:capacitor_mv'}, 'thermal:iron_plate', 'thermal:electrum_plate')
+	event.replaceInput({output:'immersiveengineering:capacitor_mv'}, 'thermal:nickel_plate', 'thermal:electrum_plate')
 })

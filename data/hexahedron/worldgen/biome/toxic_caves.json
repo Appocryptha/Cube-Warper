@@ -45,6 +45,10 @@
   "carvers": {},
   "features": [
     [
+      "hexahedron:flower_wilted_lily",
+      "hexahedron:flower_wilting_trillium"
+    ],
+    [
       "alexscaves:metal_swarf_replace_mud",
       "alexscaves:radrock_uranium_ore"
     ],

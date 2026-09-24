@@ -1,0 +1,1 @@
+execute in hexahedron:bedrock_bottom as @a[nbt={Dimension:"hexahedron:bedrock_bottom"}] in minecraft:overworld run tp @s 0.5 98 5.5

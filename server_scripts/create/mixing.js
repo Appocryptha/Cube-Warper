@@ -14,13 +14,13 @@ ServerEvents.recipes(event => {
 		'thermal:silver_dust'
 	])//.superheated()
 
-	event.recipes.createMixing(['supplementaries:ash', Item.of('thermal:iron_dust').withChance(0.5)], [
+	event.recipes.createMixing(['thermal:iron_dust', Item.of('thermal:iron_dust').withChance(0.5)], [
 		Fluid.of('untagged_mobs:fluid_blood', 1000)
 	]).heated()
 
-	event.recipes.createMixing([Fluid.of('kubejs:solder_fluid', 270)], [
-		Fluid.of('tconstruct:molten_tin', 180),
-		Fluid.of('tconstruct:molten_lead', 90)
+	event.recipes.createMixing([Fluid.of('kubejs:solder_fluid', 300)], [
+		Fluid.of('tconstruct:molten_tin', 200),
+		Fluid.of('tconstruct:molten_lead', 100)
 	]).heated()
 
 	event.remove({output: 'create:brass_ingot'})

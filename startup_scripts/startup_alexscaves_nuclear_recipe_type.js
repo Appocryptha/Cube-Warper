@@ -22,7 +22,7 @@
         })
         event.createCustom('nuclear_furnace', () => new $SimpleCookingSerializer(
             cookieBaker,
-            5000)); // the default cooking time. furnace is 200, blast furnace is 100
+            3000)); // the default cooking time. furnace is 200, blast furnace is 100
     })
     StartupEvents.recipeSchemaRegistry(event => {
         event.register('kubejs:nuclear_furnace', event.namespace('minecraft').get('smelting').schema)

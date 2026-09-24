@@ -25,7 +25,11 @@
       "environmental:cattails_dense",
       "environmental:cattails"
     ],
-    ["patch_sugar_cane"],
+    [
+      "patch_sugar_cane",
+      "hexahedron:flower_dianthus",
+      "hexahedron:flower_moschatel"
+    ],
     ["patch_grass_jungle"],
     ["seagrass_deep_warm"],
     ["hexahedron:mossy_boulder"],

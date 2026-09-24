@@ -18,11 +18,7 @@ ServerEvents.recipes(event => {
         event.custom({
             "type": "thermal:crystallizer",
             "ingredients": ingredients,
-            "result": [
-                {
-                    "item": Output
-                }
-            ],
+            "result": [Output],
             "energy": 500
         })
     }
@@ -34,7 +30,7 @@ ServerEvents.recipes(event => {
             {"item": "ae2:charged_certus_quartz_crystal"},
             {"item": "ae2:sky_dust"},
         ],
-        "ae2:fluix_crystal"
+        {"item": "ae2:fluix_crystal", "count": 3}
     )
 
     crystallizer(
@@ -43,16 +39,34 @@ ServerEvents.recipes(event => {
             {"item": "kubejs:vector_operator_empty"},
             {"item": "ae2:fluix_dust"},
         ],
-        "kubejs:vector_operator_fluix"
+        {"item": "kubejs:vector_operator_fluix"}
     )
 
     event.remove({output: 'create:rose_quartz'})
     crystallizer(
         "untagged_mobs:fluid_blood",
         [
+            {"item": "ae2:certus_quartz_dust"},
+        ],
+        {"item": "create:rose_quartz", "count": 2}
+    )
+
+    crystallizer(
+        "untagged_mobs:fluid_blood",
+        [
             {"item": "thermal:quartz_dust"},
         ],
-        "create:rose_quartz"
+        {"item": "create:rose_quartz", "count": 2}
+    )
+
+    event.remove({output: 'appflux:redstone_crystal'})
+    crystallizer(
+        "minecraft:water",
+        [
+            {"item": "kubejs:energized_redstone"},
+            {"item": "ae2:sky_dust"},
+        ],
+        {"item": "appflux:redstone_crystal", "count": 1}
     )
 
 })

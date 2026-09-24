@@ -4,6 +4,10 @@ LootJS.modifiers((event) => {
         .removeLoot(Ingredient.all)
         .addLoot("untagged_mobs:skybox_missing");
 
+        event
+        .addEntityLootModifier("clanginghowl:extraterrestrial_reaper")
+        .removeLoot(Ingredient.all)
+
     event
         .addLootTypeModifier(LootType.ENTITY)
         .removeLoot([

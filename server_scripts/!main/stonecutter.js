@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 
     function mold_cutting(mold) {
         event.remove({ output: mold })
-        event.stonecutting(mold, 'create:iron_sheet')
+        event.stonecutting(mold, '#forge:plates/iron')
     }
 
     mold_cutting('immersiveengineering:mold_rod')

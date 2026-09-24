@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
 	  		"ingredients": [
 	  		  {
 	  		    "fluid": Input1,
-	  		    "amount": 250
+	  		    "amount": 1000
 	  		  },
 	  		  {
 	  		    "item": Cast

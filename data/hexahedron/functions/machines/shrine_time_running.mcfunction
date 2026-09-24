@@ -3,15 +3,15 @@ execute as @e[type=marker,tag=clocking] at @s run schedule function hexahedron:m
 execute as @e[type=marker,tag=clocking] at @s run particle minecraft:enchant ~ ~1 ~ 3 3 3 0 10 force
 
 
-execute as @e[type=marker,tag=clocking,scores={time=10..}] at @s if block ~ ~ ~ minecraft:iron_block run setblock ~ ~ ~ kubejs:block_shiny_ingot
-execute as @e[type=marker,tag=clocking,scores={time=10..}] at @s if block ~ ~ ~ kubejs:block_shiny_ingot run particle dust_color_transition 0 0.882 1 5 1 1 1 ~ ~ ~ 0.5 0.5 0.5 0 10 force
+execute as @e[type=marker,tag=clocking,scores={time=3..}] at @s if block ~ ~ ~ minecraft:iron_block run summon item ~ ~ ~ {Motion:[0.2,0.2,0.3],Item:{id:"kubejs:block_shiny_ingot",Count:1b}}
+execute as @e[type=marker,tag=clocking,scores={time=3..}] at @s if block ~ ~ ~ kubejs:block_shiny_ingot run particle dust_color_transition 0 0.882 1 5 1 1 1 ~ ~ ~ 0.5 0.5 0.5 0 10 force
 
-execute as @e[type=marker,tag=clocking,scores={time=10..}] at @s if block ~ ~ ~ minecraft:emerald_block run function hexahedron:effects/time_stone
+execute as @e[type=marker,tag=clocking,scores={time=3..}] at @s if block ~ ~ ~ minecraft:emerald_block run function hexahedron:effects/time_stone
 
-execute as @e[type=marker,tag=clocking,scores={time=10..}] at @s if block ~ ~ ~ kubejs:vector_operator_step2 run setblock ~ ~ ~ kubejs:vector_operator_step3
-execute as @e[type=marker,tag=clocking,scores={time=10..}] at @s if block ~ ~ ~ kubejs:vector_operator_step3 run particle dust_color_transition 0.702 0 0.792 5 0 0 0 ~ ~ ~ 0.5 0.5 0.5 0 10 force
+execute as @e[type=marker,tag=clocking,scores={time=3..}] at @s if block ~ ~ ~ kubejs:vector_operator_step2 run setblock ~ ~ ~ kubejs:vector_operator_step3
+execute as @e[type=marker,tag=clocking,scores={time=3..}] at @s if block ~ ~ ~ kubejs:vector_operator_step3 run particle dust_color_transition 0.702 0 0.792 5 0 0 0 ~ ~ ~ 0.5 0.5 0.5 0 10 force
 
-execute as @e[type=marker,tag=clocking,scores={time=10..}] at @s run playsound block.respawn_anchor.charge master @a ~ ~ ~ 1 0
+execute as @e[type=marker,tag=clocking,scores={time=3..}] at @s run playsound block.respawn_anchor.charge master @a ~ ~ ~ 1 0
 
-execute as @e[type=marker,tag=shrine_time,scores={time=10..}] at @s run tag @s remove clocking
-execute as @e[type=marker,tag=shrine_time,scores={time=10..}] at @s run scoreboard players set @s time 0
+execute as @e[type=marker,tag=shrine_time,scores={time=3..}] at @s run tag @s remove clocking
+execute as @e[type=marker,tag=shrine_time,scores={time=3..}] at @s run scoreboard players set @s time 0

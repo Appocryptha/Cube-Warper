@@ -35,6 +35,7 @@ ServerEvents.tags('block', event => {
 
   event.add('minecraft:dirt', 'alexscaves:block_of_frosting')
   event.add('minecraft:dirt', 'darkerdepths:darkslate')
+  event.add('minecraft:dirt', 'darkerdepths:grimestone')
 
   event.add('minecraft:sand', 'infernalexp:shimmer_sand')
   event.add('minecraft:dirt', 'infernalexp:shimmer_sand')
@@ -54,6 +55,19 @@ ServerEvents.tags('block', event => {
   event.remove('minecraft:soul_fire_base_blocks', 'tconstruct:soul_glass')
   event.remove('minecraft:soul_fire_base_blocks', 'tconstruct:seared_soul_glass')
   event.remove('minecraft:soul_fire_base_blocks', 'tconstruct:scorched_soul_glass')
+
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_infinite_empty')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step1')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step2')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step3')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step4')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step5')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step6')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step7')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step8')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step9')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step10')
+  event.add('kubejs:final_vector', 'kubejs:vector_operator_step11')
 
 })
 
@@ -114,6 +128,8 @@ ServerEvents.tags('fluid', event => {
 
     event.add('kubejs:light_oil', 'thermal:light_oil')
     event.add('kubejs:heavy_oil', 'thermal:heavy_oil')
+
+    event.add('create:bottomless/allow', 'untagged_mobs:fluid_blood')
 
 })
 

@@ -60,4 +60,23 @@ LootJS.modifiers((event) => {
             ["thermal:gold_coin"]
         )
 
+    event.addBlockLootModifier("malum:exposed_runewood_log")
+        .removeLoot(Ingredient.all)
+		.addLoot("malum:runewood_log");
+
+    event.addBlockLootModifier("malum:revealed_runewood_log")
+        .removeLoot(Ingredient.all)
+		.addLoot("malum:stripped_runewood_log");
+
+    event.addBlockLootModifier("malum:exposed_soulwood_log")
+        .removeLoot(Ingredient.all)
+		.addLoot("malum:soulwood_log");
+
+    event.addBlockLootModifier("malum:revealed_soulwood_log")
+        .removeLoot(Ingredient.all)
+		.addLoot("malum:stripped_soulwood_log");
+
+    event.addBlockLootModifier("ae2:mysterious_cube")
+		.addLoot("appflux:energy_processor_press");
+
 });

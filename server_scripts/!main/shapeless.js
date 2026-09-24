@@ -23,4 +23,9 @@ ServerEvents.recipes(event => {
 	event.remove({output: 'exposure_polaroid:instant_color_slide'})
 	event.shapeless('exposure_polaroid:instant_color_slide', ['minecraft:paper'])
 
+	event.shapeless('3x environmental:cattail_fluff', ['environmental:cattail'])
+
+	event.remove({output: 'appflux:insulating_resin'})
+	event.shapeless('appflux:insulating_resin', ['thermal:rubber', 'alexscaves:sulfur_dust', 'ae2:silicon'])
+
 })

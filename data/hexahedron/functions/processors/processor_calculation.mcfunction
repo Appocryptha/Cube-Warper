@@ -11,8 +11,8 @@ execute as @e[type=marker,tag=core] if block ~ ~ ~ kubejs:vector_operator_lightn
 
 
 ### Special Operators
-execute as @e[type=marker,tag=core] if block ~ ~ ~ kubejs:vector_operator_eye run scoreboard players operation @s dimension_seed -= -999 -999
-execute as @e[type=marker,tag=core] if block ~ ~ ~ kubejs:vector_operator_infinite run scoreboard players operation @s dimension_seed -= 999 999
+execute as @e[type=marker,tag=core] if block ~ ~ ~ kubejs:vector_operator_eye run scoreboard players operation @s dimension_seed = 999 999
+execute as @e[type=marker,tag=core] if block ~ ~ ~ kubejs:vector_operator_infinite run scoreboard players operation @s dimension_seed = -999 -999
 
 
 

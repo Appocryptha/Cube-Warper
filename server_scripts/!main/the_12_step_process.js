@@ -69,6 +69,14 @@ ServerEvents.recipes(event => {
 
 // Step 12
 BlockEvents.placed('kubejs:vector_operator_step12', event => {
-	event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} if block ~ ~-1 ~ kubejs:vector_tuner run function hexahedron:effects/final_vector_complete`)
+	event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} if block ~ ~-1 ~ kubejs:vector_tuner if score countdown_min countdown_min matches ..9 run function hexahedron:effects/final_vector_complete`)
+})
 
+// Reset
+BlockEvents.placed('#kubejs:final_vector', event => {
+	event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} if block ~ ~-1 ~ kubejs:vector_tuner if block ~ ~ ~ #kubejs:final_vector run function hexahedron:effects/final_vector_reset`)
+})
+
+BlockEvents.placed('kubejs:vector_operator_step12', event => {
+	event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} if block ~ ~-1 ~ kubejs:vector_tuner if score countdown_min countdown_min matches 10.. run function hexahedron:effects/final_vector_reset`)
 })

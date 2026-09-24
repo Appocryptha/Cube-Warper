@@ -41,6 +41,15 @@ ServerEvents.recipes(event => {
                 )
             }
 
+            let output_rod = `immersiveposts:stick_${material}`
+            if (Item.exists(output_rod)) {
+                event.remove({type: 'minecraft:crafting_shaped', output: output_rod})
+                press(  'immersiveengineering:mold_rod',          
+                         input,                  
+                        `4x immersiveposts:stick_${material}`
+                )
+            }
+
             let output_gear = `thermal:${material}_gear`
             if (Item.exists(output_gear)) {
                 event.remove({type: 'minecraft:crafting_shaped', output: output_gear})

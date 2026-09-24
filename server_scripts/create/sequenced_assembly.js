@@ -28,4 +28,12 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(	'mekanism:steel_casing', ['mekanism:steel_casing', 'alexscaves:fissile_core']),
 	]).transitionalItem('mekanism:steel_casing').loops(20)
 
+	event.recipes.createSequencedAssembly([
+		'kubejs:supercomputer'
+	],  'kubejs:recaptured_consciousness', [
+		event.recipes.createDeploying(	'kubejs:recaptured_consciousness', ['kubejs:recaptured_consciousness', 'kubejs:seeking_circuit']),
+		event.recipes.createDeploying(	'kubejs:recaptured_consciousness', ['kubejs:recaptured_consciousness', 'kubejs:computer']),
+		event.recipes.createDeploying(	'kubejs:recaptured_consciousness', ['kubejs:recaptured_consciousness', 'mekanism:alloy_atomic']),
+	]).transitionalItem('kubejs:recaptured_consciousness').loops(20)
+
 })

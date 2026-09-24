@@ -66,7 +66,6 @@ let create = (block, item, result) => {
 	create("create:andesite_casing", 		"create:turntable", 				"create:mechanical_bearing")
 	create("create:andesite_casing", 		"create:shaft", 					"createaddition:rolling_mill")
 	create("create:andesite_casing", 		"create:item_vault", 				"create:package_frogport")
-	create("create:andesite_casing", 		"create:depot", 					"minecraft:cobblestone_slab")
 
 //Copper Casing
 	create("create:copper_casing",			"minecraft:copper_ingot", 			"create:fluid_tank")
@@ -80,7 +79,7 @@ let create = (block, item, result) => {
 //Brass Casing
 	create("create:brass_casing", 			"create:chute", 					"createaddition:portable_energy_interface")
 	create("create:brass_casing", 			"minecraft:observer", 				"create:content_observer")
-	create("create:brass_casing", 			"minecraft:crafting_table", 		"create:mechanical_crafter")
+	create("create:brass_casing", 			"create:electron_tube", 			"create:mechanical_crafter")
 	create("create:brass_casing", 			"create:gearshift", 				"create:sequenced_gearshift")
 	create("create:brass_casing", 			"create:precision_mechanism", 		"create:rotation_speed_controller")
 	create("create:brass_casing", 			"create:brass_hand", 				"create:mechanical_arm")
@@ -104,6 +103,7 @@ let create = (block, item, result) => {
 	create("thermal:machine_frame", 		"minecraft:brewing_stand", 			"thermal:machine_brewer")
 	create("thermal:machine_frame", 		"immersiveengineering:turntable", 	"thermal:machine_centrifuge")
 	create("thermal:machine_frame", 		"minecraft:hopper", 				"thermal:device_collector")
+	create("thermal:machine_frame", 		"minecraft:lava_bucket", 			"thermal:device_nullifier")
 
 //Engineering Frame
 	create("kubejs:engineering_light_empty", 	"thermal:rf_coil", 									"immersiveengineering:rs_engineering")

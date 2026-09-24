@@ -24,6 +24,7 @@
   "spawn_costs": {},
   "carvers": {},
   "features": [
+    ["hexahedron:flower_tassel"],
     ["patch_grass_plain"]
   ]
 }

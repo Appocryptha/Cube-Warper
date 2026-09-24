@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
 	let chocolate_melting = (Chocolate) => {
-		event.recipes.createMixing(Fluid.of('create:chocolate', 200), [
+		event.recipes.createMixing(Fluid.of('create:chocolate', 1000), [
 		  	Chocolate
 		]).heated()
 	}

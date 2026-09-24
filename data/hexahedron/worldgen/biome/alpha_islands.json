@@ -26,7 +26,12 @@
   "spawn_costs": {},
   "carvers": {},
   "features": [
-    ["hexahedron:tree_alpha"],
+    [
+      "hexahedron:alpha_tree"
+    ],
+    [
+      "untagged_mobs:alpha_mineolith_world"
+    ],
     [
       "hexahedron:patch_alpha_dandelion",
       "hexahedron:patch_alpha_rose"

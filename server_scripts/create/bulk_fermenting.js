@@ -1,18 +1,19 @@
 ServerEvents.recipes(event => {
 
-	let bulk_fermenting = (Item1, Item2, Fluid, Amount, Output) => {
+	let bulk_fermenting = (Item1, Fluid1, Amount1, Fluid2, Amount2, Output) => {
 		event.custom({
 		  "type": "createdieselgenerators:bulk_fermenting",
 		  "ingredients": [
 		    {
-		      "fluid": Fluid,
-		      "amount": Amount
+		      "fluid": Fluid1,
+		      "amount": Amount1
+		    },
+		    {
+		      "fluid": Fluid2,
+		      "amount": Amount2
 		    },
 		    {
 		      "item": Item1
-		    },
-		    {
-		      "item": Item2
 		    }
 		  ],
 		  "heatRequirement": "heated",
@@ -27,9 +28,9 @@ ServerEvents.recipes(event => {
 
     event.remove({output: 'clanginghowl:blaze_fuel'})
 	bulk_fermenting(
-		"malum:blazing_quartz",
 		"minecraft:blaze_powder",
-		"supplementaries:lumisene", 100,
+		"supplementaries:lumisene", 250,
+		"thermal:glowstone", 500,
 		"clanginghowl:blaze_fuel"
 	)
 

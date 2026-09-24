@@ -7,4 +7,8 @@ ServerEvents.recipes(event => {
 
 	event.recipes.thermal.pulverizer(['minecraft:redstone'], 'regions_unexplored:pointed_redstone')
 
+	event.recipes.thermal.pulverizer(['minecraft:blaze_powder'], 'minecraft:blaze_rod')
+    event.recipes.createCrushing(['minecraft:blaze_powder'], 'minecraft:blaze_rod')
+
+
 })

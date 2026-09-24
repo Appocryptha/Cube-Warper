@@ -25,6 +25,7 @@ execute if entity @e[type=minecraft:marker,tag=core,scores={runtime=100..105}] r
 
 ### REPOSITION
 execute as @e[type=minecraft:marker,tag=core,scores={runtime=120}] run function hexahedron:tickets/relocation
+execute as @e[type=minecraft:marker,tag=core,scores={runtime=120}] run schedule function hexahedron:fix_portals 3s
 
 ### END
 execute as @e[type=minecraft:marker,tag=core,scores={runtime=120..}] run tag @s remove running

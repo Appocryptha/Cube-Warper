@@ -14,7 +14,15 @@ ServerEvents.recipes(event => {
 		})
 	}
 
-	arc_furnace("caverns_and_chasms:necromium_ingot", 5,
+	arc_furnace("caverns_and_chasms:necromium_nugget", 2,
+		"caverns_and_chasms:necromium_sword",
+		[],
+		"thermal:slag",
+		400,
+		300000
+	)
+
+	arc_furnace("caverns_and_chasms:necromium_nugget", 5,
 		"caverns_and_chasms:necromium_helmet",
 		[],
 		"thermal:slag",
@@ -22,7 +30,7 @@ ServerEvents.recipes(event => {
 		300000
 	)
 
-	arc_furnace("caverns_and_chasms:necromium_ingot", 8,
+	arc_furnace("caverns_and_chasms:necromium_nugget", 8,
 		"caverns_and_chasms:necromium_chestplate",
 		[],
 		"thermal:slag",
@@ -30,7 +38,7 @@ ServerEvents.recipes(event => {
 		300000
 	)
 
-	arc_furnace("caverns_and_chasms:necromium_ingot", 7,
+	arc_furnace("caverns_and_chasms:necromium_nugget", 7,
 		"caverns_and_chasms:necromium_leggings",
 		[],
 		"thermal:slag",
@@ -38,7 +46,7 @@ ServerEvents.recipes(event => {
 		300000
 	)
 
-	arc_furnace("caverns_and_chasms:necromium_ingot", 4,
+	arc_furnace("caverns_and_chasms:necromium_nugget", 4,
 		"caverns_and_chasms:necromium_boots",
 		[],
 		"thermal:slag",

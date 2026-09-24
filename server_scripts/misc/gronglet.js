@@ -1,3 +1,7 @@
+ServerEvents.recipes(event => {
+	event.replaceInput({input: '#forge:dusts/grains_of_infinity'}, '#forge:dusts/grains_of_infinity', 'kubejs:grains_of_infinity')
+})
+
 BlockEvents.rightClicked('undergarden:gronglet', event => {
 
 	let gronglet = (input, output) => {
@@ -14,16 +18,11 @@ BlockEvents.rightClicked('undergarden:gronglet', event => {
 
 	gronglet(
 		"malum:cursed_sapball",
-		"enderio:grains_of_infinity"
+		"kubejs:grains_of_infinity"
 	)
 
 	gronglet(
 		"malum:runic_sapball",
-		"minecraft:glowstone_dust"
-	)
-
-	gronglet(
-		"environmental:mud_ball",
 		"minecraft:gunpowder"
 	)
 
