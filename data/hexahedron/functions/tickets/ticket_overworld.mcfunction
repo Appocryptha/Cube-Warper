@@ -17,3 +17,4 @@ tag @e[type=minecraft:marker,tag=core] add running
 execute as @e[tag=core] at @s unless entity @a[limit=1,sort=nearest,distance=..50] run tp @a[limit=1] ~ ~-7 ~4
 
 execute in overworld run time set noon
+schedule function hexahedron:fix_portals 7s

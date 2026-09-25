@@ -6,6 +6,7 @@ ServerEvents.tags('block', event => {
   event.add('minecraft:nylium', 'biomeswevegone:purple_sand')
   event.add('minecraft:nylium', 'minecraft:soul_soil')
   event.add('minecraft:nylium', 'create:scoria')
+  event.add('minecraft:nylium', 'undergarden:deepturf_block')
   event.add('regions_unexplored:stone_plant_can_survive_on', 'regions_unexplored:prismaglass')
   event.add('minecraft:base_stone_overworld', 'regions_unexplored:prismaglass')
   event.add('minecraft:nylium', 'regions_unexplored:glistering_wart')

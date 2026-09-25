@@ -37,6 +37,10 @@ ServerEvents.recipes(event => {
         "untagged_mobs:item_missing"
     )
 
+    weeping_well("untagged_mobs:inverse_sand",
+        "untagged_mobs:alpha_sand"
+    )
+
     weeping_well("kubejs:vector_operator_step9",
         "kubejs:vector_operator_step8"
     )

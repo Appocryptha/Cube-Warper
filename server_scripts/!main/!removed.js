@@ -25,6 +25,9 @@ ServerEvents.recipes(event => {
         event.remove({output: 'alexscaves:nuclear_bomb'})
         event.remove({output: 'ae2:crank'})
         event.remove({output: 'thermal:lightning_charge'})
+        event.remove({output: 'botania:fertilizer'})
+        event.remove({output: 'botania:orechid'})
+        event.remove({output: 'botania:orechid_ignem'})
 
         event.remove({id: 'ae2:crank'})
         event.remove({id: 'supplementaries:crank'})
