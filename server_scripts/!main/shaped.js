@@ -293,6 +293,15 @@ ServerEvents.recipes(event => {
 	  	P: 'kubejs:plastic'
   	})
 
+    event.remove({output: 'minecraft:lightning_rod'})
+	event.shaped('minecraft:lightning_rod', [
+		' C ', 
+	  	' C ',
+	  	' C '  
+	  	],{
+		C: 'minecraft:copper_ingot'
+  	})
+
     event.remove({output: 'clanginghowl:stationary_charging_station'})
 	event.shaped('clanginghowl:stationary_charging_station', [
 		'L L', 

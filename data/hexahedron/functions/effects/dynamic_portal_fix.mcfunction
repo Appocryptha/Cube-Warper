@@ -1,0 +1,2 @@
+#execute unless entity @e[type=marker,tag=running] as @e[tag=outer_core] at @s if entity @a[limit=1,sort=nearest,distance=..50] run function hexahedron:fix_portals
+#execute unless entity @e[type=marker,tag=running] as @e[tag=core] at @s if entity @a[limit=1,sort=nearest,distance=..50] run function hexahedron:fix_portals

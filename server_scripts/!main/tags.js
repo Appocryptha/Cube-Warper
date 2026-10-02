@@ -29,6 +29,8 @@ ServerEvents.tags('block', event => {
   event.add('kubejs:crimson_eye', 'kubejs:eye_stage_4')
   event.add('kubejs:crimson_eye', 'kubejs:eye_open')
 
+  event.add('ftbultimine:excluded_blocks', 'clanginghowl:extraterrestrial_energy_cluster')
+  event.add('ftbultimine:excluded_blocks', 'clanginghowl:huge_extraterrestrial_energy_cluster')
 
   event.add('biomesoplenty:flesh_decoration_placeable', 'clanginghowl:technoflesh_block')
   event.add('biomesoplenty:flesh_decoration_placeable', 'dustrial_decor:padded_block')

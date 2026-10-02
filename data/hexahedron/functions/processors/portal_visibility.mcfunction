@@ -4,3 +4,4 @@
 execute unless entity @e[type=marker,tag=running] as @e[type=marker,tag=core] at @s if entity @a[distance=..80] run execute as @e[type=immersive_portals:portal] run portal nbt {isVisible:true}
 execute unless entity @e[type=marker,tag=running] as @e[type=marker,tag=outer_core] at @s if entity @a[distance=..80] run execute as @e[type=immersive_portals:portal] run portal nbt {isVisible:true}
 execute unless entity @e[type=marker,tag=running] as @e[type=marker,tag=core] at @s unless entity @a[distance=..80] as @e[type=marker,tag=outer_core] at @s unless entity @a[distance=..80] run execute as @e[type=immersive_portals:portal] run portal nbt {isVisible:false}
+
