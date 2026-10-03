@@ -27,6 +27,7 @@ fill ~-7 ~-3 ~-7 ~7 ~-3 ~7 kubejs:warping_frame_platform
 
 # Hole
 fill ~-1 ~-3 ~-1 ~1 ~-3 ~1 air
+execute as @e[type=minecraft:marker,tag=outer_core] at @s run fill ~1 ~-8 ~1 ~-1 ~-8 ~-1 kubejs:hexahedron_filling
 fill ~-2 ~-3 ~-2 ~2 ~-3 ~-2 kubejs:warping_frame
 fill ~-2 ~-3 ~2 ~2 ~-3 ~2 kubejs:warping_frame
 fill ~-2 ~-3 ~-2 ~-2 ~-3 ~2 kubejs:warping_frame

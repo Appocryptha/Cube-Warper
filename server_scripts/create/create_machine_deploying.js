@@ -35,10 +35,10 @@ let create = (block, item, result) => {
 
 //Misc
 	create("kubejs:half_frame_bottom",		"kubejs:half_frame_top",			"thermal:machine_frame")
-	create("create:fluid_pipe",				"create:golden_sheet",				"create:smart_fluid_pipe")
+	create("create:fluid_pipe",				"thermal:gold_plate",				"create:smart_fluid_pipe")
 	create("create:andesite_casing",		"create:brass_ingot",				"create:brass_casing")
-	create("create:chute", 					"create:golden_sheet", 				"create:smart_chute")
-	create("minecraft:barrel", 				"create:iron_sheet", 				"create:item_vault")
+	create("create:chute", 					"thermal:gold_plate", 				"create:smart_chute")
+	create("minecraft:barrel", 				"thermal:iron_plate", 				"create:item_vault")
 	create("supplementaries:cage", 			"kubejs:shiny_ingot", 				"create:empty_blaze_burner")
 
 //Andesite Casings

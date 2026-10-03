@@ -22,6 +22,8 @@ ServerEvents.tags('block', event => {
   event.add('hexahedron_frame', 'kubejs:warping_controls')
   event.add('hexahedron_frame', 'kubejs:warping_disc_drive')
 
+  event.add('minecraft:invalid_spawn_inside', 'kubejs:hexahedron_filling')
+
   event.add('kubejs:crimson_eye', 'kubejs:eye_closed')
   event.add('kubejs:crimson_eye', 'kubejs:eye_stage_1')
   event.add('kubejs:crimson_eye', 'kubejs:eye_stage_2')

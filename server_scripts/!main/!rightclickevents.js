@@ -4,18 +4,27 @@ BlockEvents.rightClicked('kubejs:launch_button', event => {
 })
 
 BlockEvents.rightClicked('kubejs:ancient_core', event => {
-    const { player, item, server } = event;
+    const { player, item, server, block } = event;
+    if (item.id !== 'minecraft:redstone') return;
+    const isMachine = player.isFake();
 
-	if (event.item.id == 'minecraft:redstone') {
-		event.server.runCommandSilent(`execute in ${event.entity.level.dimension} positioned ${event.block.x} ${event.block.y} ${event.block.z} run function hexahedron:machines/ancient_redstone`)
-		event.item.count--
-		event.player.giveInHand('kubejs:energized_redstone')
-        if (!player.isFake()) {
-            server.scheduleInTicks(1, callback => {
-                player.addItemCooldown(item, 100);
-            });
+    if (!isMachine) {
+        const now = player.level.time;
+        const last = player.persistentData.getLong('core_last_use');
+        if (now - last < 100) {
+            event.cancel();
+            return;
         }
-	}
+        player.persistentData.putLong('core_last_use', now);
+    }
+
+    server.runCommandSilent(`execute in ${player.level.dimension} positioned ${block.x} ${block.y} ${block.z} run function hexahedron:machines/ancient_redstone`);
+    item.count--;
+    player.giveInHand('kubejs:energized_redstone');
+
+    if (!isMachine) {
+        player.addItemCooldown('minecraft:redstone', 100);
+    }
 })
 
 BlockEvents.rightClicked('kubejs:ancient_core', event => {

@@ -2,7 +2,17 @@ ServerEvents.recipes(event => {
 
 	event.remove({type: 'thermal:press', output: '#forge:plates'})
     event.remove({type: 'createdieselgenerators:hammering'})
+	event.remove({type: 'tconstruct:smeltery', output: 'create:golden_sheet'})
+
     //event.remove({type: 'createdieselgenerators:wire_cutting'})
+
+    event.remove({id: 'create:pressing/iron_ingot'})
+    event.remove({id: 'create:pressing/gold_ingot'})
+    event.remove({id: 'create:pressing/copper_ingot'})
+
+    event.remove({id: 'immersiveengineering:metalpress/plate_iron'})
+    event.remove({id: 'immersiveengineering:metalpress/plate_gold'})
+    event.remove({id: 'immersiveengineering:metalpress/plate_copper'})
 
     event.recipes.create.pressing('immersiveengineering:plate_steel', 'immersiveengineering:ingot_steel')
     event.recipes.create.pressing('immersiveengineering:plate_aluminum', 'immersiveengineering:ingot_aluminum')

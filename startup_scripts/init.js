@@ -251,6 +251,9 @@ let eye = (id) => {
 		.transparent(true)
 		.defaultCutout()
 		.noCollision()
+    	.notSolid() 
+		.noDrops()
+		.noValidSpawns(true)
 
 	event.create('warping_frame').displayName("Warping Frame")
 		.fullBlock(true)

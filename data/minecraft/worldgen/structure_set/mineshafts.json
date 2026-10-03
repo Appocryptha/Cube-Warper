@@ -1,0 +1,11 @@
+{
+  "structures": [],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "salt": 0,
+    "frequency": 0.004,
+    "frequency_reduction_method": "legacy_type_3"
+  }
+}
