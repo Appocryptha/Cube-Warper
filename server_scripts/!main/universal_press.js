@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
             if (Item.exists(output_gear)) {
                 event.remove({type: 'minecraft:crafting_shaped', output: output_gear})
                 press(  'immersiveengineering:mold_gear',          
-                         input,                  
+                        `4x ${input}`,                  
                         `thermal:${material}_gear`
                 )
             }

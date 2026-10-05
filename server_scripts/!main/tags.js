@@ -96,6 +96,7 @@ ServerEvents.tags('item', event => {
 	event.add('thermal:crafting/dies', 'ae2:calculation_processor_press')
 	event.add('thermal:crafting/dies', 'ae2:logic_processor_press')
 	event.add('thermal:crafting/dies', 'ae2:engineering_processor_press')
+	event.add('thermal:crafting/dies', 'appflux:energy_processor_press')
 
 	event.add('thermal:crafting/casts', 'immersiveengineering:mold_plate')
 	event.add('thermal:crafting/casts', 'immersiveengineering:mold_wire')
@@ -108,6 +109,7 @@ ServerEvents.tags('item', event => {
 	event.add('thermal:crafting/casts', 'ae2:calculation_processor_press')
 	event.add('thermal:crafting/casts', 'ae2:logic_processor_press')
 	event.add('thermal:crafting/casts', 'ae2:engineering_processor_press')
+	event.add('thermal:crafting/casts', 'appflux:energy_processor_press')
 	event.add('thermal:crafting/casts', 'alexscaves:frostmint')
 
   event.add('create:upright_on_belt', 'biomesoplenty:small_rose_quartz_bud')

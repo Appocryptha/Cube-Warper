@@ -383,7 +383,7 @@ ServerEvents.recipes(event => {
 
     event.remove({output: 'thermal:machine_insolator'})
 	event.shaped('thermal:machine_insolator', [
-		'ICI', 
+		'IGI', 
 	  	'DFD',
 	  	'IEI'  
 	  	],{
@@ -556,6 +556,7 @@ ServerEvents.recipes(event => {
 	  	N: 'caverns_and_chasms:necromium_ingot',
 	  	V: 'enderio:void_chassis',
 	  	P: 'kubejs:peeking_circuit',
+		C: 'kubejs:computer',
 	  	1: 'minecraft:furnace',
 	  	2: 'alexscaves:nuclear_furnace_component',
 	  	3: 'thermal:machine_smelter'
@@ -1064,7 +1065,8 @@ ServerEvents.recipes(event => {
 	  	'III'  
 	  	],{
 	  	I: 'minecraft:iron_ingot',
-	  	P: 'thermal:iron_plate'
+	  	P: 'thermal:iron_plate',
+	  	G: 'minecraft:glass'			
   	})
 
 	event.remove({output: 'mekanism:nutritional_liquifier'})
@@ -1174,6 +1176,30 @@ ServerEvents.recipes(event => {
 	  	N: 'clanginghowl:netherrack_shavings',
 	  	F: 'clanginghowl:fireproof_steel_coating'
   	})
+
+	event.remove({output: 'ae2:blank_pattern'})
+	event.shaped('ae2:blank_pattern', [
+		'GRG',
+	  	'RCR',
+	  	'III'  
+	  	],{
+	  	G: 'minecraft:glass',
+	  	R: 'minecraft:redstone',
+	  	C: '#ae2:all_certus_quartz',
+	  	I: 'minecraft:iron_ingot'
+  	})
+
+	event.remove({id: 'create_alexscaves_compat:splashing/guano_block'})
+	event.shaped('alexscaves:thornwood_branch', [
+		' T ',
+	  	'T  ',
+	  	'   '  
+	  	],{
+	  	T: 'alexscaves:thornwood_log'
+  	})
+
+	event.replaceInput({output:'immersiveengineering:railgun'}, 'immersiveengineering:ingot_steel', 'clanginghowl:fireproof_steel_coating')
+	event.replaceInput({output:'immersiveengineering:railgun'}, 'immersiveengineering:component_electronic_adv', 'kubejs:circuitboard')
 
 	event.replaceInput({output:'immersiveengineering:capacitor_hv'}, 'immersiveengineering:ingot_hop_graphite', 'immersiveengineering:plate_aluminum')
 

@@ -3,8 +3,24 @@ ServerEvents.recipes(event => {
 //      ### To the recipes that end up here, in peace may you rest ###
 
     //Removed
-        event.remove({type: 'botania:elven_trade'})
+        //event.remove({type: 'botania:elven_trade'})
+        //event.remove({type: 'minecraft:crafting_shaped', input:'minecraft:fire_charge', output:'#forge:ingots'})
         event.remove({type: 'tconstruct:alloy'})
+        event.remove({type: 'botania:elven_trade', output:'botania:dragonstone'})
+        event.remove({type: 'botania:elven_trade', output:'botania:dragonstone_block'})
+
+        event.remove({id: 'thermal:fire_charge/constantan_ingot_2'})
+        event.remove({id: 'thermal:fire_charge/electrum_ingot_2'})
+        event.remove({id: 'thermal:fire_charge/enderium_ingot_2'})
+        event.remove({id: 'thermal:fire_charge/invar_ingot_3'})
+        event.remove({id: 'thermal:fire_charge/bronze_ingot_4'})
+        event.remove({id: 'thermal:fire_charge/signalum_ingot_4'})
+        event.remove({id: 'thermal:fire_charge/lumium_ingot_4'})
+
+        event.remove({id: 'thermal:fire_charge/obsidian_glass_2'})
+        event.remove({id: 'thermal:fire_charge/lumium_glass_2'})
+        event.remove({id: 'thermal:fire_charge/signalum_glass_2'})
+        event.remove({id: 'thermal:fire_charge/enderium_glass_2'})
 
         //event.remove({output: 'forestry:bee_combs'})
         //event.remove({input: /^forestry:.*bee.*/})
@@ -73,7 +89,7 @@ ServerEvents.recipes(event => {
         event.remove({input: '#forestry:combs'})
         event.remove({output: '#forestry:combs'})
         event.remove({output: 'untagged_mobs:television'})
-        event.remove({output: 'botania:alfheim_portal'})
+        //event.remove({output: 'botania:alfheim_portal'})
 
         let impetus_nuke = (material) => {
             event.remove({id: `malum:node_focusing${material}`})
