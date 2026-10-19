@@ -127,7 +127,7 @@ let rotatable_side = (id, name, configure) => {
 		.renderType('translucent')
 		.waterlogged()
 		.hardness(0.0)
-		.noDrops()
+		//.noDrops()
 
 let operator = (id, name, color) => {
 	event.create(`vector_operator_${id}`)
@@ -213,6 +213,7 @@ let eye = (id) => {
 		.material("stone")
 		.soundType("stone")
 		.unbreakable()
+
 		.property(BlockProperties.FACING)
 		.placementState(c =>{
 			  c.set(BlockProperties.FACING, c.nearestLookingDirection.opposite)}
@@ -240,7 +241,6 @@ let eye = (id) => {
 		.fullBlock(true)
 		.material("shroomlight")
 		.soundType("shroomlight")
-		.unbreakable()
 		.box (4, 0, 4, 12, 8, 12)
 
 	event.create('hexahedron_filling').displayName("Hexahedron")
@@ -404,6 +404,7 @@ let eye = (id) => {
 		.lightLevel(1.0)
 		.unbreakable()
 		.box(4, 4, 4, 12, 12, 12, true)
+		.waterlogged()
 
 	event.create('ancient_core').displayName('Ancient Redstone Core')
 		.material('stone')

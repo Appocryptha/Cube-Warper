@@ -44,4 +44,16 @@ ServerEvents.recipes(event => {
     weeping_well("kubejs:vector_operator_step9",
         "kubejs:vector_operator_step8"
     )
+
+    event.remove({id: "malum:void_favor/malignant_lead"})
+    event.custom({
+        "type": "malum:favor_of_the_void",
+        "input": {
+          "item": "malum:hallowed_gold_ingot"
+        },
+        "output": {
+          "item": "malum:malignant_lead"
+        }
+    })
+
 })

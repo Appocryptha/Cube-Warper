@@ -1,11 +1,10 @@
 ServerEvents.recipes(event => {
 
 	event.remove({id: 'mekanism:oxidizing/sulfur_dioxide'})
-
 	event.custom({"type":"mekanism:oxidizing",
 		"input":{
 			"ingredient":{
-				"item":"thermal:sulfur_dust"
+				"item":"alexscaves:sulfur_dust"
 			}
 		},
 		"output":{

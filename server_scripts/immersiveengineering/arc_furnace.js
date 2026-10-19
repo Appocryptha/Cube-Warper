@@ -15,6 +15,15 @@ ServerEvents.recipes(event => {
 	}
 
 
+	arc_furnace("immersiveengineering:ingot_steel",
+		"minecraft:iron_ingot",
+		[
+			{"item":"immersiveengineering:coal_coke"}
+		],
+		"thermal:slag",
+		40,
+		30000
+	)
 
 	event.remove({output: 'clanginghowl:fireproof_steel_coating'})
 	arc_furnace("clanginghowl:fireproof_steel_coating",

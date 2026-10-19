@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
 	  	' S '  
 	  	],{
 	  	D: 'ae2:certus_quartz_dust',
-	  	S: '#forge:plates/iron'
+	  	S: 'thermal:iron_plate'
   	})
 
 	event.remove({output: 'ae2:annihilation_core'})
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
 	  	' S '  
 	  	],{
 	  	D: 'ae2:fluix_dust',
-	  	S: '#forge:plates/iron'
+	  	S: 'thermal:iron_plate'
   	})
 
 	event.remove({output: 'aewireless:wireless_transceiver'})

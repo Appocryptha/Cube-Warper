@@ -45,9 +45,9 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('kubejs:vector_operator_step6', (item, advanced, text) => {text.add(1, Text.gray('Step 6 -> Charge at the Lightning Shrine').bold(true))  })
   event.addAdvanced('kubejs:vector_operator_step7', (item, advanced, text) => {text.add(1, Text.gray('Step 7 -> Combine with metals in the Arc Furnace').bold(true))  })
   event.addAdvanced('kubejs:vector_operator_step8', (item, advanced, text) => {text.add(1, Text.gray('Step 8 -> Drop into the Weeping Well').bold(true))  })
-  event.addAdvanced('kubejs:vector_operator_step9', (item, advanced, text) => {text.add(1, Text.gray('Step 9 -> Combine with 8 Modular Reactors in the Ritual Cricle').bold(true))  })
-  event.addAdvanced('kubejs:vector_operator_step10', (item, advanced, text) => {text.add(1, Text.gray('Step 10 -> Combine with 8 Forsaken Idols in the Ritual Cricle').bold(true))  })
-  event.addAdvanced('kubejs:vector_operator_step11', (item, advanced, text) => {text.add(1, Text.gray('Step 11 -> Combine with 8 Super Computers in the Ritual Cricle').bold(true))  })
+  event.addAdvanced('kubejs:vector_operator_step9', (item, advanced, text) => {text.add(1, Text.gray('Step 9 -> Combine with 8 Modular Reactors in the Ritual Ciricle').bold(true))  })
+  event.addAdvanced('kubejs:vector_operator_step10', (item, advanced, text) => {text.add(1, Text.gray('Step 10 -> Combine with 8 Forsaken Idols in the Ritual Ciricle').bold(true))  })
+  event.addAdvanced('kubejs:vector_operator_step11', (item, advanced, text) => {text.add(1, Text.gray('Step 11 -> Combine with 8 Super Computers in the Ritual Ciricle').bold(true))  })
   event.addAdvanced('kubejs:vector_operator_step12', (item, advanced, text) => {text.add(1, Text.gray('Step 12 -> Place this back on the Vector Tuner within 10 minutes').bold(true))  })
 
 

@@ -25,4 +25,16 @@ ServerEvents.recipes(event => {
 		2000
 	)
 
+	atomic_reconstructor(
+		"minecraft:quartz",
+		"actuallyadditions:black_quartz",
+		2000
+	)
+
+	atomic_reconstructor(
+		"ae2:flawed_budding_quartz",
+		"ae2:flawless_budding_quartz",
+		2000
+	)
+
 })

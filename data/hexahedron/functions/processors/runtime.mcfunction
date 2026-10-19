@@ -4,8 +4,8 @@ scoreboard players add @e[type=marker,tag=pre_runtime] pre_runtime 1
 ### SEED SELECTION (OLD)
 #execute as @e[type=marker,tag=core,scores={pre_runtime=1}] run function hexahedron:processors/calculation_procedure
 
-### TERMINATE VENTS AND LOWER ANCHOR
-execute as @e[type=marker,tag=core,scores={pre_runtime=200}] run execute as @e[type=minecraft:marker,tag=outer_core] at @s run particle flash ~ ~ ~ 0 0 0 0 1 force
+### TERMINATE VENTS AND LOWER THE ANCHOR
+#execute as @e[type=marker,tag=core,scores={pre_runtime=200}] run execute as @e[type=minecraft:marker,tag=outer_core] at @s run particle flash ~ ~ ~ 0 0 0 0 1 force
 execute as @e[type=marker,tag=core,scores={pre_runtime=1}] run execute as @e[type=minecraft:marker,tag=outer_core] at @s run kill @e[type=marker,tag=vent,distance=..20]
 execute as @e[type=marker,tag=core,scores={pre_runtime=1}] run execute as @e[type=minecraft:marker,tag=outer_core] at @s run summon marker ~ ~ ~ {Tags:["anchor"]}
 

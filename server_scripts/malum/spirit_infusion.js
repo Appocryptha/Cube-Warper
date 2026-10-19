@@ -233,5 +233,43 @@ ServerEvents.recipes(event => {
         ]
     )
 
+    
+    spirit_infusion(
+        "malum:runewood_totem_base", 1,
+        "malum:runewood_log", 1,
+        [
+            {
+                count: 8,
+                item: "malum:runewood_planks"
+            },
+            {
+                count: 4,
+                item: "malum:hex_ash"
+            }
+        ],
+        [
+            {
+                type: "arcane",
+                count: 16
+            },
+            {
+                type: "aqueous",
+                count: 8
+            },
+            {
+                type: "earthen",
+                count: 8
+            },
+            {
+                type: "infernal",
+                count: 8
+            },
+            {
+                type: "aerial",
+                count: 8
+            }
+        ]
+    )
+
 
 })

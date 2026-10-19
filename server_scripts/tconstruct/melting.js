@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 	melting(
 		'supplementaries:cannonball', 
 		'tconstruct:molten_lead', 
-		90
+		180
 	)
 
 	melting(

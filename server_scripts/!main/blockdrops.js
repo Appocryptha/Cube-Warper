@@ -1,7 +1,11 @@
 LootJS.modifiers((event) => {
 
+
     event.addBlockLootModifier("minecraft:grass")
-        .removeLoot(Ingredient.all)
+      .removeLoot(ItemFilter.custom(stack =>
+        stack.hasTag('forge:seeds') && stack.id !== 'minecraft:wheat_seeds'
+    ))
+
     event.addBlockLootModifier("minecraft:tall_grass")
         .removeLoot(Ingredient.all)
 
@@ -78,5 +82,13 @@ LootJS.modifiers((event) => {
 
     event.addBlockLootModifier("ae2:mysterious_cube")
 		.addLoot("appflux:energy_processor_press");
+
+    event.addBlockLootModifier("alexscaves:small_peppermint")
+        .removeLoot(Ingredient.all)
+		.addLoot("alexscaves:small_peppermint");
+
+    event.addBlockLootModifier("alexscaves:large_peppermint")
+        .removeLoot(Ingredient.all)
+		.addLoot("alexscaves:large_peppermint");
 
 });

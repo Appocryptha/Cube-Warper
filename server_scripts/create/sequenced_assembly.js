@@ -10,7 +10,6 @@ ServerEvents.recipes(event => {
 	//]).transitionalItem('kubejs:heavy_engineering_empty').loops(1)
 
 
-
 	event.recipes.createSequencedAssembly([
 		'kubejs:circuitboard'
 	],  'kubejs:circuitboard_empty', [
@@ -35,5 +34,14 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying(	'kubejs:recaptured_consciousness', ['kubejs:recaptured_consciousness', 'kubejs:computer']),
 		event.recipes.createDeploying(	'kubejs:recaptured_consciousness', ['kubejs:recaptured_consciousness', 'mekanism:alloy_atomic']),
 	]).transitionalItem('kubejs:recaptured_consciousness').loops(20)
+
+
+    event.recipes.create.sequenced_assembly([
+    	'create:precision_mechanism'
+    ], 	'thermal:gold_plate', [
+        event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:cogwheel']),
+        event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:large_cogwheel']),
+        event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'minecraft:iron_nugget'])
+    ]).transitionalItem('create:incomplete_precision_mechanism').loops(5)
 
 })

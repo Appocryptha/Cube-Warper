@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
 	  	'ICI',
 	  	'IQI'  
 	  	],{
-	  	I: '#forge:plates/iron',
+	  	I: 'thermal:iron_plate',
 	  	C: 'immersiveengineering:coil_lv',
 	  	Q: 'ae2:calculation_processor'
 
@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
 	  	' S '  
 	  	],{
 	  	S: 'minecraft:stick',
-	  	I: '#forge:plates/iron'
+	  	I: 'thermal:iron_plate'
   	})
 
     event.remove({output: 'ae2:terminal'})
@@ -229,10 +229,10 @@ ServerEvents.recipes(event => {
 	  	'ICG',
 	  	' RG'  
 	  	],{
-	  	G: 'minecraft:glass',
+	  	G: '#forge:glass',
 	  	R: 'clanginghowl:redstone_wire',
 	  	C: 'ae2:calculation_processor',
-	  	I: '#forge:plates/iron'
+	  	I: 'thermal:iron_plate'
   	})
 
     event.remove({output: 'ae2:drive'})
@@ -409,7 +409,7 @@ ServerEvents.recipes(event => {
 
 	event.replaceInput({input: 'ae2:quartz_glass' }, 
 		'ae2:quartz_glass', 
-		'minecraft:glass'        
+		'#forge:glass'       
 	)
 
     event.remove({output: 'actuallyadditions:lava_factory_casing'})
@@ -695,6 +695,36 @@ ServerEvents.recipes(event => {
 	  	],{
 	  	C: 'minecraft:copper_ingot',
 	  	S: 'thermal:redstone_servo'
+  	})
+
+	event.remove({output: 'thermal:turbo_servo_attachment'})
+	event.shaped('thermal:turbo_servo_attachment', [
+		' P ',
+	  	' S ',
+	  	'   '  
+	  	],{
+	  	P: 'immersiveengineering:fluid_pump',
+	  	S: 'thermal:redstone_servo'
+  	})
+
+	event.remove({output: 'thermal:filter_attachment'})
+	event.shaped('thermal:filter_attachment', [
+		' F ',
+	  	' S ',
+	  	'   '  
+	  	],{
+	  	F: 'create:filter',
+	  	S: 'thermal:servo_attachment'
+  	})
+
+	event.remove({output: 'thermal:energy_limiter_attachment'})
+	event.shaped('thermal:energy_limiter_attachment', [
+		' E ',
+	  	' R ',
+	  	'   '  
+	  	],{
+	  	E: 'thermal:electrum_ingot',
+	  	R: 'minecraft:redstone'
   	})
 
 	event.remove({output: 'create:steam_engine'})
@@ -1036,7 +1066,7 @@ ServerEvents.recipes(event => {
 	  	' A '  
 	  	],{
 	  	A: 'create:andesite_alloy',
-	  	G: '#forge:plates/gold'
+	  	G: 'thermal:gold_plate'
   	})
 
 	event.remove({output: 'alexscaves:frostmint'})
@@ -1066,7 +1096,7 @@ ServerEvents.recipes(event => {
 	  	],{
 	  	I: 'minecraft:iron_ingot',
 	  	P: 'thermal:iron_plate',
-	  	G: 'minecraft:glass'			
+	  	G: '#forge:glass'			
   	})
 
 	event.remove({output: 'mekanism:nutritional_liquifier'})
@@ -1088,7 +1118,7 @@ ServerEvents.recipes(event => {
 	  	'I I',
 	  	'III'  
 	  	],{
-	  	I: '#forge:plates/iron'
+	  	I: 'thermal:iron_plate'
   	})
 
 	event.remove({output: 'untagged_mobs:wire'})
@@ -1143,7 +1173,7 @@ ServerEvents.recipes(event => {
 	  	'IGI'  
 	  	],{
 	  	I: 'minecraft:iron_ingot',
-	  	G: 'minecraft:glass',
+	  	G: '#forge:glass',
 	  	R: 'appflux:charged_redstone'
   	})
 
@@ -1183,7 +1213,7 @@ ServerEvents.recipes(event => {
 	  	'RCR',
 	  	'III'  
 	  	],{
-	  	G: 'minecraft:glass',
+	  	G: '#forge:glass',
 	  	R: 'minecraft:redstone',
 	  	C: '#ae2:all_certus_quartz',
 	  	I: 'minecraft:iron_ingot'
@@ -1198,6 +1228,67 @@ ServerEvents.recipes(event => {
 	  	T: 'alexscaves:thornwood_log'
   	})
 
+	event.remove({output: 'mekanism:configurator'})
+	event.shaped('mekanism:configurator', [
+		'  I',
+	  	' B ',
+	  	'R  '  
+	  	],{
+	  	I: 'immersiveengineering:stick_iron',
+	  	B: 'clanginghowl:energy_battery',
+	  	R: 'thermal:cured_rubber'
+  	})
+
+	event.remove({output: 'tconstruct:foundry_controller'})
+	event.shaped('tconstruct:foundry_controller', [
+		'SSS',
+	  	'SLS',
+	  	'SSS'  
+	  	],{
+	  	S: 'tconstruct:scorched_bricks',
+	  	L: 'immersiveengineering:light_engineering'
+  	})
+
+	event.remove({id: 'minecraft:soul_campfire'})
+	event.shaped('minecraft:soul_campfire', [
+		' T ',
+	  	'TST',
+	  	'LLL'  
+	  	],{
+	  	S: 'minecraft:soul_sand',
+	  	L: '#minecraft:logs_that_burn',
+	  	T: '#forge:rods/wooden'
+  	})
+
+	event.remove({id: 'akashictome:tome'})
+	event.shaped(Item.of('akashictome:tome', '{"akashictome:data":{actuallyadditions:{Count:1b,id:"actuallyadditions:booklet"},ae2:{Count:1b,id:"ae2:guide"},botania:{Count:1b,id:"botania:lexicon"},forestry:{Count:1b,id:"forestry:foresters_manual",tag:{"akashictome:displayName":{text:\'{"translate":"item.forestry.foresters_manual"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.forestry.foresters_manual"}]}\'}}},ftbquests:{Count:1b,id:"ftbquests:book"},immersiveengineering:{Count:1b,id:"immersiveengineering:manual"},malum:{Count:1b,id:"malum:encyclopedia_arcana"},patchouli:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"patchouli:ritual_circle"}},tconstruct:{Count:1b,id:"tconstruct:puny_smelting"},tconstruct_0:{Count:1b,id:"tconstruct:mighty_smelting",tag:{"akashictome:definedMod":"tconstruct_0"}},tconstruct_1:{Count:1b,id:"tconstruct:tinkers_gadgetry",tag:{"akashictome:definedMod":"tconstruct_1"}},tconstruct_2:{Count:1b,id:"tconstruct:materials_and_you",tag:{"akashictome:definedMod":"tconstruct_2"}},tconstruct_3:{Count:1b,id:"tconstruct:fantastic_foundry",tag:{"akashictome:definedMod":"tconstruct_3"}},tconstruct_4:{Count:1b,id:"tconstruct:encyclopedia",tag:{"akashictome:definedMod":"tconstruct_4"}}},"akashictome:is_morphing":1b}'), [
+		' P ',
+	  	' P ',
+	  	' P '  
+	  	],{
+	  	P: 'minecraft:paper'
+  	})
+
+	event.shaped('3x enderio:dense_me_conduit', [
+		'BBB',
+	  	'CCC',
+	  	'BBB'  
+	  	],{
+	  	B: 'enderio:conduit_binder',
+	  	C: 'ae2:fluix_smart_dense_cable'
+  	})
+
+	event.remove({id: 'alexscaves:nuclear_bomb'})
+	event.shaped('alexscaves:nuclear_bomb', [
+		'SPS',
+	  	'SFS',
+	  	'SPS'  
+	  	],{
+	  	F: 'alexscaves:fissile_core',
+	  	S: 'immersiveengineering:ingot_steel',
+	  	P: 'alexscaves:polymer_plate'
+  	})
+
 	event.replaceInput({output:'immersiveengineering:railgun'}, 'immersiveengineering:ingot_steel', 'clanginghowl:fireproof_steel_coating')
 	event.replaceInput({output:'immersiveengineering:railgun'}, 'immersiveengineering:component_electronic_adv', 'kubejs:circuitboard')
 
@@ -1205,4 +1296,11 @@ ServerEvents.recipes(event => {
 
 	event.replaceInput({output:'immersiveengineering:capacitor_mv'}, 'thermal:iron_plate', 'thermal:electrum_plate')
 	event.replaceInput({output:'immersiveengineering:capacitor_mv'}, 'thermal:nickel_plate', 'thermal:electrum_plate')
+
+	event.replaceInput({output:'minecraft:observer'}, 'minecraft:quartz', '#ae2:all_quartz')
+	event.replaceInput({output:'minecraft:comparator'}, 'minecraft:quartz', '#ae2:all_quartz')
+
+	event.replaceInput({input:'ae2:quartz_vibrant_glass'}, 'ae2:quartz_vibrant_glass', '#forge:glass')
+
+	event.replaceInput({output:'botania:natura_pylon'}, 'minecraft:ender_eye', 'botania:rune_greed')
 })

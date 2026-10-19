@@ -28,3 +28,19 @@ jei_remove('malum:osmium_impetus')
 jei_remove('malum:uranium_impetus')
 jei_remove('enderio:grains_of_infinity')
 jei_remove('untagged_mobs:alpha_core')
+jei_remove('untagged_mobs:camera')
+jei_remove('miners_delight:copper_cup')
+
+
+let jei_show = (Item) => {
+    JEIEvents.addItems(event => {
+      event.add(Item)
+    })
+}
+
+jei_show('thermal:iron_plate')
+jei_show('thermal:copper_plate')
+jei_show('thermal:gold_plate')
+
+jei_remove('malum:block_of_void_salts')
+jei_show('malum:block_of_void_salts')

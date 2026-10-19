@@ -14,6 +14,11 @@ ServerEvents.recipes(event => {
 		'thermal:silver_dust'
 	])//.superheated()
 
+
+  	event.recipes.create.emptying(
+  	  [Fluid.of('untagged_mobs:fluid_blood', 1000), 'minecraft:bucket'],
+  	  'untagged_mobs:fluid_blood_bucket'
+  	)
 	event.recipes.createMixing(['thermal:iron_dust', Item.of('thermal:iron_dust').withChance(0.5)], [
 		Fluid.of('untagged_mobs:fluid_blood', 1000)
 	]).heated()

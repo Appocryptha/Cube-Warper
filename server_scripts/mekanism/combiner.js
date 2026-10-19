@@ -16,4 +16,9 @@ ServerEvents.recipes(event => {
 		'16x clanginghowl:extraterrestrial_energy_crystal'
 	)
 
+	event.recipes.mekanism.combining('malum:astral_weave', 
+		'botania:manaweave_cloth',
+		'ae2:sky_dust'
+	)
+
 })

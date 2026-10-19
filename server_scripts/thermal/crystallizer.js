@@ -69,4 +69,34 @@ ServerEvents.recipes(event => {
         {"item": "appflux:redstone_crystal", "count": 1}
     )
 
+    event.remove({ id: 'ae2:transform/damaged_budding_quartz' })
+    crystallizer(
+        "minecraft:water",
+        [
+            {"item": "ae2:quartz_block"},
+            {"item": "ae2:charged_certus_quartz_crystal"},
+        ],
+        {"item": "ae2:damaged_budding_quartz", "count": 1}
+    )
+
+    event.remove({ id: 'ae2:transform/chipped_budding_quartz' })
+    crystallizer(
+        "minecraft:water",
+        [
+            {"item": "ae2:damaged_budding_quartz"},
+            {"item": "ae2:charged_certus_quartz_crystal"},
+        ],
+        {"item": "ae2:chipped_budding_quartz", "count": 1}
+    )
+
+    event.remove({ id: 'ae2:transform/flawed_budding_quartz' })
+    crystallizer(
+        "minecraft:water",
+        [
+            {"item": "ae2:chipped_budding_quartz"},
+            {"item": "ae2:charged_certus_quartz_crystal"},
+        ],
+        {"item": "ae2:flawed_budding_quartz", "count": 1}
+    )
+
 })

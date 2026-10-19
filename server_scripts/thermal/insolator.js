@@ -11,7 +11,8 @@ ServerEvents.recipes(event => {
                     "item": Output,
                     "count": 2
                 }
-            ]
+            ],
+            "energy": 5000
         })
     }
 

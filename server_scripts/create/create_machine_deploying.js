@@ -40,6 +40,7 @@ let create = (block, item, result) => {
 	create("create:chute", 					"thermal:gold_plate", 				"create:smart_chute")
 	create("minecraft:barrel", 				"thermal:iron_plate", 				"create:item_vault")
 	create("supplementaries:cage", 			"kubejs:shiny_ingot", 				"create:empty_blaze_burner")
+	create("immersiveengineering:blastbrick","immersiveengineering:plate_steel","immersiveengineering:blastbrick_reinforced")
 
 //Andesite Casings
 	create("create:andesite_casing","minecraft:compass","create:speedometer")
@@ -57,14 +58,14 @@ let create = (block, item, result) => {
 	create("create:andesite_casing", 		"minecraft:chain",					"create:encased_chain_drive")
 	create("create:andesite_casing", 		"create:brass_hand",				"create:deployer")
 	create("create:andesite_casing", 		"create:crushing_wheel",			"create:mechanical_roller")
-	create("create:andesite_casing", 		"supplementaries:rope",				"create:rope_pulley")
+	create("create:andesite_casing", 		"farmersdelight:rope",				"create:rope_pulley")
 	create("create:andesite_casing", 		"minecraft:piston",					"create:mechanical_piston")
 	create("create:andesite_casing", 		"minecraft:cobblestone_slab",		"create:depot")
 	create("create:andesite_casing", 		"create:cogwheel",					"create:millstone")
 	create("create:andesite_casing", 		"minecraft:stone_button", 			"create:contraption_controls")
 	create("create:andesite_casing", 		"create:cardboard_block", 			"create:packager")
 	create("create:andesite_casing", 		"create:turntable", 				"create:mechanical_bearing")
-	create("create:andesite_casing", 		"create:shaft", 					"createaddition:rolling_mill")
+	//create("create:andesite_casing", 		"create:shaft", 					"createaddition:rolling_mill")
 	create("create:andesite_casing", 		"create:item_vault", 				"create:package_frogport")
 
 //Copper Casing
@@ -73,11 +74,11 @@ let create = (block, item, result) => {
 	create("create:copper_casing",			"create:chute", 					"create:portable_fluid_interface")
 	create("create:copper_casing",			"thermal:cured_rubber_block", 		"create:hose_pulley")
 	create("create:copper_casing",			"minecraft:iron_bars", 				"create:item_drain")
-	create("create:copper_casing",			"create:sand_paper", 				"create_enchantment_industry:disenchanter")
+	//create("create:copper_casing",			"create:sand_paper", 				"create_enchantment_industry:disenchanter")
 	create("create:copper_casing",			"caverns_and_chasms:copper_grate", 	"thermal:device_water_gen")
 
 //Brass Casing
-	create("create:brass_casing", 			"create:chute", 					"createaddition:portable_energy_interface")
+	//create("create:brass_casing", 		"create:chute", 					"createaddition:portable_energy_interface")
 	create("create:brass_casing", 			"minecraft:observer", 				"create:content_observer")
 	create("create:brass_casing", 			"create:electron_tube", 			"create:mechanical_crafter")
 	create("create:brass_casing", 			"create:gearshift", 				"create:sequenced_gearshift")

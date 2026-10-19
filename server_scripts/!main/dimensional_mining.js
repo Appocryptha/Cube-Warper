@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
 	)
 
 	dimensional_mining("alexscaves:radrock", 
-		"alexscaves:uranium_shard", 0.5
+		"4x alexscaves:uranium_shard", 1.0
 	)
 
 	event.shaped('alexscaves:uranium', [
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
 		"mekanism:nugget_osmium", 0.1
 	)
 
-    event.recipes.createCrushing(['minecraft:netherrack', Item.of('thermal:sulfur_dust').withChance(0.1), Item.of('tconstruct:cobalt_nugget').withChance(0.01)], ['biomesoplenty:brimstone'])
+    event.recipes.createCrushing(['minecraft:netherrack', Item.of('alexscaves:sulfur_dust').withChance(0.1), Item.of('tconstruct:cobalt_nugget').withChance(0.01)], ['biomesoplenty:brimstone'])
 
 	dimensional_mining("alexscaves:limestone", 
 		"minecraft:bone_meal", 0.1
@@ -99,6 +99,10 @@ ServerEvents.recipes(event => {
 		Item.of("malum:raw_soulstone").withChance(0.011)
 	], 
 		["darkerdepths:darkslate"]
+	)
+
+	dimensional_mining("create:scoria", 
+		"minecraft:soul_sand", 1.0
 	)
 
 })

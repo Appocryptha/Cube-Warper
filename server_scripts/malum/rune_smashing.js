@@ -46,4 +46,22 @@ ServerEvents.recipes(event => {
 		'arcane'
 	)
 
+	spirit_crucible(
+		'botania:rune_pride', 
+		'32x malum:wicked_spirit', 
+		'wicked'
+	)
+
+	spirit_crucible(
+		'botania:rune_envy', 
+		'32x malum:eldritch_spirit', 
+		'eldritch'
+	)
+
+	spirit_crucible(
+		'botania:rune_lust', 
+		'32x malum:sacred_spirit', 
+		'sacred'
+	)
+
 })

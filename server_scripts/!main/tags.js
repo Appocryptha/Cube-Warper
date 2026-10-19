@@ -31,6 +31,7 @@ ServerEvents.tags('block', event => {
   event.add('kubejs:crimson_eye', 'kubejs:eye_stage_4')
   event.add('kubejs:crimson_eye', 'kubejs:eye_open')
 
+  event.add('ftbultimine:excluded_blocks', 'clanginghowl:extraterrestrial_energy_crystal_block')
   event.add('ftbultimine:excluded_blocks', 'clanginghowl:extraterrestrial_energy_cluster')
   event.add('ftbultimine:excluded_blocks', 'clanginghowl:huge_extraterrestrial_energy_cluster')
 
@@ -74,6 +75,14 @@ ServerEvents.tags('block', event => {
   event.add('kubejs:final_vector', 'kubejs:vector_operator_step10')
   event.add('kubejs:final_vector', 'kubejs:vector_operator_step11')
 
+  event.add('minecraft:wither_immune', '#minecraft:hexahedron_frame')
+  event.add('minecraft:wither_immune', '#kubejs:crimson_eye')
+  event.add('minecraft:wither_immune', 'kubejs:eye_pillar')
+  event.add('minecraft:wither_immune', 'kubejs:ancient_runes')
+  event.add('minecraft:wither_immune', 'kubejs:chiseled_ancient_bricks')
+  event.add('minecraft:wither_immune', 'kubejs:ancient_bricks')
+  event.add('minecraft:wither_immune', 'kubejs:ancient_bricks_stairs')
+
 })
 
 ServerEvents.tags('item', event => {
@@ -84,6 +93,10 @@ ServerEvents.tags('item', event => {
 	event.add('hexahedron:peat_block', 'biomeswevegone:peat')
 	event.add('hexahedron:peat_block', 'regions_unexplored:peat_dirt')
 	event.add('hexahedron:peat_block', 'regions_unexplored:peat_mud')
+
+  event.remove('minecraft:soul_fire_base_blocks', 'tconstruct:soul_glass')
+  event.remove('minecraft:soul_fire_base_blocks', 'tconstruct:seared_soul_glass')
+  event.remove('minecraft:soul_fire_base_blocks', 'tconstruct:scorched_soul_glass')
 
 	event.add('thermal:crafting/dies', 'immersiveengineering:mold_plate')
 	event.add('thermal:crafting/dies', 'immersiveengineering:mold_wire')
@@ -137,6 +150,8 @@ ServerEvents.tags('fluid', event => {
     event.add('kubejs:heavy_oil', 'thermal:heavy_oil')
 
     event.add('create:bottomless/allow', 'untagged_mobs:fluid_blood')
+    event.add('create:bottomless/allow', 'tconstruct:molten_silver')
+    event.add('create:bottomless/allow', 'createdieselgenerators:crude_oil')
 
 })
 
@@ -144,4 +159,10 @@ ServerEvents.tags("worldgen/biome", (event) => {
 
   event.add('c:is_wet', 'hexahedron:storm_islands')
 
+})
+
+// Tag order
+ServerEvents.tags('item', event => {
+  event.remove('forge:dusts/sulfur', 'thermal:sulfur_dust')
+  //event.add('forge:dusts/sulfur', 'thermal:sulfur_dust')
 })
