@@ -21,6 +21,7 @@ execute as @e[type=immersive_portals:portal,tag=-z,limit=1] at @s run portal set
 
 
 ### COMPLETE
+execute as @e[type=immersive_portals:portal,name=main_cube] at @s run portal nbt {bindCluster:true,isVisible:true}
 execute as @e[type=immersive_portals:portal,tag=y,limit=1] at @s run portal complete_bi_way_portal
 execute as @e[type=immersive_portals:portal,tag=-y,limit=1] at @s run portal complete_bi_way_portal
 
@@ -29,6 +30,7 @@ execute as @e[type=immersive_portals:portal,tag=-x,limit=1] at @s run portal com
 
 execute as @e[type=immersive_portals:portal,tag=z,limit=1] at @s run portal complete_bi_way_portal
 execute as @e[type=immersive_portals:portal,tag=-z,limit=1] at @s run portal complete_bi_way_portal
+execute as @e[type=immersive_portals:portal,name=!main_cube] at @s run portal nbt {isVisible:true}
 
 
 ### BUILD HEXAHEDRON
