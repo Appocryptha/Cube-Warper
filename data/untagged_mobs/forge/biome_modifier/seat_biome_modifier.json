@@ -1,0 +1,27 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "untagged_mobs:barrens",
+    "untagged_mobs:city_blocks",
+    "untagged_mobs:corridors",
+    "untagged_mobs:foggy_forest",
+    "untagged_mobs:furniture_store",
+    "untagged_mobs:inverse_forest",
+    "untagged_mobs:large_foggy_forest",
+    "untagged_mobs:library_hall",
+    "untagged_mobs:meatdow",
+    "untagged_mobs:minelands",
+    "untagged_mobs:old_forest",
+    "untagged_mobs:peering_pines",
+    "untagged_mobs:rows",
+    "untagged_mobs:sparse_desert",
+    "untagged_mobs:storage_units",
+    "untagged_mobs:the_selection_hub"
+  ],
+  "spawners": {
+    "type": "untagged_mobs:seat",
+    "weight": 20,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}
