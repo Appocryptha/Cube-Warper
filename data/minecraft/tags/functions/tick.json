@@ -7,6 +7,7 @@
                     "hexahedron:worldgen/chunk_pillar_tick",
                     "hexahedron:machines/rune_cube",
                     "hexahedron:machines/forsaken_bronze_detection",
-                    "hexahedron:machines/lightning_rod"
+                    "hexahedron:machines/lightning_rod",
+                    "hexahedron:trigger/tick"
                 ]
 }

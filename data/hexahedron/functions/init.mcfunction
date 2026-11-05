@@ -2,6 +2,7 @@ scoreboard objectives add runtime dummy
 scoreboard objectives add time dummy
 scoreboard objectives add hexahedron_portals dummy
 scoreboard objectives add unfold dummy
+scoreboard objectives add rebuild_hexahedron trigger
 
 scoreboard objectives add cube_time dummy
 scoreboard objectives add redstone_cooldown dummy

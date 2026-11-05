@@ -1,0 +1,2 @@
+scoreboard players reset @s rebuild_hexahedron
+function hexahedron:hexahedron_rebuild
