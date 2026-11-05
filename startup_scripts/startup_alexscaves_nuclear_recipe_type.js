@@ -28,7 +28,7 @@ StartupEvents.registry('recipe_serializer', event => {
     })
     event.createCustom('nuclear_furnace', () => new $SimpleCookingSerializer(
         cookieBaker,
-        3000)); // the default cooking time. furnace is 200, blast furnace is 100
+        1500)); // the default cooking time. furnace is 200, blast furnace is 100
 })
 
 StartupEvents.recipeSchemaRegistry(event => {
