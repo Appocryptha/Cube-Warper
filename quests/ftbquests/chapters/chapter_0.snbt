@@ -1,0 +1,275 @@
+{
+	autofocus_id: "30A0ACC1C6D738A8"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_0"
+	group: ""
+	icon: "kubejs:vector_operator_basic"
+	id: "7216CC03FDC70704"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["{cube_warper.quest.30A0ACC1C6D738A8.description1}"]
+			icon: "kubejs:launch_button"
+			id: "30A0ACC1C6D738A8"
+			size: 2.0d
+			subtitle: "{cube_warper.quest.30A0ACC1C6D738A8.subtitle}"
+			tasks: [{
+				dimension: "hexahedron:hexahedron_graveyard"
+				id: "4DCBD79A3064C0F9"
+				title: "{cube_warper.task.4DCBD79A3064C0F9}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.30A0ACC1C6D738A8.title}"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30A0ACC1C6D738A8"]
+			description: [
+				"{cube_warper.quest.43823F2E6C3DD6A1.description1}"
+				"{cube_warper.quest.43823F2E6C3DD6A1.description2}"
+				""
+				"{cube_warper.quest.43823F2E6C3DD6A1.description3}"
+				"{cube_warper.quest.43823F2E6C3DD6A1.description4}"
+				""
+				"{cube_warper.quest.43823F2E6C3DD6A1.image0}"
+			]
+			id: "43823F2E6C3DD6A1"
+			rewards: [
+				{
+					id: "265ACAB0D1BDA723"
+					item: "kubejs:emergency_fuses"
+					type: "item"
+				}
+				{
+					id: "40540DFD4AFB7A9F"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "{cube_warper.quest.43823F2E6C3DD6A1.subtitle}"
+			tasks: [{
+				id: "67B3C3C64DD71B42"
+				item: "kubejs:vector_operator_basic"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["30A0ACC1C6D738A8"]
+			description: [
+				"{cube_warper.quest.722B22AF736527D1.description1}"
+				""
+				"{cube_warper.quest.722B22AF736527D1.description2}"
+				""
+				"{cube_warper.quest.722B22AF736527D1.description3}"
+			]
+			icon: {
+				Count: 1
+				id: "clanginghowl:extraterrestrial_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "722B22AF736527D1"
+			subtitle: "{cube_warper.quest.722B22AF736527D1.subtitle}"
+			tasks: [{
+				id: "61ABF0B11CAED1DA"
+				title: "{cube_warper.task.61ABF0B11CAED1DA}"
+				type: "checkmark"
+			}]
+			title: "{cube_warper.quest.722B22AF736527D1.title}"
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["30A0ACC1C6D738A8"]
+			description: [
+				"{cube_warper.quest.186BE3D50FBAC8D8.description1}"
+				""
+				"{cube_warper.quest.186BE3D50FBAC8D8.description2}"
+				""
+				"{cube_warper.quest.186BE3D50FBAC8D8.description3}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:filled_map"
+				tag: {
+					map: 0
+				}
+			}
+			id: "186BE3D50FBAC8D8"
+			subtitle: "{cube_warper.quest.186BE3D50FBAC8D8.subtitle}"
+			tasks: [{
+				id: "307755245B1A4BD4"
+				title: "{cube_warper.task.307755245B1A4BD4}"
+				type: "checkmark"
+			}]
+			title: "{cube_warper.quest.186BE3D50FBAC8D8.title}"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["30A0ACC1C6D738A8"]
+			description: [
+				"{cube_warper.quest.11650877F274EF55.description1}"
+				""
+				"{cube_warper.quest.11650877F274EF55.description2}"
+				""
+				"{cube_warper.quest.11650877F274EF55.description3}"
+			]
+			icon: "akashictome:tome"
+			id: "11650877F274EF55"
+			rewards: [{
+				id: "0892E30AA70323DA"
+				item: {
+					Count: 1
+					id: "akashictome:tome"
+					tag: {
+						"akashictome:data": {
+							actuallyadditions: {
+								Count: 1b
+								id: "actuallyadditions:booklet"
+							}
+							ae2: {
+								Count: 1b
+								id: "ae2:guide"
+							}
+							botania: {
+								Count: 1b
+								id: "botania:lexicon"
+							}
+							forestry: {
+								Count: 1b
+								id: "forestry:foresters_manual"
+								tag: {
+									"akashictome:displayName": {
+										text: "{\"translate\":\"item.forestry.foresters_manual\"}"
+									}
+									"akashictome:is_morphing": 1b
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.forestry.foresters_manual\"}]}"
+									}
+								}
+							}
+							ftbquests: {
+								Count: 1b
+								id: "ftbquests:book"
+							}
+							immersiveengineering: {
+								Count: 1b
+								id: "immersiveengineering:manual"
+							}
+							malum: {
+								Count: 1b
+								id: "malum:encyclopedia_arcana"
+							}
+							patchouli: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "patchouli:ritual_circle"
+								}
+							}
+							tconstruct: {
+								Count: 1b
+								id: "tconstruct:puny_smelting"
+							}
+							tconstruct_0: {
+								Count: 1b
+								id: "tconstruct:mighty_smelting"
+								tag: {
+									"akashictome:definedMod": "tconstruct_0"
+								}
+							}
+							tconstruct_1: {
+								Count: 1b
+								id: "tconstruct:tinkers_gadgetry"
+								tag: {
+									"akashictome:definedMod": "tconstruct_1"
+								}
+							}
+							tconstruct_2: {
+								Count: 1b
+								id: "tconstruct:materials_and_you"
+								tag: {
+									"akashictome:definedMod": "tconstruct_2"
+								}
+							}
+							tconstruct_3: {
+								Count: 1b
+								id: "tconstruct:fantastic_foundry"
+								tag: {
+									"akashictome:definedMod": "tconstruct_3"
+								}
+							}
+							tconstruct_4: {
+								Count: 1b
+								id: "tconstruct:encyclopedia"
+								tag: {
+									"akashictome:definedMod": "tconstruct_4"
+								}
+							}
+						}
+						"akashictome:is_morphing": 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.11650877F274EF55.subtitle}"
+			tasks: [{
+				id: "2A1B1F6C6EC3CF19"
+				title: "{cube_warper.task.2A1B1F6C6EC3CF19}"
+				type: "checkmark"
+			}]
+			title: "{cube_warper.quest.11650877F274EF55.title}"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["30A0ACC1C6D738A8"]
+			description: [
+				"{cube_warper.quest.31BF68FFC2949A89.description1}"
+				""
+				"{cube_warper.quest.31BF68FFC2949A89.description2}"
+			]
+			icon: "supplementaries:slice_map"
+			id: "31BF68FFC2949A89"
+			tasks: [{
+				id: "45EFC8C5811E8689"
+				title: "{cube_warper.task.45EFC8C5811E8689}"
+				type: "checkmark"
+			}]
+			title: "{cube_warper.quest.31BF68FFC2949A89.title}"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["30A0ACC1C6D738A8"]
+			description: [
+				"{cube_warper.quest.04D761E4AC9E2FAA.description1}"
+				""
+				"{cube_warper.quest.04D761E4AC9E2FAA.description2}"
+				""
+				"{cube_warper.quest.04D761E4AC9E2FAA.description3}"
+				"{cube_warper.quest.04D761E4AC9E2FAA.description4}"
+			]
+			icon: "minecraft:command_block_minecart"
+			id: "04D761E4AC9E2FAA"
+			tasks: [{
+				id: "08B8E387F3E0FB06"
+				title: "{cube_warper.task.08B8E387F3E0FB06}"
+				type: "checkmark"
+			}]
+			title: "{cube_warper.quest.04D761E4AC9E2FAA.title}"
+			x: -4.5d
+			y: 1.5d
+		}
+	]
+	title: "{cube_warper.chapter.7216CC03FDC70704.title}"
+}

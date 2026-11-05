@@ -1,0 +1,1276 @@
+{
+	autofocus_id: "42E9291D3E994A0F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_3"
+	group: ""
+	icon: "kubejs:vector_operator_nuclear"
+	id: "5B9242AE7DC77549"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["57972A3714FCB9BE"]
+			id: "42E9291D3E994A0F"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "664465FA9A7A6952"
+				item: "kubejs:vector_operator_fluix"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["42E9291D3E994A0F"]
+			icon: "regions_unexplored:silver_birch_sapling"
+			id: "7F8A84E6792D57C5"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:silver_forest"
+				id: "0B120370B39C12EE"
+				title: "{cube_warper.task.0B120370B39C12EE}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.7F8A84E6792D57C5.title}"
+			x: 15.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["42E9291D3E994A0F"]
+			icon: "kubejs:coin_bag_gold"
+			id: "695F411874E4905F"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:endless_hoard"
+				id: "7FD52FBA54C94376"
+				title: "{cube_warper.task.7FD52FBA54C94376}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.695F411874E4905F.title}"
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["42E9291D3E994A0F"]
+			icon: "alexscaves:waste_drum"
+			id: "724BF4D8D1DA930D"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:toxic_caves"
+				id: "59C3943501FCD420"
+				title: "{cube_warper.task.59C3943501FCD420}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.724BF4D8D1DA930D.title}"
+			x: -14.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"79CA283CB3EAD8A8"
+				"10B4D789801FA7A3"
+			]
+			description: [
+				"{cube_warper.quest.59B914C684A5EE4C.description1}"
+				""
+				"{cube_warper.quest.59B914C684A5EE4C.description2}"
+				""
+				"{cube_warper.quest.59B914C684A5EE4C.description3}"
+				""
+				"{cube_warper.quest.59B914C684A5EE4C.description4}"
+				""
+				"{cube_warper.quest.59B914C684A5EE4C.description5}"
+				"{cube_warper.quest.59B914C684A5EE4C.description6}"
+				""
+				"{cube_warper.quest.59B914C684A5EE4C.description7}"
+			]
+			icon: "alexscaves:fissile_core"
+			id: "59B914C684A5EE4C"
+			rewards: [
+				{
+					id: "345C62CB8A5F49E8"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "4C934F03CC2B77E0"
+					item: "alexscaves:uranium_rod"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{cube_warper.quest.59B914C684A5EE4C.subtitle}"
+			tasks: [
+				{
+					count: 8L
+					id: "1FAB7335BE99CD36"
+					item: "alexscaves:nuclear_furnace_component"
+					type: "item"
+				}
+				{
+					id: "2B2CC9B105DF2614"
+					item: "alexscaves:metal_barrel"
+					type: "item"
+				}
+				{
+					id: "35C9DFBDE40C7C09"
+					item: "alexscaves:uranium_rod"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.59B914C684A5EE4C.title}"
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["07D4A4DCB638CC93"]
+			description: ["{cube_warper.quest.3EFB28B57ACCA844.description1}"]
+			icon: "kubejs:vector_operator_empty"
+			id: "3EFB28B57ACCA844"
+			tasks: [
+				{
+					id: "48030730B7DE8719"
+					item: "kubejs:vector_operator_empty"
+					type: "item"
+				}
+				{
+					id: "5D4B0F03237F7E1B"
+					title: "{cube_warper.task.5D4B0F03237F7E1B}"
+					type: "checkmark"
+				}
+			]
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F8A84E6792D57C5"]
+			icon: "botania:apothecary_livingrock"
+			id: "6840D094E91491E5"
+			rewards: [{
+				id: "0852677A948F7B5A"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					count: 6L
+					id: "083087B1C13FBD7F"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					id: "698B33240FBB699C"
+					item: "botania:apothecary_livingrock"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.6840D094E91491E5.title}"
+			x: 13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["42E9291D3E994A0F"]
+			icon: "windswept:icicles"
+			id: "1D855C82AF9E2087"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:snowstorm"
+				id: "04015132771AEC69"
+				title: "{cube_warper.task.04015132771AEC69}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.1D855C82AF9E2087.title}"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["724BF4D8D1DA930D"]
+			description: [
+				"{cube_warper.quest.79CA283CB3EAD8A8.description1}"
+				""
+				"{cube_warper.quest.79CA283CB3EAD8A8.description2}"
+				""
+				"{cube_warper.quest.79CA283CB3EAD8A8.description3}"
+				"{cube_warper.quest.79CA283CB3EAD8A8.description4}"
+				"{cube_warper.quest.79CA283CB3EAD8A8.description5}"
+				""
+				"{cube_warper.quest.79CA283CB3EAD8A8.description6}"
+				""
+				"{cube_warper.quest.79CA283CB3EAD8A8.description7}"
+			]
+			icon: "alexscaves:nuclear_bomb"
+			id: "79CA283CB3EAD8A8"
+			rewards: [
+				{
+					id: "661F15A1B35DAD4B"
+					item: "alexscaves:music_disc_fusion"
+					type: "item"
+				}
+				{
+					id: "6BD41469B3D2381A"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+			]
+			subtitle: "{cube_warper.quest.79CA283CB3EAD8A8.subtitle}"
+			tasks: [
+				{
+					id: "34C9DB7C87F14F4F"
+					item: {
+						Count: 1
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6FCBE98C6F842032"
+					item: "kubejs:crowbar"
+					type: "item"
+				}
+				{
+					id: "58786FCCDEA404B1"
+					item: "alexscaves:fissile_core"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.79CA283CB3EAD8A8.title}"
+			x: -14.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"79CA283CB3EAD8A8"
+				"07D4A4DCB638CC93"
+			]
+			description: ["{cube_warper.quest.1F81CCC1F7562C57.description1}"]
+			id: "1F81CCC1F7562C57"
+			rewards: [{
+				id: "269D3C4BEC9195C7"
+				item: {
+					Count: 1
+					id: "untagged_mobs:hyper_confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{cube_warper.quest.1F81CCC1F7562C57.subtitle}"
+			tasks: [{
+				id: "1600D6054496DF25"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7F8A84E6792D57C5"]
+			description: [
+				"{cube_warper.quest.706CFA622308E0A2.description1}"
+				""
+				"{cube_warper.quest.706CFA622308E0A2.description2}"
+				""
+				"{cube_warper.quest.706CFA622308E0A2.description3}"
+			]
+			icon: "thermal:silver_ingot"
+			id: "706CFA622308E0A2"
+			rewards: [{
+				id: "1A809C216AF7CE82"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.706CFA622308E0A2.subtitle}"
+			tasks: [
+				{
+					id: "093FBC994DD37473"
+					item: "tconstruct:molten_silver_bucket"
+					type: "item"
+				}
+				{
+					id: "76E259ACA37BC3E5"
+					item: "thermal:silver_ingot"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.706CFA622308E0A2.title}"
+			x: 15.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["706CFA622308E0A2"]
+			id: "7EBA57DECDEF83EB"
+			rewards: [{
+				id: "4D4C1441985683CA"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "501ECD301D8A2CB5"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"1ACBFD0A2732FA5C"
+				"3811EE766D2CF5C5"
+				"0C64583682770587"
+			]
+			description: ["{cube_warper.quest.07D4A4DCB638CC93.description1}"]
+			icon: "forestry:fabricator"
+			id: "07D4A4DCB638CC93"
+			rewards: [{
+				id: "1CCC1603D3D576AD"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "{cube_warper.quest.07D4A4DCB638CC93.subtitle}"
+			tasks: [
+				{
+					id: "6831EA1AA0E107B2"
+					item: "forestry:fabricator"
+					type: "item"
+				}
+				{
+					id: "389432AC8675D955"
+					item: "forestry:electron_tube_emerald"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1DF9F6C26950EFBC"
+				"5A3080407E21CCC2"
+				"07D4A4DCB638CC93"
+				"1D39E9C67C28C53A"
+				"1AA2701817C05F20"
+			]
+			description: ["{cube_warper.quest.71A95CEBD6B55B80.description1}"]
+			id: "71A95CEBD6B55B80"
+			rewards: [{
+				id: "0608C5EF36783723"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "65C5F8954DB7906A"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6840D094E91491E5"
+				"1D855C82AF9E2087"
+			]
+			description: [
+				"{cube_warper.quest.1AA2701817C05F20.description1}"
+				""
+				"{cube_warper.quest.1AA2701817C05F20.description2}"
+			]
+			icon: "botania:pure_daisy"
+			id: "1AA2701817C05F20"
+			rewards: [
+				{
+					id: "0F2F4D4E8C57F923"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					id: "73C140AC7DDC4CBD"
+					item: "windswept:music_disc_snow"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "{cube_warper.quest.1AA2701817C05F20.subtitle}"
+			tasks: [
+				{
+					id: "41C42E79C601E47D"
+					item: "windswept:snowdrop"
+					type: "item"
+				}
+				{
+					id: "06591822A7676FE3"
+					item: "botania:pure_daisy"
+					type: "item"
+				}
+				{
+					id: "1C49C4466272DD92"
+					item: "minecraft:deepslate"
+					type: "item"
+				}
+				{
+					id: "3F871601014D4804"
+					item: "malum:cluster_of_brilliance"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.1AA2701817C05F20.title}"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["724BF4D8D1DA930D"]
+			icon: "alexscaves:sulfur_dust"
+			id: "0B89BA14A34F6DC3"
+			subtitle: "{cube_warper.quest.0B89BA14A34F6DC3.subtitle}"
+			tasks: [{
+				id: "382C5C84F7648F0A"
+				item: "alexscaves:sulfur_dust"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7EBA57DECDEF83EB"
+				"56A2089DBDAAEA29"
+			]
+			description: ["{cube_warper.quest.10B4D789801FA7A3.description1}"]
+			id: "10B4D789801FA7A3"
+			rewards: [{
+				id: "5E3B69185D39EE9E"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "40B0EEE5B0CD31B8"
+				item: "alexscaves:uranium_rod"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7EBA57DECDEF83EB"]
+			description: ["{cube_warper.quest.62FCB4D691D5A46A.description1}"]
+			icon: {
+				Count: 1
+				id: "alexscaves:hazmat_mask"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "62FCB4D691D5A46A"
+			subtitle: "{cube_warper.quest.62FCB4D691D5A46A.subtitle}"
+			tasks: [
+				{
+					id: "04A6FC17E1086F8B"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F504FED57156124"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F2C8483512D7137"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "036E2DB0EDFB734B"
+					item: {
+						Count: 1
+						id: "alexscaves:hazmat_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.62FCB4D691D5A46A.title}"
+			x: 2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1D855C82AF9E2087"]
+			description: ["{cube_warper.quest.1DF9F6C26950EFBC.description1}"]
+			icon: "mekanism:ingot_osmium"
+			id: "1DF9F6C26950EFBC"
+			rewards: [{
+				id: "79896C00F0580DD3"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A00E02938D08E99"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["695F411874E4905F"]
+			description: ["{cube_warper.quest.1ACBFD0A2732FA5C.description1}"]
+			icon: "minecraft:emerald"
+			id: "1ACBFD0A2732FA5C"
+			rewards: [{
+				id: "1E8FEA51B835A431"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.1ACBFD0A2732FA5C.subtitle}"
+			tasks: [
+				{
+					id: "5B8A02A45FC0D682"
+					item: "minecraft:emerald_block"
+					type: "item"
+				}
+				{
+					id: "255F22571A224D44"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["59B914C684A5EE4C"]
+			description: ["{cube_warper.quest.40111918A62390D4.description1}"]
+			id: "40111918A62390D4"
+			rewards: [{
+				id: "07283CC098CF728C"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.40111918A62390D4.subtitle}"
+			tasks: [{
+				id: "1EDE38ACE6BB5584"
+				item: "alexscaves:raygun"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["724BF4D8D1DA930D"]
+			description: ["{cube_warper.quest.3811EE766D2CF5C5.description1}"]
+			icon: "alexscaves:radon_bottle"
+			id: "3811EE766D2CF5C5"
+			rewards: [{
+				id: "3EC2F4B5760066FF"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.3811EE766D2CF5C5.subtitle}"
+			tasks: [
+				{
+					id: "475FC54BA27348E2"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "17D50B9F82CBF767"
+					item: "alexscaves:radon_bottle"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.3811EE766D2CF5C5.title}"
+			x: -13.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["59B914C684A5EE4C"]
+			description: ["{cube_warper.quest.66D36B4E2249E0C2.description1}"]
+			icon: "kubejs:empty_shell"
+			id: "66D36B4E2249E0C2"
+			rewards: [
+				{
+					id: "598EAB63E1A8EADD"
+					item: "immersiveengineering:screwdriver"
+					type: "item"
+				}
+				{
+					id: "6CE2B5CF70F51DBE"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+			]
+			subtitle: "{cube_warper.quest.66D36B4E2249E0C2.subtitle}"
+			tasks: [
+				{
+					id: "586EDB2CDF9520BF"
+					item: "kubejs:empty_shell"
+					type: "item"
+				}
+				{
+					id: "42F50D9B537537E1"
+					item: "alexscaves:fissile_core"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.66D36B4E2249E0C2.title}"
+			x: 1.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["42E9291D3E994A0F"]
+			icon: "windswept:pinecone"
+			id: "0F12939AF08CC493"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:pine_forrest"
+				id: "62B70AA399403623"
+				title: "{cube_warper.task.62B70AA399403623}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.0F12939AF08CC493.title}"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["59B914C684A5EE4C"]
+			id: "692627354D53875B"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "2E4A4440730A0929"
+				item: "kubejs:vector_operator_nuclear"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["59B914C684A5EE4C"]
+			description: [
+				"{cube_warper.quest.7FE20D4DE2E912CB.description1}"
+				""
+				"{cube_warper.quest.7FE20D4DE2E912CB.description2}"
+			]
+			id: "7FE20D4DE2E912CB"
+			tasks: [
+				{
+					id: "6277E9C6DB299EE5"
+					item: "create_alex_power:soul_goop"
+					type: "item"
+				}
+				{
+					id: "7ED340CAAE43179F"
+					item: "alexscaves:toxic_paste"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.7FE20D4DE2E912CB.title}"
+			x: 2.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["07D4A4DCB638CC93"]
+			description: ["{cube_warper.quest.50553C4CCED700E3.description1}"]
+			id: "50553C4CCED700E3"
+			rewards: [{
+				id: "189A00A8DAF2A461"
+				item: {
+					Count: 1
+					id: "untagged_mobs:nonnac_ittefnoc_repyh"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.50553C4CCED700E3.subtitle}"
+			tasks: [{
+				id: "32EC34EFB522CF75"
+				item: "kubejs:portal_lantern"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1AA2701817C05F20"
+				"71A95CEBD6B55B80"
+			]
+			description: ["{cube_warper.quest.56A2089DBDAAEA29.description1}"]
+			id: "56A2089DBDAAEA29"
+			rewards: [{
+				id: "10C8293B5CD27674"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{cube_warper.quest.56A2089DBDAAEA29.subtitle}"
+			tasks: [{
+				id: "3AF2854D7E028E52"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0F12939AF08CC493"]
+			description: [
+				"{cube_warper.quest.0C64583682770587.description1}"
+				""
+				"{cube_warper.quest.0C64583682770587.description2}"
+			]
+			icon: "create:zinc_ingot"
+			id: "0C64583682770587"
+			rewards: [{
+				id: "6EA2685337AF817D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "{cube_warper.quest.0C64583682770587.subtitle}"
+			tasks: [
+				{
+					id: "1C09FDFDFBCF2250"
+					item: "create:asurine"
+					type: "item"
+				}
+				{
+					id: "0310308A3066A724"
+					item: "create:raw_zinc"
+					type: "item"
+				}
+				{
+					id: "128C4C2F598093BA"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.0C64583682770587.title}"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0F12939AF08CC493"]
+			description: [
+				"{cube_warper.quest.1D39E9C67C28C53A.description1}"
+				""
+				"{cube_warper.quest.1D39E9C67C28C53A.description2}"
+				""
+				"{cube_warper.quest.1D39E9C67C28C53A.description3}"
+				""
+				"{cube_warper.quest.1D39E9C67C28C53A.description4}"
+				""
+				"{cube_warper.quest.1D39E9C67C28C53A.description5}"
+			]
+			icon: "supplementaries:clock_block"
+			id: "1D39E9C67C28C53A"
+			rewards: [{
+				id: "3F9669A1FDF056B7"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "{cube_warper.quest.1D39E9C67C28C53A.subtitle}"
+			tasks: [
+				{
+					id: "1C3B924AC31266AA"
+					item: "minecraft:iron_block"
+					type: "item"
+				}
+				{
+					id: "721206B1D3336480"
+					item: "kubejs:block_shiny_ingot"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.1D39E9C67C28C53A.title}"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7F8A84E6792D57C5"]
+			description: [
+				"{cube_warper.quest.22556B2096D509A1.description1}"
+				""
+				"{cube_warper.quest.22556B2096D509A1.description2}"
+			]
+			icon: "botania:livingrock"
+			id: "22556B2096D509A1"
+			shape: "octagon"
+			tasks: [
+				{
+					id: "68CA5A80862B6052"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					id: "09442B32ADB2D16E"
+					title: "{cube_warper.task.09442B32ADB2D16E}"
+					type: "checkmark"
+				}
+			]
+			x: 16.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["724BF4D8D1DA930D"]
+			description: [
+				"{cube_warper.quest.4B1F78DCF2E2C538.description1}"
+				""
+				"{cube_warper.quest.4B1F78DCF2E2C538.description2}"
+			]
+			id: "4B1F78DCF2E2C538"
+			shape: "octagon"
+			subtitle: "{cube_warper.quest.4B1F78DCF2E2C538.subtitle}"
+			tasks: [{
+				id: "355C0FC8AA39627A"
+				item: "alexscaves:uranium_shard"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1D855C82AF9E2087"]
+			description: [
+				"{cube_warper.quest.1AD73B0A7B843C82.description1}"
+				""
+				"{cube_warper.quest.1AD73B0A7B843C82.description2}"
+			]
+			id: "1AD73B0A7B843C82"
+			shape: "octagon"
+			tasks: [{
+				id: "6C0AEED162DE58CD"
+				item: "mekanism:nugget_osmium"
+				type: "item"
+			}]
+			title: "{cube_warper.quest.1AD73B0A7B843C82.title}"
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1F81CCC1F7562C57"]
+			description: [
+				"{cube_warper.quest.1303271D201C87A7.description1}"
+				""
+				"{cube_warper.quest.1303271D201C87A7.description2}"
+				"{cube_warper.quest.1303271D201C87A7.description3}"
+				""
+				"{cube_warper.quest.1303271D201C87A7.image0}"
+				""
+				"{cube_warper.quest.1303271D201C87A7.description4}"
+				"{cube_warper.quest.1303271D201C87A7.description5}"
+				""
+				"{cube_warper.quest.1303271D201C87A7.image2}"
+				""
+				"{cube_warper.quest.1303271D201C87A7.description6}"
+				"{cube_warper.quest.1303271D201C87A7.description7}"
+			]
+			icon: "aewireless:wireless_transceiver"
+			id: "1303271D201C87A7"
+			rewards: [
+				{
+					id: "7929EA9BE1F30513"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "414D40CE1D5FEB23"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.5d
+			subtitle: "{cube_warper.quest.1303271D201C87A7.subtitle}"
+			tasks: [{
+				count: 2L
+				id: "71B49964272A7AEA"
+				item: { Count: 2, id: "aewireless:wireless_transceiver" }
+				type: "item"
+			}]
+			title: "{cube_warper.quest.1303271D201C87A7.title}"
+			x: -4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["695F411874E4905F"]
+			description: ["{cube_warper.quest.66858347C4FDB6F3.description1}"]
+			icon: "minecraft:diamond"
+			id: "66858347C4FDB6F3"
+			rewards: [{
+				id: "21B581457ED7CC6A"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.66858347C4FDB6F3.subtitle}"
+			tasks: [
+				{
+					id: "6E95067E0B646577"
+					item: "caverns_and_chasms:diamond_lamp"
+					type: "item"
+				}
+				{
+					id: "5426F18453E19260"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.66858347C4FDB6F3.title}"
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["695F411874E4905F"]
+			description: ["{cube_warper.quest.1421E91BC9378574.description1}"]
+			icon: "minecraft:gold_ingot"
+			id: "1421E91BC9378574"
+			rewards: [{
+				id: "421966D3068F7B04"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "{cube_warper.quest.1421E91BC9378574.subtitle}"
+			tasks: [
+				{
+					id: "72D9F2A3C755E19C"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+				{
+					id: "687B9D6B1671C20A"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.1421E91BC9378574.title}"
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1D39E9C67C28C53A"
+				"1ACBFD0A2732FA5C"
+			]
+			description: ["{cube_warper.quest.6BD9302EF68EEE51.description1}"]
+			icon: {
+				Count: 1
+				id: "tiab:time_in_a_bottle"
+				tag: { }
+			}
+			id: "6BD9302EF68EEE51"
+			rewards: [{
+				id: "701F7171FF28EE30"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.6BD9302EF68EEE51.subtitle}"
+			tasks: [
+				{
+					id: "355D98976D5F681B"
+					item: "minecraft:emerald_block"
+					type: "item"
+				}
+				{
+					id: "3F31076FBE27CDA2"
+					item: {
+						Count: 1
+						id: "tiab:time_in_a_bottle"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.6BD9302EF68EEE51.title}"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1D39E9C67C28C53A"]
+			description: ["{cube_warper.quest.0721C1EEAD957574.description1}"]
+			icon: "kubejs:vector_operator_basic"
+			id: "0721C1EEAD957574"
+			rewards: [{
+				count: 4
+				id: "0346D852453998D8"
+				item: "kubejs:vector_operator_basic"
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.0721C1EEAD957574.subtitle}"
+			tasks: [
+				{
+					id: "5DFDEE42453CDB0B"
+					item: "kubejs:vector_operator_empty"
+					type: "item"
+				}
+				{
+					id: "728503A433375FD9"
+					item: "kubejs:vector_operator_basic"
+					type: "item"
+				}
+				{
+					id: "3383F1DBF8B0854A"
+					title: "{cube_warper.task.3383F1DBF8B0854A}"
+					type: "checkmark"
+				}
+			]
+			title: "{cube_warper.quest.0721C1EEAD957574.title}"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["695F411874E4905F"]
+			icon: "minecraft:lapis_lazuli"
+			id: "30518F83070B2B5C"
+			rewards: [{
+				id: "77EB0DDA83CBE933"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.30518F83070B2B5C.subtitle}"
+			tasks: [
+				{
+					id: "6211FC6F1094E6DA"
+					item: "minecraft:lapis_block"
+					type: "item"
+				}
+				{
+					id: "6336E1D3051E3AF8"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"57972A3714FCB9BE"
+				"724BF4D8D1DA930D"
+			]
+			description: [
+				"{cube_warper.quest.032F81B9942E156B.description1}"
+				""
+				"{cube_warper.quest.032F81B9942E156B.description2}"
+			]
+			icon: "appflux:energy_processor"
+			id: "032F81B9942E156B"
+			rewards: [{
+				id: "7929DF9833C2934B"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.032F81B9942E156B.subtitle}"
+			tasks: [
+				{
+					id: "5676E466FA439A96"
+					item: "appflux:charged_redstone"
+					type: "item"
+				}
+				{
+					id: "733CB58DBE47FF28"
+					item: "appflux:energy_processor"
+					type: "item"
+				}
+				{
+					id: "5940AB0E40D63F6E"
+					item: "appflux:flux_accessor"
+					type: "item"
+				}
+				{
+					id: "0AE59702A6FFE5DD"
+					item: {
+						Count: 1
+						id: "appflux:fe_1k_cell"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "681C223C5FC5ED56"
+					item: "appflux:induction_card"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.032F81B9942E156B.title}"
+			x: -15.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["10B4D789801FA7A3"]
+			description: [
+				"{cube_warper.quest.4944F4A26FE8C3EB.description1}"
+				""
+				"{cube_warper.quest.4944F4A26FE8C3EB.description2}"
+				"{cube_warper.quest.4944F4A26FE8C3EB.description3}"
+				"{cube_warper.quest.4944F4A26FE8C3EB.description4}"
+			]
+			icon: {
+				Count: 1
+				id: "thermal:dynamo_lapidary"
+				tag: {
+					BlockEntityTag: {
+						Energy: 0
+						EnergyMax: 50000
+						EnergyRecv: 0
+						EnergySend: 400
+						RSControl: {
+							RSMode: 0b
+							RSThreshold: 0b
+						}
+					}
+				}
+			}
+			id: "4944F4A26FE8C3EB"
+			rewards: [{
+				id: "043BC8EE60A25B9D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "0A5249081EDD9814"
+					item: {
+						Count: 1
+						id: "thermal:dynamo_lapidary"
+						tag: {
+							BlockEntityTag: {
+								Energy: 0
+								EnergyMax: 50000
+								EnergyRecv: 0
+								EnergySend: 400
+								RSControl: {
+									RSMode: 0b
+									RSThreshold: 0b
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "598CA2C6F7A277CA"
+					item: "alexscaves:uranium_rod"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.4944F4A26FE8C3EB.title}"
+			x: -1.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1D855C82AF9E2087"]
+			description: [
+				"{cube_warper.quest.20827613C878D74D.description1}"
+				""
+				"{cube_warper.quest.20827613C878D74D.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "sophisticatedbackpacks:backpack"
+				tag: {
+					inventorySlots: 27
+					upgradeSlots: 1
+				}
+			}
+			id: "20827613C878D74D"
+			rewards: [
+				{
+					id: "0BE64D537AC6C20D"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					id: "44E1484CCFC6FA7F"
+					item: "biomesoplenty:music_disc_wanderer"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "41DBEE94A835871E"
+					item: "windswept:frozen_flesh"
+					type: "item"
+				}
+				{
+					id: "3BC94D742116BD57"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "0BA0EEA08E3E15BB"
+					item: {
+						Count: 1
+						id: "sophisticatedbackpacks:backpack"
+						tag: {
+							inventorySlots: 27
+							upgradeSlots: 1
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.20827613C878D74D.title}"
+			x: 7.0d
+			y: 1.0d
+		}
+	]
+	title: "{cube_warper.chapter.5B9242AE7DC77549.title}"
+}

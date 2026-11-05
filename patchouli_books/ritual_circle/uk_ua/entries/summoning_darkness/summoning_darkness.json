@@ -1,0 +1,25 @@
+{
+    "name": "Виклик темряви",
+    "icon": "alexscaves:pure_darkness",
+    "category": "patchouli:ritual",
+    "sortnum": 3,
+    "pages": [
+	    {
+            "type": "patchouli:spotlight",
+            "item": "alexscaves:pure_darkness",
+			"title": "Виклик темряви",
+			"text": "Цей ритуал викличе чисту темряву. $(br2)Після принесення в жертву необхідних предметів із центрального п'єдесталу вискочать три фрагменти істинної темряви."
+		},
+		{
+			"type": "patchouli:ritual",
+			"input1": "untagged_mobs:nothing",
+			"input2": "untagged_mobs:nothing",
+			"input3": "untagged_mobs:nullpoint_tiles",
+			"input4": "untagged_mobs:nullpoint_tiles",
+			"input5": "malum:block_of_void_salts",
+			"input6": "malum:block_of_void_salts",
+			"input7": "malum:block_of_void_salts",
+			"input8": "malum:block_of_void_salts",
+			"input9": "kubejs:crimson_eye"
+		}
+]}

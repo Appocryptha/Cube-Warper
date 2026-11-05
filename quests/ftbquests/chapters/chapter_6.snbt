@@ -1,0 +1,262 @@
+{
+	autofocus_id: "3A0E442DF5C70BAE"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_6"
+	group: ""
+	icon: "kubejs:vector_operator_infinite"
+	id: "2425A8353B43CFB5"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "kubejs:vector_operator_eye"
+			id: "3A0E442DF5C70BAE"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "56B90F831238147F"
+				item: "kubejs:vector_operator_eye"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A0E442DF5C70BAE"]
+			icon: "untagged_mobs:nothing"
+			id: "57121F1DD7739B2D"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:the_edge_of_reality"
+				id: "2ED5ED791A2C45B0"
+				title: "{cube_warper.task.2ED5ED791A2C45B0}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.57121F1DD7739B2D.title}"
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6483A804AEE2CFED"]
+			icon: "kubejs:vector_operator_infinite"
+			id: "430D259FB92B7E62"
+			rewards: [
+				{
+					id: "340D08224618AAB8"
+					item: "kubejs:tiny_party_popper"
+					type: "item"
+				}
+				{
+					id: "2446568581F2C693"
+					item: "supplementaries:confetti_popper"
+					type: "item"
+				}
+				{
+					id: "650FF8F4B6F1F7A0"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "48B71A3035F4A9F0"
+					item: {
+						Count: 1
+						id: "untagged_mobs:confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7384438DB2399D35"
+					item: {
+						Count: 1
+						id: "untagged_mobs:nonnac_ittefnoc_repyh"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FAD5AD0B4D8D872"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 5.0d
+			tasks: [
+				{
+					id: "64D68B345510B77F"
+					item: "kubejs:vector_operator_infinite"
+					type: "item"
+				}
+				{
+					dimension: "hexahedron:overworld"
+					id: "5B072252D95428A0"
+					title: "{cube_warper.task.5B072252D95428A0}"
+					type: "dimension"
+				}
+			]
+			x: -5.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["57121F1DD7739B2D"]
+			description: ["{cube_warper.quest.5B67DE1C52A6C4AD.description1}"]
+			hide_until_deps_complete: true
+			id: "5B67DE1C52A6C4AD"
+			size: 2.0d
+			subtitle: "{cube_warper.quest.5B67DE1C52A6C4AD.subtitle}"
+			tasks: [{
+				id: "043A62FF5C123A3A"
+				item: "kubejs:vector_operator_infinite_empty"
+				type: "item"
+			}]
+			title: "{cube_warper.quest.5B67DE1C52A6C4AD.title}"
+			x: -5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5B67DE1C52A6C4AD"]
+			description: [
+				"{cube_warper.quest.6483A804AEE2CFED.description1}"
+				""
+				"{cube_warper.quest.6483A804AEE2CFED.description2}"
+				""
+				"{cube_warper.quest.6483A804AEE2CFED.description3}"
+				""
+				"{cube_warper.quest.6483A804AEE2CFED.description4}"
+				""
+				"{cube_warper.quest.6483A804AEE2CFED.description5}"
+				""
+				"{cube_warper.quest.6483A804AEE2CFED.description6}"
+			]
+			icon: "ae2:singularity"
+			id: "6483A804AEE2CFED"
+			rewards: [{
+				id: "3A7F87FD116A39A9"
+				item: {
+					Count: 1
+					id: "untagged_mobs:hyper_confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "1D2B658191E5A68D"
+					item: "kubejs:vector_operator_infinite_empty"
+					type: "item"
+				}
+				{
+					id: "70FA1855D14E6E08"
+					item: "kubejs:vector_operator_step2"
+					type: "item"
+				}
+				{
+					id: "44C0DA96017B5C03"
+					item: "kubejs:vector_operator_step3"
+					type: "item"
+				}
+				{
+					id: "6EC273C30D58BE88"
+					item: "kubejs:vector_operator_step4"
+					type: "item"
+				}
+				{
+					id: "28F2C09078447525"
+					item: "kubejs:vector_operator_step5"
+					type: "item"
+				}
+				{
+					id: "6CF0034C64A6AF9A"
+					item: "kubejs:vector_operator_step6"
+					type: "item"
+				}
+				{
+					id: "7F27E466BF733EE4"
+					item: "kubejs:vector_operator_step7"
+					type: "item"
+				}
+				{
+					id: "4FD68E976E86384F"
+					item: "kubejs:vector_operator_step8"
+					type: "item"
+				}
+				{
+					id: "5D667B0D940C60B7"
+					item: "kubejs:vector_operator_step9"
+					type: "item"
+				}
+				{
+					id: "0F2F264B806F3AC0"
+					item: "kubejs:vector_operator_step10"
+					type: "item"
+				}
+				{
+					id: "71C1A26E39886E20"
+					item: "kubejs:vector_operator_step11"
+					type: "item"
+				}
+				{
+					id: "13DAE6CBA30297DB"
+					item: "kubejs:vector_operator_step12"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.6483A804AEE2CFED.title}"
+			x: -5.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["6483A804AEE2CFED"]
+			description: [
+				"{cube_warper.quest.66E6BFE29C256D20.description1}"
+				""
+				"{cube_warper.quest.66E6BFE29C256D20.description2}"
+			]
+			icon: "kubejs:warping_interface_cracked"
+			id: "66E6BFE29C256D20"
+			size: 0.5d
+			tasks: [{
+				id: "397F12AA87C8F81B"
+				title: "{cube_warper.task.397F12AA87C8F81B}"
+				type: "checkmark"
+			}]
+			title: "{cube_warper.quest.66E6BFE29C256D20.title}"
+			x: -4.0d
+			y: 20.25d
+		}
+		{
+			description: [
+				"{cube_warper.quest.6C52C4A4BFFE9BF0.description1}"
+				""
+				"{cube_warper.quest.6C52C4A4BFFE9BF0.description2}"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "6C52C4A4BFFE9BF0"
+			subtitle: "{cube_warper.quest.6C52C4A4BFFE9BF0.subtitle}"
+			tasks: [{
+				id: "78A678777FF97159"
+				title: "{cube_warper.task.78A678777FF97159}"
+				type: "checkmark"
+			}]
+			title: "{cube_warper.quest.6C52C4A4BFFE9BF0.title}"
+			x: -5.0d
+			y: 8.0d
+		}
+	]
+	title: "{cube_warper.chapter.2425A8353B43CFB5.title}"
+}

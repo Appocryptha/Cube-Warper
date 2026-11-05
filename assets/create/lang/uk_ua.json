@@ -1,0 +1,22 @@
+{
+  "item.create.andesite_alloy": "Обпалений сплав",
+  "item.create.brass_hand": "Золота рука",
+  "block.create.rose_quartz_block": "Блок кров'яного кварцу",
+  "block.create.rose_quartz_lamp": "Лампа кров'яного кварцу",
+  "block.create.rose_quartz_tiles": "Плитка з кров'яного кварцу",
+  "block.create.small_rose_quartz_tiles": "Дрібна плитка з кров'яного кварцу",
+  "create.ponder.rose_quartz_lamp.header": "Лампи з кров'яного кварцу",
+  "create.ponder.rose_quartz_lamp.text_1": "Лампу з кров'яного кварцу можна заживити редстоуновим сигналом",
+  "item.create.polished_rose_quartz": "Полірований кров'яний кварц",
+  "item.create.rose_quartz": "Кров'яний кварц",
+  "advancement.create.rose_quartz.desc": "Відшліфуйте кров'яний кварц",
+  "block.create.andesite_alloy_block": "Блок обпаленого сплаву",
+  "block.create.andesite_bars": "Обпалені ґрати",
+  "block.create.andesite_casing": "Обпалений корпус",
+  "block.create.andesite_door": "Обпалені двері",
+  "block.create.andesite_funnel": "Обпалений жолоб",
+  "block.create.andesite_ladder": "Обпалена драбина",
+  "block.create.andesite_scaffolding": "Обпалене риштування",
+  "block.create.andesite_table_cloth": "Обпалене настільне покриття",
+  "block.create.andesite_tunnel": "Обпалений тунель"
+}

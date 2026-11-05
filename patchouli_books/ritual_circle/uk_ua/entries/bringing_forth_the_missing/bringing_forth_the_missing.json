@@ -1,0 +1,25 @@
+{
+    "name": "Виявлення Відсутнього",
+    "icon": "untagged_mobs:item_missing",
+    "category": "patchouli:ritual",
+    "sortnum": 2,
+    "pages": [
+	    {
+            "type": "patchouli:spotlight",
+            "item": "untagged_mobs:item_missing",
+			"title": "Виявлення Відсутнього",
+			"text": "Відсутні або негравці — це дивні смертоносні сутності, що складаються з відсутніх текстур. $(br2)Вони атакують гравця, якщо їх спровокувати, а після загибелі залишають по собі Відсутнє ядро. $(br2)Майте на увазі: у бою вони здатні виконувати будь-які дії, доступні звичайному гравцеві, що робить їх надзвичайно небезпечними."
+		},
+		{
+			"type": "patchouli:ritual",
+			"input1": "untagged_mobs:nothing",
+			"input2": "untagged_mobs:nothing",
+			"input3": "untagged_mobs:nothing",
+			"input4": "untagged_mobs:nothing",
+			"input5": "untagged_mobs:nothing",
+			"input6": "untagged_mobs:nothing",
+			"input7": "untagged_mobs:nothing",
+			"input8": "untagged_mobs:nothing",
+			"input9": "enderio:ensouled_chassis"
+		}
+]}

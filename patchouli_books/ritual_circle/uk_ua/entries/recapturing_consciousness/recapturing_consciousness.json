@@ -1,0 +1,25 @@
+{
+    "name": "Повернення свідомості",
+    "icon": "kubejs:recaptured_consciousness",
+    "category": "patchouli:ritual",
+    "sortnum": 1,
+    "pages": [
+	    {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:recaptured_consciousness",
+			"title": "Повернення свідомості",
+			"text": "Здається, багрові очі мають певний зв'язок з давніми колонами. $(br2)За допомогою цього ритуалу можна розібратися в принципах роботи цієї системи, ув'язнивши око всередині контейнера свідомості."
+		},
+		{
+			"type": "patchouli:ritual",
+			"input1": "kubejs:crimson_eye",
+			"input2": "kubejs:computer",
+			"input3": "kubejs:computer",
+			"input4": "kubejs:computer",
+			"input5": "kubejs:computer",
+			"input6": "kubejs:vector_operator_lightning",
+			"input7": "kubejs:vector_operator_lightning",
+			"input8": "kubejs:vector_operator_lightning",
+			"input9": "kubejs:recaptured_consciousness_empty"
+		}
+]}

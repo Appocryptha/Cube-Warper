@@ -7,8 +7,8 @@ particle untagged_mobs:missing_cube ~ ~ ~ 0 0 0 0.1 100 force
 particle dust_color_transition 0 0 0 5 1 0 1 ~ ~ ~ 10 10 10 0 1000 force
 particle dust_color_transition 1 0 1 5 0 0 0 ~ ~ ~ 10 10 10 0 1000 force
 
-summon untagged_mobs:non_player ~ ~ ~ {CustomNameVisible:0b,Motion:[0.0,0.0,0.0],CustomName:'{"text":"missing","obfuscated":true}',ActiveEffects:[{Id:11,Amplifier:1b,Duration:-1,ShowParticles:0b}]}
-summon untagged_mobs:non_player ~ ~ ~ {CustomNameVisible:0b,Motion:[0.0,0.0,0.0],CustomName:'{"text":"missing","obfuscated":true}',ActiveEffects:[{Id:11,Amplifier:1b,Duration:-1,ShowParticles:0b}]}
+summon untagged_mobs:non_player ~ ~ ~ {CustomNameVisible:0b,Motion:[0.0,0.0,0.0],CustomName:'{"translate":"message.hexahedron.missing_start.1","obfuscated":true}',ActiveEffects:[{Id:11,Amplifier:1b,Duration:-1,ShowParticles:0b}]}
+summon untagged_mobs:non_player ~ ~ ~ {CustomNameVisible:0b,Motion:[0.0,0.0,0.0],CustomName:'{"translate":"message.hexahedron.missing_start.1","obfuscated":true}',ActiveEffects:[{Id:11,Amplifier:1b,Duration:-1,ShowParticles:0b}]}
 
-tellraw @p {"text":"Non-Player joined the game","color":"yellow"}
-tellraw @p {"text":"Non-Player joined the game","color":"yellow"}
+tellraw @p {"translate":"message.hexahedron.missing_start.2","color":"yellow"}
+tellraw @p {"translate":"message.hexahedron.missing_start.2","color":"yellow"}

@@ -1,0 +1,1310 @@
+{
+	autofocus_id: "3F6624FB96478C8D"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_5"
+	group: ""
+	icon: "kubejs:vector_operator_lightning"
+	id: "42E20C6D7BEA70B7"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3F6624FB96478C8D"]
+			icon: "windswept:yellow_petals"
+			id: "243AFF85A4B9DEAC"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:endless_rainbows"
+				id: "19CDAC83434F4509"
+				title: "{cube_warper.task.19CDAC83434F4509}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.243AFF85A4B9DEAC.title}"
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			id: "3F6624FB96478C8D"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "034B815C417C27E9"
+				item: "kubejs:vector_operator_blaze"
+				type: "item"
+			}]
+			title: "{cube_warper.quest.3F6624FB96478C8D.title}"
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4371A7827F334251"]
+			description: [
+				"{cube_warper.quest.02EA6FCB8A583675.description1}"
+				""
+				"{cube_warper.quest.02EA6FCB8A583675.description2}"
+				"{cube_warper.quest.02EA6FCB8A583675.description3}"
+				""
+				"{cube_warper.quest.02EA6FCB8A583675.description4}"
+				""
+				"{cube_warper.quest.02EA6FCB8A583675.image0}"
+			]
+			icon: "malum:totemic_staff"
+			id: "02EA6FCB8A583675"
+			rewards: [{
+				id: "4E3DBC036E1112F7"
+				item: {
+					Count: 1
+					id: "untagged_mobs:nonnac_ittefnoc_repyh"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "{cube_warper.quest.02EA6FCB8A583675.subtitle}"
+			tasks: [
+				{
+					id: "66541FA46604E4DD"
+					item: "malum:runewood_totem_base"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6B29DD69DB0C4A54"
+					item: "malum:runewood_log"
+					type: "item"
+				}
+				{
+					id: "00AA2230D8D1450B"
+					item: "malum:totemic_staff"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6742EC457DB21326"
+					item: { Count: 5, id: "malum:arcane_spirit" }
+					type: "item"
+				}
+				{
+					id: "28198E7346575B97"
+					item: "malum:soulwood_growth"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.02EA6FCB8A583675.title}"
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["65865592B7FBB1CC"]
+			description: [
+				"{cube_warper.quest.3362A3145B9D5745.description1}"
+				""
+				"{cube_warper.quest.3362A3145B9D5745.description2}"
+				""
+				"{cube_warper.quest.3362A3145B9D5745.description3}"
+				""
+				"{cube_warper.quest.3362A3145B9D5745.image0}"
+				""
+				"{cube_warper.quest.3362A3145B9D5745.description4}"
+			]
+			icon: "kubejs:bottled_lightning"
+			id: "3362A3145B9D5745"
+			rewards: [
+				{
+					id: "15E7B512A299D022"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7FA84A49D0FC912C"
+					item: "windswept:music_disc_rain"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "{cube_warper.quest.3362A3145B9D5745.subtitle}"
+			tasks: [
+				{
+					id: "24183FCBB64EF1F2"
+					item: "immersiveengineering:capacitor_lv"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "18E4F5626262884B"
+					item: { Count: 5, id: "immersiveengineering:coil_lv" }
+					type: "item"
+				}
+				{
+					id: "7C1AF3F5B6B074DD"
+					item: "minecraft:lightning_rod"
+					type: "item"
+				}
+				{
+					id: "477BB3BCACDD6A82"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "7710C9867F89CF38"
+					item: "kubejs:bottled_lightning"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.3362A3145B9D5745.title}"
+			x: -15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["00A78310B2AA5365"]
+			description: ["{cube_warper.quest.28FB9EDAB196A3BC.description1}"]
+			icon: "mekanism:alloy_infused"
+			id: "28FB9EDAB196A3BC"
+			rewards: [{
+				id: "34838F04B598C39A"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					id: "3660ED0A1DC22BF1"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+				{
+					id: "44FB39E397918A8A"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["3F6624FB96478C8D"]
+			icon: "thermal:crude_oil_bucket"
+			id: "6291AD460BD9EA70"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:the_umbral_sea"
+				id: "0D079CF1C15D332F"
+				title: "{cube_warper.task.0D079CF1C15D332F}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.6291AD460BD9EA70.title}"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6291AD460BD9EA70"]
+			icon: "thermal:crude_oil_bucket"
+			id: "0E609FF5BCBBEA88"
+			rewards: [{
+				id: "2843E7D3217BA5D2"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D9538DC003F3D35"
+				item: "createdieselgenerators:crude_oil_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3F6624FB96478C8D"]
+			icon: "minecraft:soul_soil"
+			id: "179AB6E02372A596"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:soul_valley"
+				id: "65E04DCA1BB15A66"
+				title: "{cube_warper.task.65E04DCA1BB15A66}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.179AB6E02372A596.title}"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3362A3145B9D5745"]
+			description: [
+				"{cube_warper.quest.500C36B667B15D5C.description1}"
+				""
+				"{cube_warper.quest.500C36B667B15D5C.description2}"
+				""
+				"{cube_warper.quest.500C36B667B15D5C.description3}"
+				""
+				"{cube_warper.quest.500C36B667B15D5C.description4}"
+			]
+			icon: "thermal:lightning_charge"
+			id: "500C36B667B15D5C"
+			rewards: [{
+				id: "578E428CECC7FC32"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "{cube_warper.quest.500C36B667B15D5C.subtitle}"
+			tasks: [
+				{
+					id: "18438E85E0DF817A"
+					item: "immersiveengineering:lightning_rod"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "53392A7CD1FBDF44"
+					item: { Count: 3, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					id: "2FF8E1D7383E99FA"
+					item: "thermal:copper_dust"
+					type: "item"
+				}
+				{
+					id: "4698C6AFB3C1B923"
+					item: "thermal:lightning_charge"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.500C36B667B15D5C.title}"
+			x: -15.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["562B1530139F8AEA"]
+			description: ["{cube_warper.quest.003736C6E3EF0118.description1}"]
+			icon: "immersiveengineering:refinery"
+			id: "003736C6E3EF0118"
+			rewards: [{
+				id: "325344995CB72F34"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "111864E195E78111"
+					item: "immersiveengineering:refinery"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0DB3B1F9C23669F9"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "095B1EEC93C62DA1"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["562B1530139F8AEA"]
+			description: [
+				"{cube_warper.quest.02C145CB0410E42F.description1}"
+				""
+				"{cube_warper.quest.02C145CB0410E42F.description2}"
+			]
+			icon: "immersiveengineering:arc_furnace"
+			id: "02C145CB0410E42F"
+			rewards: [
+				{
+					id: "0C349CE5BEE90BC2"
+					item: "immersiveengineering:earmuffs"
+					type: "item"
+				}
+				{
+					id: "5A264073C6FB7D22"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{cube_warper.quest.02C145CB0410E42F.subtitle}"
+			tasks: [
+				{
+					id: "471E1C7DB77CA228"
+					item: "immersiveengineering:arc_furnace"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7D435C55F063DECE"
+					item: {
+						Count: 3
+						id: "immersiveengineering:graphite_electrode"
+						tag: {
+							graphDmg: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["7F2977D3C91BEA05"]
+			icon: "immersiveengineering:fermenter"
+			id: "1735ADAACB96DC07"
+			rewards: [{
+				id: "528364CE8F31EB38"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "6F92AACAEB8D3277"
+					item: "immersiveengineering:fermenter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "22D9ED361D26A2AC"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "36F5CBE5E2E243D3"
+					item: { Count: 4, id: "minecraft:cauldron" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["562B1530139F8AEA"]
+			description: [
+				"{cube_warper.quest.71A24C101C595EEF.description1}"
+				""
+				"{cube_warper.quest.71A24C101C595EEF.description2}"
+			]
+			icon: "immersivepetroleum:distillation_tower"
+			id: "71A24C101C595EEF"
+			rewards: [
+				{
+					id: "6861656B81B8B17E"
+					item: "kubejs:party_popper"
+					type: "item"
+				}
+				{
+					id: "76B0CBBDDB8CD0C6"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{cube_warper.quest.71A24C101C595EEF.subtitle}"
+			tasks: [
+				{
+					id: "4DAA0DDF94741CF8"
+					item: "immersivepetroleum:distillation_tower"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1C0EE43D57CAEFA8"
+					item: { Count: 4, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["3F6624FB96478C8D"]
+			icon: "regions_unexplored:chalk_grass_block"
+			id: "65865592B7FBB1CC"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:dusk_islands"
+				id: "5DEAAE647D9C7F6B"
+				title: "{cube_warper.task.5DEAAE647D9C7F6B}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.65865592B7FBB1CC.title}"
+			x: -15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["71A24C101C595EEF"]
+			description: [
+				"{cube_warper.quest.3C0C5BE247CF991A.description1}"
+				""
+				"{cube_warper.quest.3C0C5BE247CF991A.description2}"
+			]
+			icon: "immersivepetroleum:hydrotreater"
+			id: "3C0C5BE247CF991A"
+			rewards: [{
+				id: "5F97BBF7B3795BCE"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "{cube_warper.quest.3C0C5BE247CF991A.subtitle}"
+			tasks: [
+				{
+					id: "12D6D698AA83A996"
+					item: "immersivepetroleum:hydrotreater"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4F629A8B2921ADFC"
+					item: { Count: 4, id: "immersiveengineering:heavy_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0C539DA3A9B4FED1"
+					item: { Count: 2, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["243AFF85A4B9DEAC"]
+			description: [
+				"{cube_warper.quest.130D8C347C0B0AB6.description1}"
+				""
+				"{cube_warper.quest.130D8C347C0B0AB6.description2}"
+				""
+				"{cube_warper.quest.130D8C347C0B0AB6.description3}"
+				""
+				"{cube_warper.quest.130D8C347C0B0AB6.description4}"
+			]
+			icon: "clanginghowl:extraterrestrial_energy_crystal"
+			id: "130D8C347C0B0AB6"
+			rewards: [{
+				id: "0D97AD98F8A81A69"
+				item: "caverns_and_chasms:large_arrow"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "51AAD86BA625A874"
+					item: "caverns_and_chasms:large_arrow"
+					type: "item"
+				}
+				{
+					id: "7DF015EE5B85396D"
+					item: "clanginghowl:extraterrestrial_energy_crystal"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.130D8C347C0B0AB6.title}"
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3C0C5BE247CF991A"
+				"1B9BD40F42E3D0A5"
+				"003736C6E3EF0118"
+			]
+			description: ["{cube_warper.quest.013DA58608406C7D.description1}"]
+			id: "013DA58608406C7D"
+			rewards: [{
+				id: "7FBC5DD6FA40A545"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CCE4993819E57A8"
+				item: "kubejs:circuitboard"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 26.0d
+		}
+		{
+			dependencies: [
+				"013DA58608406C7D"
+				"61EBAB9F6E904FE8"
+			]
+			id: "73E39C4EDCB47CEF"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "069D6A6DDE2A3575"
+				item: "kubejs:vector_operator_lightning"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 34.0d
+		}
+		{
+			dependencies: ["304389322101F300"]
+			description: ["{cube_warper.quest.7F2977D3C91BEA05.description1}"]
+			id: "7F2977D3C91BEA05"
+			rewards: [{
+				id: "4FBFD525E151F42B"
+				item: {
+					Count: 1
+					id: "untagged_mobs:confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "1F8FD69CF6C86AF8"
+				item: "immersiveengineering:light_engineering"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3BFBC00147BE58DF"]
+			description: [
+				"{cube_warper.quest.562B1530139F8AEA.description1}"
+				""
+				"{cube_warper.quest.562B1530139F8AEA.description2}"
+			]
+			id: "562B1530139F8AEA"
+			rewards: [
+				{
+					id: "521CBCC36C171EDD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 0
+							}
+						}
+						id: "immersivepetroleum:projector"
+					}
+					type: "item"
+				}
+				{
+					id: "08766209BB033836"
+					item: {
+						Count: 1
+						id: "untagged_mobs:hyper_confetti_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "2581189CB20B99B4"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"5FB02F53EA532C75"
+				"01A551720FDD9F68"
+			]
+			description: [
+				"{cube_warper.quest.304389322101F300.description1}"
+				""
+				"{cube_warper.quest.304389322101F300.description2}"
+			]
+			id: "304389322101F300"
+			rewards: [{
+				id: "19D5A5706547B4B6"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.304389322101F300.subtitle}"
+			tasks: [{
+				id: "454A3254EDB8D08A"
+				item: "immersiveengineering:component_electronic"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1735ADAACB96DC07"
+				"13CB5998266B8B4B"
+			]
+			description: [
+				"{cube_warper.quest.3BFBC00147BE58DF.description1}"
+				""
+				"{cube_warper.quest.3BFBC00147BE58DF.description2}"
+			]
+			icon: "immersiveengineering:component_electronic_adv"
+			id: "3BFBC00147BE58DF"
+			rewards: [{
+				id: "737CE6EC41C34CD2"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.3BFBC00147BE58DF.subtitle}"
+			tasks: [
+				{
+					id: "1BC2B9031B39E4BB"
+					item: "create:blaze_cake"
+					type: "item"
+				}
+				{
+					id: "3360E82440649ECA"
+					item: "immersiveengineering:component_electronic_adv"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.3BFBC00147BE58DF.title}"
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"304389322101F300"
+				"28EC0CE38E4640DE"
+			]
+			id: "13CB5998266B8B4B"
+			rewards: [{
+				id: "3D525DE09878BCEF"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "{cube_warper.quest.13CB5998266B8B4B.subtitle}"
+			tasks: [{
+				id: "7C7AA41B34536970"
+				item: "actuallyadditions:atomic_reconstructor"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"13CB5998266B8B4B"
+				"3BFBC00147BE58DF"
+			]
+			id: "00A78310B2AA5365"
+			rewards: [{
+				id: "343DCA491820DE7A"
+				item: {
+					Count: 1
+					id: "untagged_mobs:hyper_confetti_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "01DD6AA385AACC0F"
+				item: "actuallyadditions:empowerer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["179AB6E02372A596"]
+			description: [
+				"{cube_warper.quest.5FB02F53EA532C75.description1}"
+				""
+				"{cube_warper.quest.5FB02F53EA532C75.description2}"
+			]
+			id: "5FB02F53EA532C75"
+			rewards: [{
+				id: "2AF07C1EC4CDE690"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1509F0DBAFB9C41D"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6291AD460BD9EA70"]
+			description: ["{cube_warper.quest.4371A7827F334251.description1}"]
+			id: "4371A7827F334251"
+			rewards: [{
+				id: "055AEA2089F24F8D"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "11F08139DAFEDBD3"
+				item: "malum:raw_soulstone"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"179AB6E02372A596"
+				"4371A7827F334251"
+			]
+			description: [
+				"{cube_warper.quest.07F2D5A7CCA1A58B.description1}"
+				""
+				"{cube_warper.quest.07F2D5A7CCA1A58B.description2}"
+				""
+				"{cube_warper.quest.07F2D5A7CCA1A58B.description3}"
+				""
+				"{cube_warper.quest.07F2D5A7CCA1A58B.description4}"
+			]
+			icon: "kubejs:soul_cube"
+			id: "07F2D5A7CCA1A58B"
+			rewards: [{
+				id: "4EEE3E16AFD32333"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{cube_warper.quest.07F2D5A7CCA1A58B.subtitle}"
+			tasks: [{
+				id: "3D4C779DC7ADBC70"
+				item: "malum:processed_soulstone"
+				type: "item"
+			}]
+			title: "{cube_warper.quest.07F2D5A7CCA1A58B.title}"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3F6624FB96478C8D"]
+			icon: "untagged_mobs:very_rusted_heavy_metal_grate"
+			id: "0123B7152870D571"
+			shape: "square"
+			tasks: [{
+				dimension: "hexahedron:gronglegrowth"
+				id: "270A2E83FA005BCA"
+				title: "{cube_warper.task.270A2E83FA005BCA}"
+				type: "dimension"
+			}]
+			title: "{cube_warper.quest.0123B7152870D571.title}"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0123B7152870D571"]
+			description: [
+				"{cube_warper.quest.394C0194156AAE7C.description1}"
+				""
+				"{cube_warper.quest.394C0194156AAE7C.description2}"
+				""
+				"{cube_warper.quest.394C0194156AAE7C.description3}"
+				"{cube_warper.quest.394C0194156AAE7C.description4}"
+			]
+			icon: "undergarden:gronglet"
+			id: "394C0194156AAE7C"
+			rewards: [{
+				id: "41B0382CF7BF796A"
+				item: {
+					Count: 1
+					id: "undergarden:slingshot"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{cube_warper.quest.394C0194156AAE7C.subtitle}"
+			tasks: [{
+				id: "0DE7FBA6919CAAA8"
+				item: "undergarden:gronglet"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"394C0194156AAE7C"
+				"02EA6FCB8A583675"
+			]
+			description: [
+				"{cube_warper.quest.5F390AE1F113B848.description1}"
+				""
+				"{cube_warper.quest.5F390AE1F113B848.description2}"
+			]
+			icon: "kubejs:grains_of_infinity"
+			id: "5F390AE1F113B848"
+			rewards: [{
+				id: "1B5F6AD3A9F1F419"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4C793098A35B6DE5"
+					item: "malum:cursed_sapball"
+					type: "item"
+				}
+				{
+					id: "3853D789D59FE700"
+					item: "kubejs:grains_of_infinity"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.5F390AE1F113B848.title}"
+			x: 9.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["28FB9EDAB196A3BC"]
+			description: [
+				"{cube_warper.quest.1B9BD40F42E3D0A5.description1}"
+				""
+				"{cube_warper.quest.1B9BD40F42E3D0A5.description2}"
+			]
+			icon: "mekanism:chemical_oxidizer"
+			id: "1B9BD40F42E3D0A5"
+			rewards: [{
+				id: "1AFF74C58D55DE7E"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "{cube_warper.quest.1B9BD40F42E3D0A5.subtitle}"
+			tasks: [
+				{
+					id: "48D11FBBC90869A8"
+					item: "mekanism:chemical_oxidizer"
+					type: "item"
+				}
+				{
+					id: "350A2BF7B008B8E8"
+					item: "mekanism:rotary_condensentrator"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.1B9BD40F42E3D0A5.title}"
+			x: -8.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"5F390AE1F113B848"
+				"02C145CB0410E42F"
+				"07F2D5A7CCA1A58B"
+			]
+			description: ["{cube_warper.quest.547C18CF2C6FA3D6.description1}"]
+			icon: "enderio:void_chassis"
+			id: "547C18CF2C6FA3D6"
+			rewards: [{
+				id: "5B0408987B064A44"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "6F3336EFC9381470"
+					item: "caverns_and_chasms:necromium_nugget"
+					type: "item"
+				}
+				{
+					id: "533AFF7A8C3DC476"
+					item: "caverns_and_chasms:necromium_ingot"
+					type: "item"
+				}
+				{
+					id: "1FFB230CC0532ACC"
+					item: "enderio:void_chassis"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.547C18CF2C6FA3D6.title}"
+			x: 4.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"02C145CB0410E42F"
+				"3AEDF7B7730CA73D"
+			]
+			description: ["{cube_warper.quest.61EBAB9F6E904FE8.description1}"]
+			id: "61EBAB9F6E904FE8"
+			rewards: [{
+				id: "2E8F17159F7EA32C"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "703D610DB6238F3C"
+				item: "clanginghowl:fireproof_steel_coating"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["547C18CF2C6FA3D6"]
+			description: [
+				"{cube_warper.quest.3AEDF7B7730CA73D.description1}"
+				""
+				"{cube_warper.quest.3AEDF7B7730CA73D.description2}"
+			]
+			icon: "enderio:sag_mill"
+			id: "3AEDF7B7730CA73D"
+			rewards: [{
+				id: "7F22D50C9308DDF1"
+				item: "supplementaries:confetti_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "7FF9DE545A7A1C8C"
+					item: "enderio:sag_mill"
+					type: "item"
+				}
+				{
+					id: "492618484AB5B0AA"
+					item: "enderio:basic_capacitor"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["0123B7152870D571"]
+			icon: "minecraft:diamond"
+			id: "7D0109AE975E49BE"
+			shape: "octagon"
+			tasks: [
+				{
+					id: "5C7DAB56B199D649"
+					item: "undergarden:depthrock"
+					type: "item"
+				}
+				{
+					id: "5EA67E0C95B52B0E"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.7D0109AE975E49BE.title}"
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"130D8C347C0B0AB6"
+				"3362A3145B9D5745"
+			]
+			description: ["{cube_warper.quest.28EC0CE38E4640DE.description1}"]
+			id: "28EC0CE38E4640DE"
+			size: 1.0d
+			tasks: [{
+				id: "5FDAA07F5C9933B4"
+				item: "actuallyadditions:lava_factory_casing"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["394C0194156AAE7C"]
+			description: ["{cube_warper.quest.4EDB043848C115B1.description1}"]
+			icon: "minecraft:gunpowder"
+			id: "4EDB043848C115B1"
+			tasks: [
+				{
+					id: "1326373F3353A35B"
+					item: "malum:runic_sapball"
+					type: "item"
+				}
+				{
+					id: "4BE968B9163DFCC0"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+			]
+			title: "{cube_warper.quest.4EDB043848C115B1.title}"
+			x: 12.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["65865592B7FBB1CC"]
+			description: [
+				"{cube_warper.quest.61CB35448C2C96A5.description1}"
+				""
+				"{cube_warper.quest.61CB35448C2C96A5.description2}"
+			]
+			id: "61CB35448C2C96A5"
+			shape: "octagon"
+			tasks: [{
+				id: "654C3EBB2BEC1CD3"
+				item: "immersiveengineering:raw_aluminum"
+				type: "item"
+			}]
+			title: "{cube_warper.quest.61CB35448C2C96A5.title}"
+			x: -11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"130D8C347C0B0AB6"
+				"135F7CA45A2CE98C"
+			]
+			description: [
+				"{cube_warper.quest.01A551720FDD9F68.description1}"
+				""
+				"{cube_warper.quest.01A551720FDD9F68.description2}"
+			]
+			id: "01A551720FDD9F68"
+			rewards: [{
+				id: "18C790FE1A57656D"
+				item: "kubejs:party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "46BF0EB3FA0287ED"
+				item: "forestry:carpenter"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["130D8C347C0B0AB6"]
+			description: ["{cube_warper.quest.7901F7F30F475BE1.description1}"]
+			id: "7901F7F30F475BE1"
+			rewards: [{
+				id: "5ECD2ECC530D7667"
+				item: "kubejs:tiny_party_popper"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "66F5C9F8621FABE7"
+				item: "clanginghowl:stationary_charging_station"
+				type: "item"
+			}]
+			x: -11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7901F7F30F475BE1"]
+			icon: {
+				Count: 1
+				id: "clanginghowl:advanced_chainsword"
+				tag: {
+					Energy: 1500
+					"Max Energy": 1500
+				}
+			}
+			id: "0C755E69C5A7DD79"
+			subtitle: "{cube_warper.quest.0C755E69C5A7DD79.subtitle}"
+			tasks: [{
+				id: "4FA7B6CA7429D947"
+				item: {
+					Count: 1
+					id: "clanginghowl:advanced_chainsword"
+					tag: {
+						Energy: 1500
+						"Max Energy": 1500
+					}
+				}
+				type: "item"
+			}]
+			x: -12.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7901F7F30F475BE1"]
+			icon: {
+				Count: 1
+				id: "clanginghowl:advanced_chainsaw"
+				tag: {
+					Energy: 3000
+					"Max Energy": 3000
+				}
+			}
+			id: "3B1E003F392F39B0"
+			subtitle: "{cube_warper.quest.3B1E003F392F39B0.subtitle}"
+			tasks: [
+				{
+					id: "31DA68B1A04AF740"
+					item: {
+						Count: 1
+						id: "clanginghowl:advanced_chainsaw"
+						tag: {
+							Energy: 3000
+							"Max Energy": 3000
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "341A12293011DF90"
+					item: {
+						Count: 1
+						id: "clanginghowl:advanced_hand_drill"
+						tag: {
+							Energy: 3000
+							"Max Energy": 3000
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6291AD460BD9EA70"]
+			description: [
+				"{cube_warper.quest.365A0560F237D1FC.description1}"
+				""
+				"{cube_warper.quest.365A0560F237D1FC.description2}"
+			]
+			id: "365A0560F237D1FC"
+			shape: "octagon"
+			tasks: [{
+				id: "536D4B12677F0D58"
+				item: "thermal:raw_nickel"
+				type: "item"
+			}]
+			title: "{cube_warper.quest.365A0560F237D1FC.title}"
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["243AFF85A4B9DEAC"]
+			description: [
+				"{cube_warper.quest.135F7CA45A2CE98C.description1}"
+				""
+				"{cube_warper.quest.135F7CA45A2CE98C.description2}"
+			]
+			id: "135F7CA45A2CE98C"
+			shape: "octagon"
+			tasks: [{
+				id: "5C8D9B518693163C"
+				item: "thermal:raw_tin"
+				type: "item"
+			}]
+			title: "{cube_warper.quest.135F7CA45A2CE98C.title}"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"013DA58608406C7D"
+				"61EBAB9F6E904FE8"
+			]
+			description: [
+				"{cube_warper.quest.0CBFA3982D725C91.description1}"
+				""
+				"{cube_warper.quest.0CBFA3982D725C91.description2}"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 3
+					}
+				}
+				id: "immersiveengineering:railgun"
+			}
+			id: "0CBFA3982D725C91"
+			rewards: [
+				{
+					count: 4
+					id: "11FA4F83AD0EDF56"
+					item: "immersiveengineering:stick_steel"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "022E8C08FD4EDEBC"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "264C7B79734AA545"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 3
+							}
+						}
+						id: "immersiveengineering:railgun"
+					}
+					type: "item"
+				}
+				{
+					id: "2B777885C28C005C"
+					item: "immersiveengineering:charging_station"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 28.0d
+		}
+	]
+	title: "{cube_warper.chapter.42E20C6D7BEA70B7.title}"
+}

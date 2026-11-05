@@ -1,0 +1,8 @@
+{
+    "name": "book.cube_warper.name",
+    "landing_text": "book.cube_warper.landing",
+    "version": 1,
+    "use_resource_pack": false,
+	"pamphlet": true,
+	"model": "kubejs:ritual_book"
+}
