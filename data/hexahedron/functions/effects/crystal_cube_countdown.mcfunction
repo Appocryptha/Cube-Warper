@@ -11,4 +11,4 @@ execute in hexahedron:endless_rainbows as @e[type=marker,tag=cube_countdown,scor
 execute in hexahedron:endless_rainbows as @e[type=marker,tag=cube_countdown,scores={time=10..}] at @s run tag @s remove cube_countdown
 
 execute in hexahedron:endless_rainbows as @e[type=marker,tag=cube_countdown,scores={time=..10}] at @s run schedule function hexahedron:effects/crystal_cube_countdown 1s
-execute in hexahedron:endless_rainbows as @e[type=marker,scores={time=10..}] at @s run scoreboard players set @s time 0
+execute in hexahedron:endless_rainbows as @e[type=marker,tag=cube_marker,scores={time=10..}] at @s run scoreboard players set @s time 0
