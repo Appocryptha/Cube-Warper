@@ -68,6 +68,7 @@ let create = (block, item, result) => {
 	//create("create:andesite_casing", 		"create:shaft", 					"createaddition:rolling_mill")
 	create("create:andesite_casing", 		"create:item_vault", 				"create:package_frogport")
 	create("create:andesite_casing", 		"create:cogwheel", 					"create:gearbox")
+	event.remove('create:crafting/kinetics/vertical_gearbox')
 
 //Copper Casing
 	create("create:copper_casing",			"minecraft:copper_ingot", 			"create:fluid_tank")
