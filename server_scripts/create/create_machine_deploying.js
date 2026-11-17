@@ -61,12 +61,14 @@ let create = (block, item, result) => {
 	create("create:andesite_casing", 		"farmersdelight:rope",				"create:rope_pulley")
 	create("create:andesite_casing", 		"minecraft:piston",					"create:mechanical_piston")
 	create("create:andesite_casing", 		"minecraft:cobblestone_slab",		"create:depot")
-	create("create:andesite_casing", 		"create:cogwheel",					"create:millstone")
+	create("create:andesite_casing", 		"minecraft:grindstone",				"create:millstone")
 	create("create:andesite_casing", 		"minecraft:stone_button", 			"create:contraption_controls")
 	create("create:andesite_casing", 		"create:cardboard_block", 			"create:packager")
 	create("create:andesite_casing", 		"create:turntable", 				"create:mechanical_bearing")
 	//create("create:andesite_casing", 		"create:shaft", 					"createaddition:rolling_mill")
 	create("create:andesite_casing", 		"create:item_vault", 				"create:package_frogport")
+	create("create:andesite_casing", 		"create:cogwheel", 					"create:gearbox")
+	event.remove('create:crafting/kinetics/vertical_gearbox')
 
 //Copper Casing
 	create("create:copper_casing",			"minecraft:copper_ingot", 			"create:fluid_tank")
